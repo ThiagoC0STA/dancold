@@ -1,0 +1,347 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - link "dancold@dancold.com.br" [ref=e5] [cursor=pointer]:
+        - /url: mailto:dancold@dancold.com.br
+      - generic [ref=e7]: Seg a Sex - 8h00 às 17h30
+    - generic [ref=e8]:
+      - link "(41) 3365-4877" [ref=e9] [cursor=pointer]:
+        - /url: tel:+554133654877
+      - link "(41) 9 9246-6920" [ref=e10] [cursor=pointer]:
+        - /url: https://wa.me/+5541992466920
+  - banner [ref=e11]:
+    - generic [ref=e12]:
+      - link "Dancold - Home" [ref=e13] [cursor=pointer]:
+        - /url: /pt
+        - img "Dancold" [ref=e14]
+      - navigation "Principal" [ref=e15]:
+        - link "Home" [ref=e16] [cursor=pointer]:
+          - /url: /pt
+          - text: Home
+        - link "Sobre Nós" [ref=e18] [cursor=pointer]:
+          - /url: /pt/sobre-nos
+        - link "Serviços" [ref=e19] [cursor=pointer]:
+          - /url: /pt/servicos
+        - link "Segmentos" [ref=e20] [cursor=pointer]:
+          - /url: /pt/segmentos
+        - link "Onde Estamos" [ref=e21] [cursor=pointer]:
+          - /url: /pt/onde-estamos
+        - link "Contato" [ref=e22] [cursor=pointer]:
+          - /url: /pt/contato
+      - generic [ref=e23]:
+        - button "Light / Dark" [ref=e24]:
+          - img [ref=e25]
+        - button "Idioma" [ref=e29] [cursor=pointer]:
+          - img [ref=e30]
+          - generic [ref=e35]: pt
+          - img [ref=e36]
+        - link "Contato pelo WhatsApp" [ref=e38] [cursor=pointer]:
+          - /url: https://wa.me/+5541992466920
+          - img [ref=e39]
+          - text: Contato pelo WhatsApp
+  - main [ref=e41]:
+    - generic [ref=e42]:
+      - generic [ref=e47]:
+        - generic [ref=e49]:
+          - paragraph [ref=e50]: Grandes Soluções
+          - heading "Projetos de Climatização de Alto Desempenho" [level=1] [ref=e52]:
+            - generic [ref=e54]: Projetos
+            - generic [ref=e56]: de
+            - generic [ref=e58]: Climatização
+            - generic [ref=e60]: de
+            - generic [ref=e62]: Alto
+            - generic [ref=e64]: Desempenho
+          - link "Saiba mais" [ref=e66] [cursor=pointer]:
+            - /url: /pt/servicos/projetos-personalizados
+            - text: Saiba mais
+            - generic [ref=e67]: →
+        - generic [ref=e68]:
+          - button "Grandes Soluções" [ref=e69]
+          - button "Grandes Ambientes" [ref=e72]
+          - button "Ambientes Industriais" [ref=e74]
+          - button "Manutenção" [ref=e76]
+      - generic [ref=e79]:
+        - generic [ref=e80]:
+          - generic [ref=e81]: Desde 1998
+          - generic [ref=e83]: Curitiba — PR
+          - generic [ref=e84]: 25.4284° S / 49.2733° W
+        - generic [ref=e85]:
+          - generic [ref=e86]: 01 / 04
+          - generic [ref=e87]: Role para explorar
+    - generic [ref=e90]:
+      - generic [ref=e91]:
+        - paragraph [ref=e93]:
+          - generic [ref=e94]: "+0"
+        - paragraph [ref=e95]: Anos de experiência
+      - generic [ref=e96]:
+        - paragraph [ref=e98]:
+          - generic [ref=e99]: "+0"
+        - paragraph [ref=e100]: Clientes satisfeitos
+      - generic [ref=e101]:
+        - paragraph [ref=e103]: "0"
+        - paragraph [ref=e104]: Suporte técnico
+      - generic [ref=e105]:
+        - paragraph [ref=e107]: "0"
+        - paragraph [ref=e108]: Cidades atendidas
+    - generic [ref=e111]:
+      - generic [ref=e112]:
+        - generic [ref=e113]:
+          - paragraph [ref=e114]: O que fazemos
+          - heading "Serviços" [level=2] [ref=e116]
+        - link "Ver todos" [ref=e118] [cursor=pointer]:
+          - /url: /pt/servicos
+          - text: Ver todos
+          - generic [ref=e119]: →
+      - generic [ref=e121]:
+        - link "Automação e Monitoramento Instalamos sensores de temperatura e energia com alarme 24/7, protegendo câmaras frias, vacinas e data centers contra perdas por falha térmica ou queda de energia. Ler Mais" [ref=e123] [cursor=pointer]:
+          - /url: /pt/servicos/automacao-e-monitoramento
+          - generic [ref=e124]: "01"
+          - generic [ref=e125]:
+            - generic [ref=e126]: Automação e Monitoramento
+            - generic [ref=e127]: Instalamos sensores de temperatura e energia com alarme 24/7, protegendo câmaras frias, vacinas e data centers contra perdas por falha térmica ou queda de energia.
+          - generic [ref=e128]:
+            - generic [ref=e129]: Ler Mais
+            - generic [ref=e130]: →
+        - link "Projetos Personalizados Desenvolvemos projetos executivos de climatização e refrigeração sob medida para cada empresa. Partindo do zero, visitamos o ambiente, dimensionamos com precisão técnica e entregamos sistemas que resolvem a dor de cada operação, com eficiência energética. Ler Mais" [ref=e132] [cursor=pointer]:
+          - /url: /pt/servicos/projetos-personalizados
+          - generic [ref=e133]: "02"
+          - generic [ref=e134]:
+            - generic [ref=e135]: Projetos Personalizados
+            - generic [ref=e136]: Desenvolvemos projetos executivos de climatização e refrigeração sob medida para cada empresa. Partindo do zero, visitamos o ambiente, dimensionamos com precisão técnica e entregamos sistemas que resolvem a dor de cada operação, com eficiência energética.
+          - generic [ref=e137]:
+            - generic [ref=e138]: Ler Mais
+            - generic [ref=e139]: →
+        - link "Instalações Instalamos todos os sistemas de climatização e refrigeração, do Split ao Chiller. Certificados pelas melhores marcas do mundo, seguimos rigorosamente cada fabricante e finalizamos com comissionamento completo, testes de desempenho e relatório técnico de entrega. Ler Mais" [ref=e141] [cursor=pointer]:
+          - /url: /pt/servicos/instalacoes
+          - generic [ref=e142]: "03"
+          - generic [ref=e143]:
+            - generic [ref=e144]: Instalações
+            - generic [ref=e145]: Instalamos todos os sistemas de climatização e refrigeração, do Split ao Chiller. Certificados pelas melhores marcas do mundo, seguimos rigorosamente cada fabricante e finalizamos com comissionamento completo, testes de desempenho e relatório técnico de entrega.
+          - generic [ref=e146]:
+            - generic [ref=e147]: Ler Mais
+            - generic [ref=e148]: →
+        - link "Plano de Manutenção (PMOC) Elaboramos e implantamos o Plano de Manutenção, Operação e Controle (PMOC) conforme legislação vigente, com equipes fixas ou volantes, relatórios técnicos periódicos e laudos de qualidade do ar. Ler Mais" [ref=e150] [cursor=pointer]:
+          - /url: /pt/servicos/plano-de-manutencao-pmoc
+          - generic [ref=e151]: "04"
+          - generic [ref=e152]:
+            - generic [ref=e153]: Plano de Manutenção (PMOC)
+            - generic [ref=e154]: Elaboramos e implantamos o Plano de Manutenção, Operação e Controle (PMOC) conforme legislação vigente, com equipes fixas ou volantes, relatórios técnicos periódicos e laudos de qualidade do ar.
+          - generic [ref=e155]:
+            - generic [ref=e156]: Ler Mais
+            - generic [ref=e157]: →
+        - link "Comissionamento de obras Realizamos o comissionamento completo de sistemas HVAC, assegurando que todos os equipamentos operem conforme os parâmetros de projeto antes da entrega final da obra. Ler Mais" [ref=e159] [cursor=pointer]:
+          - /url: /pt/servicos/comissionamento-de-obras
+          - generic [ref=e160]: "05"
+          - generic [ref=e161]:
+            - generic [ref=e162]: Comissionamento de obras
+            - generic [ref=e163]: Realizamos o comissionamento completo de sistemas HVAC, assegurando que todos os equipamentos operem conforme os parâmetros de projeto antes da entrega final da obra.
+          - generic [ref=e164]:
+            - generic [ref=e165]: Ler Mais
+            - generic [ref=e166]: →
+    - generic [ref=e167]:
+      - generic: “
+      - paragraph [ref=e171]: Com dedicação, responsabilidade e constante investimento em novas tecnologias, a Dancold oferece aos seus clientes e parceiros o que há de mais inovador, competitivo e rentável no mercado.
+    - generic [ref=e174]:
+      - generic [ref=e175]:
+        - paragraph [ref=e176]: Quem confia na Dancold
+        - heading "Clientes" [level=2] [ref=e179]
+      - generic [ref=e183]:
+        - generic [ref=e184]:
+          - img "Ambev"
+        - generic [ref=e185]:
+          - img "ArcelorMittal"
+        - generic [ref=e186]:
+          - img "Brose"
+        - generic [ref=e187]:
+          - img "Champagnat"
+        - generic [ref=e188]:
+          - img "Daikin"
+        - generic [ref=e189]:
+          - img "Hitachi"
+        - generic [ref=e190]:
+          - img "Mondelez"
+        - generic [ref=e191]:
+          - img "Mueller"
+        - generic [ref=e192]:
+          - img "Shopping Curitiba"
+        - generic [ref=e193]:
+          - img "Unimed"
+        - generic [ref=e194]:
+          - img "Ambev"
+        - generic [ref=e195]:
+          - img "ArcelorMittal"
+        - generic [ref=e196]:
+          - img "Brose"
+        - generic [ref=e197]:
+          - img "Champagnat"
+        - generic [ref=e198]:
+          - img "Daikin"
+        - generic [ref=e199]:
+          - img "Hitachi"
+        - generic [ref=e200]:
+          - img "Mondelez"
+        - generic [ref=e201]:
+          - img "Mueller"
+        - generic [ref=e202]:
+          - img "Shopping Curitiba"
+        - generic [ref=e203]:
+          - img "Unimed"
+    - generic [ref=e205]:
+      - generic [ref=e206]:
+        - paragraph [ref=e207]: Onde atuamos
+        - heading "Segmentos" [level=2] [ref=e209]
+        - paragraph [ref=e210]: "A Dancold oferece consultoria, e implanta PMOC disponibilizando equipes com suporte técnico ininterrupto para os seguintes segmentos:"
+      - generic [ref=e211]:
+        - link "Indústrias Indústrias Mantemos sua produção rodando sem paradas. Refrigeração e climatização crítica com manutenção especializada, reduzindo custos e protegendo seu processo contra falhas térmicas. Saiba mais" [ref=e213] [cursor=pointer]:
+          - /url: /pt/segmentos/industrias
+          - img "Indústrias" [ref=e214]
+          - generic [ref=e216]: "01"
+          - generic [ref=e217]:
+            - heading "Indústrias" [level=3] [ref=e219]
+            - paragraph: Mantemos sua produção rodando sem paradas. Refrigeração e climatização crítica com manutenção especializada, reduzindo custos e protegendo seu processo contra falhas térmicas.
+            - generic [ref=e220]:
+              - text: Saiba mais
+              - generic [ref=e221]: →
+        - link "Hospitais Hospitais Trabalhamos na sua operação contínua, protegendo a vida dos seus pacientes, vacinas e medicamentos em um único contrato. Saiba mais" [ref=e223] [cursor=pointer]:
+          - /url: /pt/segmentos/hospitais
+          - img "Hospitais" [ref=e224]
+          - generic [ref=e226]: "02"
+          - generic [ref=e227]:
+            - heading "Hospitais" [level=3] [ref=e229]
+            - paragraph: Trabalhamos na sua operação contínua, protegendo a vida dos seus pacientes, vacinas e medicamentos em um único contrato.
+            - generic [ref=e230]:
+              - text: Saiba mais
+              - generic [ref=e231]: →
+        - link "Shopping Centers Shopping Centers Conforto térmico contínuo para milhares de pessoas. Cuidamos do parque completo de máquinas com equipe exclusiva, evitando paradas que afastam clientes. Saiba mais" [ref=e233] [cursor=pointer]:
+          - /url: /pt/segmentos/shopping-centers
+          - img "Shopping Centers" [ref=e234]
+          - generic [ref=e236]: "03"
+          - generic [ref=e237]:
+            - heading "Shopping Centers" [level=3] [ref=e239]
+            - paragraph: Conforto térmico contínuo para milhares de pessoas. Cuidamos do parque completo de máquinas com equipe exclusiva, evitando paradas que afastam clientes.
+            - generic [ref=e240]:
+              - text: Saiba mais
+              - generic [ref=e241]: →
+        - link "Residências e Lojas Residências e Lojas Oferecemos soluções para o conforto e a segurança em diferentes processos, além de atendimento para balcões resfriados e câmaras frigoríficas. Saiba mais" [ref=e243] [cursor=pointer]:
+          - /url: /pt/segmentos/residencias-e-lojas
+          - img "Residências e Lojas" [ref=e244]
+          - generic [ref=e246]: "04"
+          - generic [ref=e247]:
+            - heading "Residências e Lojas" [level=3] [ref=e249]
+            - paragraph: Oferecemos soluções para o conforto e a segurança em diferentes processos, além de atendimento para balcões resfriados e câmaras frigoríficas.
+            - generic [ref=e250]:
+              - text: Saiba mais
+              - generic [ref=e251]: →
+        - link "Prédios Corporativos Prédios Corporativos Climatização, elétrica e hidráulica do seu prédio em um único contrato. Cuidamos da edificação inteira com suporte 24/7, mantendo ocupantes confortáveis e tudo funcionando. Saiba mais" [ref=e253] [cursor=pointer]:
+          - /url: /pt/segmentos/predios-corporativos
+          - img "Prédios Corporativos" [ref=e254]
+          - generic [ref=e256]: "05"
+          - generic [ref=e257]:
+            - heading "Prédios Corporativos" [level=3] [ref=e259]
+            - paragraph: Climatização, elétrica e hidráulica do seu prédio em um único contrato. Cuidamos da edificação inteira com suporte 24/7, mantendo ocupantes confortáveis e tudo funcionando.
+            - generic [ref=e260]:
+              - text: Saiba mais
+              - generic [ref=e261]: →
+        - link "Agronegócios Agronegócios Proporcionamos conforto e bem-estar ao usuário ao oferecer projeto e instalação de sistemas VRV contemplando automação local e remota. Saiba mais" [ref=e263] [cursor=pointer]:
+          - /url: /pt/segmentos/agronegocios
+          - img "Agronegócios" [ref=e264]
+          - generic [ref=e266]: "06"
+          - generic [ref=e267]:
+            - heading "Agronegócios" [level=3] [ref=e269]
+            - paragraph: Proporcionamos conforto e bem-estar ao usuário ao oferecer projeto e instalação de sistemas VRV contemplando automação local e remota.
+            - generic [ref=e270]:
+              - text: Saiba mais
+              - generic [ref=e271]: →
+    - generic [ref=e274]:
+      - paragraph [ref=e275]: Marcas que representamos
+      - heading "Fornecedores" [level=2] [ref=e278]
+    - generic [ref=e296]:
+      - generic [ref=e298]: / Dancold — 1998
+      - generic [ref=e299]: 25.4284° S / 49.2733° W
+      - generic [ref=e300]:
+        - generic [ref=e301]:
+          - heading "Pronto para levar sua operação a outro nível?" [level=2] [ref=e302]
+          - paragraph [ref=e303]: Fale com nossa equipe técnica e descubra a solução ideal em climatização, refrigeração e automação para o seu negócio.
+        - link "Solicitar orçamento" [ref=e305] [cursor=pointer]:
+          - /url: https://wa.me/+5541992466920
+          - img [ref=e306]
+          - text: Solicitar orçamento
+          - generic [ref=e308]: →
+  - contentinfo [ref=e309]:
+    - generic [ref=e311]:
+      - generic [ref=e312]:
+        - generic [ref=e313]:
+          - img "Dancold" [ref=e314]
+          - paragraph [ref=e315]: Fundada em 1998, a Dancold iniciou como empresa familiar em manutenção de ar-condicionado e refrigeração. A partir de 2002, expandiu sua atuação para o setor industrial, atendendo marcas reconhecidas internacionalmente.
+          - paragraph [ref=e316]: "CNPJ: 05.477.326/0001-28"
+          - generic [ref=e317]:
+            - link "Facebook" [ref=e318] [cursor=pointer]:
+              - /url: https://www.facebook.com/DANCOLDCLIMATIZACAO
+              - img [ref=e319]
+            - link "Instagram" [ref=e321] [cursor=pointer]:
+              - /url: https://www.instagram.com/arcondicionadodancold/
+              - img [ref=e322]
+            - link "LinkedIn" [ref=e324] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/dancoldclimatiza%C3%A7%C3%A3o/
+              - img [ref=e325]
+        - navigation "A Dancold" [ref=e327]:
+          - heading "A Dancold" [level=3] [ref=e328]
+          - list [ref=e329]:
+            - listitem [ref=e330]:
+              - link "Home" [ref=e331] [cursor=pointer]:
+                - /url: /pt
+            - listitem [ref=e332]:
+              - link "Sobre Nós" [ref=e333] [cursor=pointer]:
+                - /url: /pt/sobre-nos
+            - listitem [ref=e334]:
+              - link "Serviços" [ref=e335] [cursor=pointer]:
+                - /url: /pt/servicos
+            - listitem [ref=e336]:
+              - link "Segmentos" [ref=e337] [cursor=pointer]:
+                - /url: /pt/segmentos
+            - listitem [ref=e338]:
+              - link "Onde Estamos" [ref=e339] [cursor=pointer]:
+                - /url: /pt/onde-estamos
+            - listitem [ref=e340]:
+              - link "Contato" [ref=e341] [cursor=pointer]:
+                - /url: /pt/contato
+        - navigation "Nossos Serviços" [ref=e342]:
+          - heading "Nossos Serviços" [level=3] [ref=e343]
+          - list [ref=e344]:
+            - listitem [ref=e345]:
+              - link "Automação e Monitoramento" [ref=e346] [cursor=pointer]:
+                - /url: /pt/servicos/automacao-e-monitoramento
+            - listitem [ref=e347]:
+              - link "Projetos Personalizados" [ref=e348] [cursor=pointer]:
+                - /url: /pt/servicos/projetos-personalizados
+            - listitem [ref=e349]:
+              - link "Instalações" [ref=e350] [cursor=pointer]:
+                - /url: /pt/servicos/instalacoes
+            - listitem [ref=e351]:
+              - link "Plano de Manutenção (PMOC)" [ref=e352] [cursor=pointer]:
+                - /url: /pt/servicos/plano-de-manutencao-pmoc
+            - listitem [ref=e353]:
+              - link "Comissionamento de obras" [ref=e354] [cursor=pointer]:
+                - /url: /pt/servicos/comissionamento-de-obras
+        - generic [ref=e355]:
+          - heading "Seg a Sex - 8h00 às 17h30" [level=3] [ref=e356]
+          - generic [ref=e357]:
+            - paragraph [ref=e358]:
+              - link "(41) 3365-4877" [ref=e359] [cursor=pointer]:
+                - /url: tel:+554133654877
+              - link "(41) 9 9246-6920" [ref=e360] [cursor=pointer]:
+                - /url: https://wa.me/+5541992466920
+            - paragraph [ref=e361]:
+              - generic [ref=e362]: Endereço
+              - text: Av. Prefeito Maurício Fruet, 3060 — Cajuru, Curitiba-PR, CEP 82.920-330
+            - paragraph [ref=e363]:
+              - generic [ref=e364]: E-mail
+              - link "dancold@dancold.com.br" [ref=e365] [cursor=pointer]:
+                - /url: mailto:dancold@dancold.com.br
+      - generic [ref=e366]:
+        - paragraph [ref=e367]: 2026 © Dancold. Todos os direitos reservados.
+        - paragraph [ref=e368]: Ar condicionado / Refrigeração / Automação
+  - link "Contato pelo WhatsApp" [ref=e369] [cursor=pointer]:
+    - /url: https://wa.me/+5541992466920
+    - img [ref=e371]
+  - alert [ref=e373]

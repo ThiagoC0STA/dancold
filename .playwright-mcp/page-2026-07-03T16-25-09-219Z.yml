@@ -1,0 +1,201 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - link "dancold@dancold.com.br" [ref=e5] [cursor=pointer]:
+        - /url: mailto:dancold@dancold.com.br
+      - generic [ref=e7]: Seg a Sex - 8h00 às 17h30
+    - generic [ref=e8]:
+      - link "(41) 3365-4877" [ref=e9] [cursor=pointer]:
+        - /url: tel:+554133654877
+      - link "(41) 9 9246-6920" [ref=e10] [cursor=pointer]:
+        - /url: https://wa.me/+5541992466920
+  - banner [ref=e11]:
+    - generic [ref=e12]:
+      - link "Dancold - Home" [ref=e13] [cursor=pointer]:
+        - /url: /pt
+        - img "Dancold" [ref=e14]
+      - navigation "Principal" [ref=e15]:
+        - link "Home" [ref=e16] [cursor=pointer]:
+          - /url: /pt
+        - link "Sobre Nós" [ref=e17] [cursor=pointer]:
+          - /url: /pt/sobre-nos
+        - link "Serviços" [ref=e18] [cursor=pointer]:
+          - /url: /pt/servicos
+          - text: Serviços
+        - link "Segmentos" [ref=e20] [cursor=pointer]:
+          - /url: /pt/segmentos
+        - link "Onde Estamos" [ref=e21] [cursor=pointer]:
+          - /url: /pt/onde-estamos
+        - link "Contato" [ref=e22] [cursor=pointer]:
+          - /url: /pt/contato
+      - generic [ref=e23]:
+        - button "Idioma" [ref=e25] [cursor=pointer]:
+          - img [ref=e26]
+          - generic [ref=e31]: pt
+          - img [ref=e32]
+        - link "Contato pelo WhatsApp" [ref=e34] [cursor=pointer]:
+          - /url: https://wa.me/+5541992466920
+          - img [ref=e35]
+          - text: Contato pelo WhatsApp
+  - main [ref=e37]:
+    - generic [ref=e43]:
+      - paragraph [ref=e44]: Nossos Serviços
+      - heading "Plano de Manutenção (PMOC)" [level=1] [ref=e46]
+      - navigation "Breadcrumb" [ref=e47]:
+        - list [ref=e48]:
+          - listitem [ref=e49]:
+            - link "Home" [ref=e50] [cursor=pointer]:
+              - /url: /pt
+          - listitem [ref=e51]:
+            - generic [ref=e52]: /
+            - link "Serviços" [ref=e53] [cursor=pointer]:
+              - /url: /pt/servicos
+          - listitem [ref=e54]:
+            - generic [ref=e55]: /
+            - generic [ref=e56]: Plano de Manutenção (PMOC)
+    - generic [ref=e60]:
+      - generic [ref=e61]:
+        - paragraph [ref=e63]: Elaboramos e implantamos o Plano de Manutenção, Operação e Controle (PMOC) conforme legislação vigente (Lei 13.589/2018, ANVISA RDC 09/2003 e Portaria MS 3.523/98). Equipes fixas ou volantes, com relatórios técnicos periódicos e laudos de qualidade do ar.
+        - generic [ref=e64]:
+          - paragraph [ref=e66]: "O PMOC não é um documento, é um sistema de gestão de ativos. A maioria das empresas que operam sem PMOC estruturado descobre isso da pior forma: com uma falha de compressor no meio do dia, uma auditoria da ANVISA que identifica ausência de rastreabilidade nas manutenções, ou um colapso térmico em câmara fria com perda de matéria-prima. A Dancold implanta o PMOC como um processo vivo, integrado à rotina operacional da empresa, não como um arquivo que fica parado em gaveta."
+          - paragraph [ref=e68]: O processo começa com o inventário técnico completo de todos os ativos de climatização e refrigeração, levantamento da carga térmica, classificação dos ambientes e definição das frequências de intervenção preditiva, preventiva e corretiva. Um de nossos engenheiros mecânicos define o cronograma e emite a ART. As equipes — fixas para contratos de alta criticidade, volantes para operações distribuídas — executam cada intervenção com registro em plataforma de gestão digital, acessível em desktop e mobile, com histórico técnico completo de cada equipamento. Para indústrias, o resultado é uma redução de até 15% nos custos operacionais com manutenção e extensão da vida útil dos equipamentos. A eliminação do risco de multas da ANVISA de até R$1,5 milhões por falta de conformidade. Garantia de continuidade operacional em ambientes onde uma falha técnica coloca vidas em risco.
+        - generic [ref=e69]:
+          - heading "Características" [level=2] [ref=e70]
+          - list [ref=e71]:
+            - listitem [ref=e72]:
+              - generic [ref=e73]: "01"
+              - generic [ref=e74]:
+                - heading "Gestão preditiva, preventiva e corretiva integrada" [level=3] [ref=e75]
+                - paragraph [ref=e76]: O PMOC da Dancold cobre os três níveis de manutenção com cronograma estruturado, frequências definidas por criticidade do ambiente e registro digital de cada intervenção, garantindo rastreabilidade completa para auditorias sanitárias e fiscalizações.
+            - listitem [ref=e77]:
+              - generic [ref=e78]: "02"
+              - generic [ref=e79]:
+                - heading "Equipes fixas e volantes com cobertura nacional" [level=3] [ref=e80]
+                - paragraph [ref=e81]: Implantamos equipes fixas para clientes de alta criticidade e equipes volantes para operações distribuídas em múltiplas unidades, com atendimento emergencial 24 horas, 7 dias por semana, em todos os estados onde atuamos.
+            - listitem [ref=e82]:
+              - generic [ref=e83]: "03"
+              - generic [ref=e84]:
+                - heading "Conformidade regulatória e emissão de ART" [level=3] [ref=e85]
+                - paragraph [ref=e86]: Todos os contratos de PMOC incluem a elaboração do plano por engenheiro mecânico habilitado, emissão de ART junto ao CREA, laudos de qualidade do ar e documentação completa para conformidade com ANVISA, Lei 13.589/2018 e normas ABNT aplicáveis.
+        - link "Entre em contato" [ref=e88] [cursor=pointer]:
+          - /url: https://wa.me/+5541992466920
+          - img [ref=e89]
+          - text: Entre em contato
+      - complementary [ref=e91]:
+        - generic [ref=e92]:
+          - img "Plano de Manutenção (PMOC)" [ref=e94]
+          - navigation "Nossos Serviços" [ref=e96]:
+            - heading "Nossos Serviços" [level=2] [ref=e97]
+            - list [ref=e98]:
+              - listitem [ref=e99]:
+                - link "Automação e Monitoramento" [ref=e100] [cursor=pointer]:
+                  - /url: /pt/servicos/automacao-e-monitoramento
+                  - text: Automação e Monitoramento
+                  - generic [ref=e101]: →
+              - listitem [ref=e102]:
+                - link "Projetos Personalizados" [ref=e103] [cursor=pointer]:
+                  - /url: /pt/servicos/projetos-personalizados
+                  - text: Projetos Personalizados
+                  - generic [ref=e104]: →
+              - listitem [ref=e105]:
+                - link "Instalações" [ref=e106] [cursor=pointer]:
+                  - /url: /pt/servicos/instalacoes
+                  - text: Instalações
+                  - generic [ref=e107]: →
+              - listitem [ref=e108]:
+                - link "Plano de Manutenção (PMOC)" [ref=e109] [cursor=pointer]:
+                  - /url: /pt/servicos/plano-de-manutencao-pmoc
+                  - text: Plano de Manutenção (PMOC)
+                  - generic [ref=e110]: →
+              - listitem [ref=e111]:
+                - link "Comissionamento de obras" [ref=e112] [cursor=pointer]:
+                  - /url: /pt/servicos/comissionamento-de-obras
+                  - text: Comissionamento de obras
+                  - generic [ref=e113]: →
+    - generic [ref=e119]:
+      - generic [ref=e120]:
+        - heading "Pronto para levar sua operação a outro nível?" [level=2] [ref=e121]
+        - paragraph [ref=e122]: Fale com nossa equipe técnica e descubra a solução ideal em climatização, refrigeração e automação para o seu negócio.
+      - link "Solicitar orçamento" [ref=e124] [cursor=pointer]:
+        - /url: https://wa.me/+5541992466920
+        - img [ref=e125]
+        - text: Solicitar orçamento
+        - generic [ref=e127]: →
+  - contentinfo [ref=e128]:
+    - generic [ref=e130]:
+      - generic [ref=e131]:
+        - generic [ref=e132]:
+          - img "Dancold" [ref=e133]
+          - paragraph [ref=e134]: Fundada em 1998, a Dancold iniciou como empresa familiar em manutenção de ar-condicionado e refrigeração. A partir de 2002, expandiu sua atuação para o setor industrial, atendendo marcas reconhecidas internacionalmente.
+          - paragraph [ref=e135]: "CNPJ: 05.477.326/0001-28"
+          - generic [ref=e136]:
+            - link "Facebook" [ref=e137] [cursor=pointer]:
+              - /url: https://www.facebook.com/DANCOLDCLIMATIZACAO
+              - img [ref=e138]
+            - link "Instagram" [ref=e140] [cursor=pointer]:
+              - /url: https://www.instagram.com/arcondicionadodancold/
+              - img [ref=e141]
+            - link "LinkedIn" [ref=e143] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/dancoldclimatiza%C3%A7%C3%A3o/
+              - img [ref=e144]
+        - navigation "A Dancold" [ref=e146]:
+          - heading "A Dancold" [level=3] [ref=e147]
+          - list [ref=e148]:
+            - listitem [ref=e149]:
+              - link "Home" [ref=e150] [cursor=pointer]:
+                - /url: /pt
+            - listitem [ref=e151]:
+              - link "Sobre Nós" [ref=e152] [cursor=pointer]:
+                - /url: /pt/sobre-nos
+            - listitem [ref=e153]:
+              - link "Serviços" [ref=e154] [cursor=pointer]:
+                - /url: /pt/servicos
+            - listitem [ref=e155]:
+              - link "Segmentos" [ref=e156] [cursor=pointer]:
+                - /url: /pt/segmentos
+            - listitem [ref=e157]:
+              - link "Onde Estamos" [ref=e158] [cursor=pointer]:
+                - /url: /pt/onde-estamos
+            - listitem [ref=e159]:
+              - link "Contato" [ref=e160] [cursor=pointer]:
+                - /url: /pt/contato
+        - navigation "Nossos Serviços" [ref=e161]:
+          - heading "Nossos Serviços" [level=3] [ref=e162]
+          - list [ref=e163]:
+            - listitem [ref=e164]:
+              - link "Automação e Monitoramento" [ref=e165] [cursor=pointer]:
+                - /url: /pt/servicos/automacao-e-monitoramento
+            - listitem [ref=e166]:
+              - link "Projetos Personalizados" [ref=e167] [cursor=pointer]:
+                - /url: /pt/servicos/projetos-personalizados
+            - listitem [ref=e168]:
+              - link "Instalações" [ref=e169] [cursor=pointer]:
+                - /url: /pt/servicos/instalacoes
+            - listitem [ref=e170]:
+              - link "Plano de Manutenção (PMOC)" [ref=e171] [cursor=pointer]:
+                - /url: /pt/servicos/plano-de-manutencao-pmoc
+            - listitem [ref=e172]:
+              - link "Comissionamento de obras" [ref=e173] [cursor=pointer]:
+                - /url: /pt/servicos/comissionamento-de-obras
+        - generic [ref=e174]:
+          - heading "Seg a Sex - 8h00 às 17h30" [level=3] [ref=e175]
+          - generic [ref=e176]:
+            - paragraph [ref=e177]:
+              - link "(41) 3365-4877" [ref=e178] [cursor=pointer]:
+                - /url: tel:+554133654877
+              - link "(41) 9 9246-6920" [ref=e179] [cursor=pointer]:
+                - /url: https://wa.me/+5541992466920
+            - paragraph [ref=e180]:
+              - generic [ref=e181]: Endereço
+              - text: Av. Prefeito Maurício Fruet, 3060 — Cajuru, Curitiba-PR, CEP 82.920-330
+            - paragraph [ref=e182]:
+              - generic [ref=e183]: E-mail
+              - link "dancold@dancold.com.br" [ref=e184] [cursor=pointer]:
+                - /url: mailto:dancold@dancold.com.br
+      - generic [ref=e185]:
+        - paragraph [ref=e186]: 2026 © Dancold. Todos os direitos reservados.
+        - paragraph [ref=e187]: Ar condicionado / Refrigeração / Automação
+  - link "Contato pelo WhatsApp" [ref=e188] [cursor=pointer]:
+    - /url: https://wa.me/+5541992466920
+    - img [ref=e190]
+  - alert [ref=e192]

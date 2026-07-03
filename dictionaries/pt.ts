@@ -1,0 +1,550 @@
+const pt = {
+  meta: {
+    suffix: "Dancold - Ar condicionado | Refrigeração | Automação",
+    home: {
+      title: "Dancold - Ar condicionado | Refrigeração | Automação",
+      description:
+        "Há mais de 25 anos a Dancold entrega projetos, instalação, PMOC, automação e comissionamento de sistemas de climatização e refrigeração para indústrias, hospitais, shoppings e grandes corporações.",
+    },
+    about: {
+      title: "Sobre Nós",
+      description:
+        "Fundada em 1998, a Dancold é referência em HVAC, refrigeração industrial e automação de processos no Sul do Brasil, com mais de 25 anos de mercado e suporte 365 dias por ano.",
+    },
+    services: {
+      title: "Serviços",
+      description:
+        "Automação e monitoramento, projetos personalizados, instalações, plano de manutenção (PMOC) e comissionamento de obras. Conheça os serviços da Dancold.",
+    },
+    segments: {
+      title: "Segmentos",
+      description:
+        "A Dancold oferece consultoria e implanta PMOC com equipes de suporte técnico ininterrupto para indústrias, hospitais, shopping centers, residências, prédios corporativos e agronegócios.",
+    },
+    whereWeAre: {
+      title: "Onde Estamos",
+      description:
+        "A Dancold está presente no Paraná, Santa Catarina, São Paulo, Rio de Janeiro e Piauí, com mobilização rápida para grandes contratos em todo o território nacional.",
+    },
+    contact: {
+      title: "Contato",
+      description:
+        "Entre em contato com a Dancold para solicitar um orçamento ou a visita de um técnico especializado, esclarecer dúvidas ou dar sugestões.",
+    },
+  },
+  common: {
+    learnMore: "Saiba mais",
+    readMore: "Ler Mais",
+    seeAll: "Ver todos",
+    contactUs: "Entre em contato",
+    whatsapp: "Contato pelo WhatsApp",
+    home: "Home",
+    hours: "Seg a Sex - 8h00 às 17h30",
+    since: "Desde 1998",
+    scroll: "Role para explorar",
+  },
+  nav: {
+    home: "Home",
+    about: "Sobre Nós",
+    services: "Serviços",
+    segments: "Segmentos",
+    whereWeAre: "Onde Estamos",
+    contact: "Contato",
+  },
+  hero: {
+    slides: [
+      {
+        kicker: "Grandes Soluções",
+        title: "Projetos de Refrigeração de Alto Desempenho",
+      },
+      {
+        kicker: "Grandes Ambientes",
+        title: "Conforto Térmico para Grandes Ambientes",
+      },
+      {
+        kicker: "Ambientes Industriais",
+        title: "Eficiência Térmica e PMOC de alta qualidade",
+      },
+      {
+        kicker: "Manutenção",
+        title: "Contratos de Manutenção Preventiva e Corretiva",
+      },
+    ],
+  },
+  home: {
+    servicesKicker: "O que fazemos",
+    servicesTitle: "Serviços",
+    quote:
+      "Com dedicação, responsabilidade e constante investimento em novas tecnologias, a Dancold entrega aos seus clientes o que há de mais inovador e competitivo em climatização, refrigeração e automação.",
+    clientsTitle: "Clientes",
+    clientsKicker: "Quem confia na Dancold",
+    segmentsTitle: "Segmentos",
+    segmentsKicker: "Onde atuamos",
+    segmentsIntro:
+      "A Dancold oferece consultoria, e implanta PMOC disponibilizando equipes com suporte técnico ininterrupto para os seguintes segmentos:",
+    suppliersTitle: "Fornecedores",
+    suppliersKicker: "Marcas que representamos",
+    statsYears: "Anos de experiência",
+    statsClients: "Clientes satisfeitos",
+    statsSupport: "Suporte técnico",
+    statsCities: "Cidades atendidas",
+  },
+  about: {
+    kicker: "A Dancold",
+    title: "Sobre Nós",
+    welcome: "Seja bem vindo!",
+    intro:
+      "Com dedicação, responsabilidade e constante investimento em novas tecnologias, a Dancold oferece aos seus clientes e parceiros o que há de mais inovador, competitivo e rentável no mercado.",
+    whoWeAre: "Quem somos",
+    missionTitle: "Missão",
+    mission:
+      "Projetar, vender, instalar e prestar assistência técnica para equipamentos de ar-condicionado e refrigeração, automatizando processos de forma profissional e superando as expectativas dos clientes — sempre com foco no usuário, na qualidade do ar e no menor impacto ambiental.",
+    visionTitle: "Visão",
+    vision:
+      "Ser referência nacional e internacional como grande empresa mantenedora de HVAC e refrigeração, reconhecida pela excelência técnica, capacidade de resolver desafios complexos e pela entrega de serviços de alta qualidade a qualquer organização que nos solicitar.",
+    valuesTitle: "Valores",
+    values: [
+      "Foco no cliente",
+      "Honestidade e transparência",
+      "Excelência técnica",
+      "Valorização dos colaboradores",
+      "Trabalho em equipe",
+      "Inovação contínua",
+      "Responsabilidade socioambiental",
+    ],
+    yearsLabel: "Anos de experiência",
+    clientsLabel: "Clientes satisfeitos",
+    morePrefix: "+ de",
+    historyTitle: "Nossa história",
+    history:
+      "Fundada em 1998 como empresa familiar especializada em manutenção de ar-condicionado e refrigeração, a Dancold expandiu sua atuação para o setor industrial a partir de 2002, atendendo desde então marcas reconhecidas nacional e internacionalmente. Hoje, com mais de 25 anos de mercado, somos uma referência em HVAC, refrigeração industrial e automação de processos no Sul do Brasil.",
+    timeline: [
+      {
+        period: "1998 - 2002",
+        text: "Iniciou sua trajetória como uma empresa familiar, prestando serviços de manutenção em sistemas de ar-condicionado e refrigeração nas áreas residencial e comercial.",
+      },
+      {
+        period: "2004 - 2008",
+        text: "Estende sua área de atuação para indústrias, passando a oferecer assistência para várias marcas renomadas no mercado internacional.",
+      },
+      {
+        period: "2009 - 2013",
+        text: "Deixa de ser uma empresa familiar e focaliza seu departamento comercial para prestar um atendimento para órgãos públicos.",
+      },
+      {
+        period: "2014 - 2021",
+        text: "Por conta do alto volume de demanda, começou a atuar nas áreas de consultoria, comissionamento, gerenciamento e supervisão de obras, terceirizando serviços de empreitada.",
+      },
+      {
+        period: "2022",
+        text: "Atualiza toda a operação proporcionando dispositivos mobile para todas as equipes interligando sistemas e processos para controle mediante departamento operacional.",
+      },
+      {
+        period: "2023 - 2025",
+        text: "Expande atividades para mais 3 estados, hoje presente em 11 cidades distribuídas no Paraná, São Paulo, Rio de Janeiro e Santa Catarina. Fortalecendo cada vez mais os serviços como uma grande mantenedora garantindo aos seus clientes maior produtividade através do controle, coordenação e fiscalização integrados de seus processos.",
+      },
+    ],
+    whyKicker: "Top Razões",
+    whyTitle: "Porque nos escolher?",
+    whyIntro:
+      "A Dancold dispõe de um departamento que oferece consultoria e manutenção capaz de prestar suporte técnico nos 365 dias do ano, de forma ininterrupta.",
+    reasons: [
+      {
+        title: "Suporte 365 dias por ano",
+        text: "Departamento de manutenção com equipes dedicadas para atendimento contínuo, sem interrupções.",
+      },
+      {
+        title: "Mais de 25 anos de experiência",
+        text: "Trajetória sólida atendendo indústrias, hospitais, shoppings e grandes corporações.",
+      },
+      {
+        title: "Equipes especializadas por segmento",
+        text: "Técnicos certificados e experientes em cada vertical de atuação.",
+      },
+      {
+        title: "Tecnologia e inovação",
+        text: "Uso de ferramentas digitais, monitoramento remoto e automação para máxima eficiência.",
+      },
+    ],
+  },
+  servicesPage: {
+    kicker: "Nossos Serviços",
+    title: "Serviços",
+    breadcrumb: "Serviços",
+  },
+  services: {
+    "automacao-e-monitoramento": {
+      title: "Automação e Monitoramento",
+      short:
+        "Instalamos sensores de temperatura e energia com alarme 24/7, protegendo câmaras frias, vacinas e data centers contra perdas por falha térmica ou queda de energia.",
+      summary:
+        "Executamos a instalação de sistemas de sensores que protegem câmaras de vacinas e imunobiológicos, frias e data centers, com tecnologia embutida e alarme ligado 24 horas o ano todo em sistema mobile.",
+      body: [
+        "É um meio de prevenção. Pela nossa experiência atendendo múltiplos ramos como indústrias alimentícias, hospitais e data centers, nós entendemos a importância de ter um meio de prevenção a ocasionalidades que surgem devido à falta de monitoramento.",
+        "Ocasionalidades estas que geram perdas de milhões: um alimento que fica sem a refrigeração correta gera reclamações e potenciais doenças no consumidor; uma vacina mal refrigerada estraga e não ajuda a proteger ou curar o paciente, ou pode gerar até mesmo um problema clínico; um servidor que fica muitas horas sem a temperatura correta acaba apresentando falhas e logo é derrubado. Já imaginou se uma empresa de internet tem um problema da noite pro dia e não consegue resolver envolvendo refrigeração, o quanto iria prejudicar as pessoas e comércios? Entendendo esse problema encontramos uma solução: um sensor de refrigeração e energia que identifica quedas de energia e temperatura e protege o nosso cliente de riscos que vão ferir tanto sua reputação quanto seu fluxo de caixa.",
+      ],
+      characteristicsTitle: "Características",
+      characteristics: [
+        {
+          title: "Projeto e Instalação",
+          text: "Estudo de situação, projeto do local e instalação completa com equipe técnica profissional.",
+        },
+        {
+          title: "Mentoria e Acompanhamento",
+          text: "Mentoria para como usar o aparelho e ter melhor aproveitamento.",
+        },
+        {
+          title: "Eficiência e Monitoramento Reforçado",
+          text: "Acompanhamento da eficiência geral do aparelho junto de monitoramento completo reforçado.",
+        },
+      ],
+    },
+    "projetos-personalizados": {
+      title: "Projetos Personalizados",
+      short:
+        "Desenvolvemos projetos executivos de climatização e refrigeração sob medida para cada empresa. Partindo do zero, visitamos o ambiente, dimensionamos com precisão técnica e entregamos sistemas que resolvem a dor de cada operação, com eficiência energética.",
+      summary:
+        "Desenvolvemos projetos executivos de climatização, ventilação e refrigeração para todas as empresas que precisarem. Do dimensionamento à entrega técnica, garantimos eficiência térmica e energética, junto de conformidade com as normas vigentes.",
+      body: [
+        "Um sistema de climatização ou refrigeração mal dimensionado não é apenas ineficiente, ele é um passivo financeiro que cresce silenciosamente. Equipamentos superdimensionados consomem energia além do necessário. Sistemas subdimensionados operam em sobrecarga constante, reduzindo a vida útil e gerando falhas em momentos críticos da operação. A Dancold desenvolve projetos executivos com base em levantamento técnico rigoroso do ambiente, da carga térmica real e das exigências regulatórias de cada setor.",
+        "Para cada cliente, o projeto parte do zero: visitamos o ambiente, mapeamos as condicionantes reais de operação e dimensionamos o sistema com precisão técnica antes de qualquer especificação de equipamento. Não vendemos soluções de prateleira, desenvolvemos projetos que resolvem a dor de cada operação, seja garantir conforto térmico para equipes e clientes ou assegurar que o processo produtivo nunca pare por falha térmica. O resultado é um sistema que funciona por décadas, com custo operacional previsível desde o primeiro dia.",
+      ],
+      characteristicsTitle: "Características",
+      characteristics: [
+        {
+          title: "Levantamento técnico e carga térmica",
+          text: "Antes de qualquer especificação de equipamento, realizamos o inventário completo do ambiente, calculamos a carga térmica real e identificamos as exigências regulatórias aplicáveis ao setor e ao uso da edificação.",
+        },
+        {
+          title: "Projeto executivo multidisciplinar",
+          text: "Entregamos memoriais descritivos, plantas técnicas, especificação de equipamentos e cronograma de implantação com todos os documentos necessários para execução e registro em CREA, incluindo ART do responsável técnico.",
+        },
+        {
+          title: "Conformidade normativa garantida",
+          text: "Todos os projetos são desenvolvidos dentro das normas ABNT, ANVISA e ASHRAE aplicáveis, eliminando riscos de não conformidade em auditorias sanitárias, vistorias do Corpo de Bombeiros e inspeções regulatórias.",
+        },
+      ],
+    },
+    instalacoes: {
+      title: "Instalações",
+      short:
+        "Instalamos todos os sistemas de climatização e refrigeração, do Split ao Chiller. Certificados pelas melhores marcas do mundo, seguimos rigorosamente cada fabricante e finalizamos com comissionamento completo, testes de desempenho e relatório técnico de entrega.",
+      summary:
+        "Executamos a instalação de sistemas de ar-condicionado (Split, VRF/VRV, Chiller, Fan Coil), refrigeração industrial (câmaras frias, túneis de congelamento, resfriadores de água) e sistemas de ventilação e pressurização.",
+      body: [
+        "A qualidade de uma instalação define o comportamento do sistema pela próxima década de operação. Uma tubulação mal dimensionada gera perda de carga e consumo excessivo de energia. Um equipamento instalado fora das especificações do fabricante tem a garantia comprometida e falha antes do prazo. A Dancold executa instalações e é certificada pelas melhores marcas de ar-condicionado do mundo, seguindo rigorosamente os procedimentos de cada fabricante.",
+        "Para o setor industrial, instalamos sistemas completos de refrigeração de processo: chillers de água gelada com periféricos, torres de resfriamento, câmaras frias, túneis de congelamento e balcões frigoríficos. Para hospitais e laboratórios, executamos instalações de sistemas VRF com controle de pressurização diferencial, AHUs e UTA's com filtragem de alta eficiência e monitoramento de temperatura em ambientes críticos. Para edificações corporativas e shopping centers, trabalhamos com sistemas centralizados de grande porte com gestão integrada de energia. Em todos os casos, a instalação termina com comissionamento completo, testes de desempenho e emissão de relatório técnico de entrega.",
+      ],
+      characteristicsTitle: "Características",
+      characteristics: [
+        {
+          title: "Levantamento e especificação técnica",
+          text: "Antes de qualquer execução, realizamos o levantamento das condições reais do ambiente, definimos os equipamentos adequados à demanda térmica e elaboramos o plano de instalação com cronograma, rotas de tubulação e pontos elétricos mapeados.",
+        },
+        {
+          title: "Execução com equipes técnicas certificadas",
+          text: "Instalamos desde splits e sistemas multi-split até VRFs, chillers, fan coils, UTAs, câmaras frias e sistemas de filtragem de alta eficiência, sempre com equipes próprias treinadas e certificadas pelas marcas que representamos, seguindo os procedimentos de instalação de cada fabricante.",
+        },
+        {
+          title: "Comissionamento e documentação técnica",
+          text: "Toda instalação é finalizada com testes de carga, verificação dos parâmetros de projeto, ajustes finos de operação e entrega de relatório técnico assinado por engenheiro responsável, com documentação de ART para o CREA.",
+        },
+      ],
+    },
+    "plano-de-manutencao-pmoc": {
+      title: "Plano de Manutenção (PMOC)",
+      short:
+        "Elaboramos e implantamos o Plano de Manutenção, Operação e Controle (PMOC) conforme legislação vigente, com equipes fixas ou volantes, relatórios técnicos periódicos e laudos de qualidade do ar.",
+      summary:
+        "Elaboramos e implantamos o Plano de Manutenção, Operação e Controle (PMOC) conforme legislação vigente (Lei 13.589/2018, ANVISA RDC 09/2003 e Portaria MS 3.523/98). Equipes fixas ou volantes, com relatórios técnicos periódicos e laudos de qualidade do ar.",
+      body: [
+        "O PMOC não é um documento, é um sistema de gestão de ativos. A maioria das empresas que operam sem PMOC estruturado descobre isso da pior forma: com uma falha de compressor no meio do dia, uma auditoria da ANVISA que identifica ausência de rastreabilidade nas manutenções, ou um colapso térmico em câmara fria com perda de matéria-prima. A Dancold implanta o PMOC como um processo vivo, integrado à rotina operacional da empresa, não como um arquivo que fica parado em gaveta.",
+        "O processo começa com o inventário técnico completo de todos os ativos de climatização e refrigeração, levantamento da carga térmica, classificação dos ambientes e definição das frequências de intervenção preditiva, preventiva e corretiva. Um de nossos engenheiros mecânicos define o cronograma e emite a ART. As equipes — fixas para contratos de alta criticidade, volantes para operações distribuídas — executam cada intervenção com registro em plataforma de gestão digital, acessível em desktop e mobile, com histórico técnico completo de cada equipamento. Para indústrias, o resultado é uma redução de até 15% nos custos operacionais com manutenção e extensão da vida útil dos equipamentos. A eliminação do risco de multas da ANVISA de até R$1,5 milhões por falta de conformidade. Garantia de continuidade operacional em ambientes onde uma falha técnica coloca vidas em risco.",
+      ],
+      characteristicsTitle: "Características",
+      characteristics: [
+        {
+          title: "Gestão preditiva, preventiva e corretiva integrada",
+          text: "O PMOC da Dancold cobre os três níveis de manutenção com cronograma estruturado, frequências definidas por criticidade do ambiente e registro digital de cada intervenção, garantindo rastreabilidade completa para auditorias sanitárias e fiscalizações.",
+        },
+        {
+          title: "Equipes fixas e volantes com cobertura nacional",
+          text: "Implantamos equipes fixas para clientes de alta criticidade e equipes volantes para operações distribuídas em múltiplas unidades, com atendimento emergencial 24 horas, 7 dias por semana, em todos os estados onde atuamos.",
+        },
+        {
+          title: "Conformidade regulatória e emissão de ART",
+          text: "Todos os contratos de PMOC incluem a elaboração do plano por engenheiro mecânico habilitado, emissão de ART junto ao CREA, laudos de qualidade do ar e documentação completa para conformidade com ANVISA, Lei 13.589/2018 e normas ABNT aplicáveis.",
+        },
+      ],
+    },
+    "comissionamento-de-obras": {
+      title: "Comissionamento de obras",
+      short:
+        "Realizamos o comissionamento completo de sistemas HVAC, assegurando que todos os equipamentos operem conforme os parâmetros de projeto antes da entrega final da obra.",
+      summary:
+        "Realizamos o comissionamento completo de sistemas HVAC, assegurando que todos os equipamentos operem conforme os parâmetros de projeto antes da entrega final da obra. Inclui testes de desempenho, ajustes e emissão de relatório técnico.",
+      body: [
+        "A diferença entre um sistema que simplesmente funciona e um sistema que opera dentro dos parâmetros de projeto pode representar 20 a 30% de consumo de energia a mais, vida útil reduzida e performance abaixo do especificado desde o primeiro dia de operação. O comissionamento é o processo técnico que fecha essa lacuna, e que a maior parte das obras entrega incompleto ou simplesmente ignora.",
+        "A Dancold realiza o comissionamento completo de sistemas HVAC após a instalação, cobrindo desde a verificação de partida dos equipamentos até os testes de carga plena e ajuste fino de todos os parâmetros operacionais. Cada equipamento é testado individualmente e em conjunto com o sistema, com medição de pressão, temperatura, vazão de ar, consumo elétrico e coeficiente de performance real. O processo inclui treinamento da equipe de operação do cliente nos procedimentos de uso correto e manutenção de primeiro nível. A entrega é formalizada com relatório técnico assinado por engenheiro responsável, documentando o estado operacional do sistema e servindo como baseline para todo o PMOC subsequente. A entrega é o ponto de partida da operação — não o fim do nosso trabalho. Por isso, cada comissionamento é documentado com precisão suficiente para sustentar auditorias, vistorias técnicas e qualquer processo regulatório que o cliente venha a enfrentar ao longo da vida útil do sistema.",
+      ],
+      characteristicsTitle: "Características",
+      characteristics: [
+        {
+          title: "Testes de desempenho e verificação de parâmetros de projeto",
+          text: "Medimos pressão, temperatura, vazão, consumo elétrico e COP real de cada equipamento individualmente e em operação integrada do sistema, comparando os resultados com os parâmetros do projeto executivo para identificar e corrigir desvios antes da entrega.",
+        },
+        {
+          title: "Ajuste operacional e treinamento da equipe",
+          text: "O comissionamento inclui o ajuste fino de todos os controles, setpoints e programações do sistema, além de treinamento prático da equipe de operação e manutenção do cliente nos procedimentos de uso correto, alarmes e intervenções de primeiro nível.",
+        },
+        {
+          title: "Relatório técnico de entrega com ART",
+          text: "Emitimos relatório técnico detalhado assinado por engenheiro responsável, documentando o estado operacional do sistema na data de entrega. Este documento serve como baseline técnica para o PMOC e como comprovação de conformidade em auditorias e fiscalizações.",
+        },
+      ],
+    },
+  },
+  segmentsPage: {
+    kicker: "Onde atuamos",
+    title: "Segmentos",
+    breadcrumb: "Segmentos",
+    servicesInclude: "Nossos serviços incluem:",
+  },
+  segments: {
+    industrias: {
+      title: "Indústrias",
+      short:
+        "Mantemos sua produção rodando sem paradas. Refrigeração e climatização crítica com manutenção especializada, reduzindo custos e protegendo seu processo contra falhas térmicas.",
+      description:
+        "Mantemos sua produção rodando sem paradas imprevistas. Atuamos na refrigeração e climatização crítica da sua indústria com manutenção especializada, reduzindo custos operacionais, prolongando a vida útil dos equipamentos e protegendo seu processo produtivo contra falhas térmicas que custam milhões em produção parada.",
+      items: [
+        {
+          title: "RETROFIT",
+          text: "Upgrade tecnológico no seu parque de equipamentos, estendendo a vida útil dos equipamentos com automação inteligente.",
+        },
+        {
+          title: "Eficiência Energética",
+          text: "Medimos o consumo real e identificamos desperdícios, reduzindo até 20% dos seus custos com energia sem comprometer a produção.",
+        },
+        {
+          title: "Manutenção em Ar Comprimido e Bebedouros Industriais",
+          text: "Mantemos secadoras de ar comprimido e bebedouros industriais operando com segurança, garantindo qualidade do ar, da água e conformidade sanitária.",
+        },
+        {
+          title: "PMOC com suporte 24/7",
+          text: "Plano de manutenção com equipe com dedicação exclusiva, relatórios técnicos e monitoramento remoto de desempenho.",
+        },
+      ],
+    },
+    hospitais: {
+      title: "Hospitais",
+      short:
+        "Trabalhamos na sua operação contínua, protegendo a vida dos seus pacientes, vacinas e medicamentos em um único contrato.",
+      description:
+        "Mantemos seu hospital em operação contínua, eliminando riscos em ambientes críticos. Garantimos sua conformidade com a ANVISA, protegendo principalmente pacientes, vacinas e medicamentos contra falhas térmicas, evitando multas e centralizando todas as suas manutenções em um único contrato.",
+      items: [
+        {
+          title: "PMOC com suporte 24/7",
+          text: "Manutenção preditiva, preventiva e corretiva o ano inteiro, com suporte ininterrupto e gestão digital que garante conformidade total com a ANVISA.",
+        },
+        {
+          title: "Cadeia de Frio: Câmaras Frias, Imunobiológicos e Vacinas",
+          text: "Monitoramento remoto e redundância que protegem vacinas, medicamentos e imunobiológicos, garantindo a cadeia de frio conforme PNI e ANVISA.",
+        },
+        {
+          title: "Ambientes Críticos: Salas de Isolamento, Exames e Limpas",
+          text: "Controle de pressurização, temperatura e partículas que mantém cada ambiente dentro dos parâmetros normativos de alta criticidade hospitalar.",
+        },
+        {
+          title: "Câmaras de Morgue",
+          text: "Manutenção especializada que assegura a integridade dos corpos e protege laudos periciais contra falhas térmicas, com monitoramento contínuo.",
+        },
+      ],
+    },
+    "shopping-centers": {
+      title: "Shopping Centers",
+      short:
+        "Conforto térmico contínuo para milhares de pessoas. Cuidamos do parque completo de máquinas com equipe exclusiva, evitando paradas que afastam clientes.",
+      description:
+        "Garantimos conforto térmico contínuo para milhares de pessoas em circulação. Cuidamos do parque completo de máquinas do seu shopping com equipe de dedicação exclusiva, evitando paradas que afastam clientes, mantendo cada ambiente na temperatura ideal o ano todo.",
+      items: [
+        {
+          title: "Instalação",
+          text: "Instalamos parques de máquinas completos. Com comissionamento e relatório técnico de entrega.",
+        },
+        {
+          title: "PMOC com equipe dedicada",
+          text: "Manutenção preditiva, preventiva e corretiva com equipe de dedicação exclusiva no local, garantindo resposta imediata e operação sem interrupções.",
+        },
+        {
+          title: "RETROFIT",
+          text: "Atualização de tecnologia: modernizamos o seu parque de máquinas, estendendo a vida útil com automação inteligente.",
+        },
+        {
+          title: "Eficiência Energética",
+          text: "Medimos o consumo real do seu sistema e identificamos onde está o desperdício, otimizando um dos maiores gastos do shopping.",
+        },
+      ],
+    },
+    "residencias-e-lojas": {
+      title: "Residências e Lojas",
+      short:
+        "Oferecemos soluções para o conforto e a segurança em diferentes processos, além de atendimento para balcões resfriados e câmaras frigoríficas.",
+      description:
+        "Levamos conforto térmico com projeto e instalação sob medida para o seu espaço. Da residência à loja, dimensionamos o sistema ideal para o ambiente e mantemos tudo funcionando com manutenção contínua, garantindo climatização eficiente e sem dor de cabeça no dia a dia.",
+      items: [
+        {
+          title: "Projetos Personalizados",
+          text: "Desenvolvemos o projeto de climatização sob medida para o seu espaço, dimensionando o sistema ideal antes de qualquer instalação.",
+        },
+        {
+          title: "Instalação",
+          text: "Instalamos sistemas de pequeno e médio porte com técnica precisa, seguindo os procedimentos do fabricante e garantindo a garantia do equipamento.",
+        },
+        {
+          title: "Plano de Manutenção (PMOC)",
+          text: "Manutenção preventiva e corretiva que mantém seu sistema sempre eficiente, prolongando a vida útil e evitando a transmissão de doenças respiratórias.",
+        },
+      ],
+    },
+    "predios-corporativos": {
+      title: "Prédios Corporativos",
+      short:
+        "Climatização, elétrica e hidráulica do seu prédio em um único contrato. Cuidamos da edificação inteira com suporte 24/7, mantendo ocupantes confortáveis e tudo funcionando.",
+      description:
+        "Garantimos conforto térmico e ar de qualidade para quem trabalha no seu prédio. Cuidamos da climatização, elétrica e hidráulica da edificação em um único contrato, do projeto à manutenção contínua, evitando paradas que desagradam ocupantes e mantendo tudo funcionando com suporte 24/7 o ano todo.",
+      items: [
+        {
+          title: "Projetos Personalizados",
+          text: "Desenvolvemos o projeto de climatização sob medida para a sua edificação, dimensionando o sistema ideal para cada ambiente.",
+        },
+        {
+          title: "Instalação",
+          text: "Instalamos o parque completo de climatização do seu prédio, de sistemas centralizados a máquinas individuais, com entrega comissionada.",
+        },
+        {
+          title: "Plano de Manutenção (PMOC)",
+          text: "Manutenção preditiva, preventiva e corretiva de climatização, elétrica e hidráulica, mantendo o prédio inteiro operando sem interrupções.",
+        },
+        {
+          title: "RETROFIT",
+          text: "Atualização de tecnologia: modernizamos o seu parque de máquinas, estendendo a vida útil com automação inteligente e reduzindo custos energéticos.",
+        },
+      ],
+    },
+    agronegocios: {
+      title: "Agronegócios",
+      short:
+        "Proporcionamos conforto e bem-estar ao usuário ao oferecer projeto e instalação de sistemas VRV contemplando automação local e remota.",
+      description:
+        "Protegemos a qualidade da sua produção do campo ao armazenamento. Cuidamos da refrigeração e do controle de umidade críticos do agronegócio, garantindo a conservação de leite, grãos, cultivos e alimentos congelados, evitando perdas por falha térmica e mantendo sua operação rodando sem problemas.",
+      items: [
+        {
+          title: "Instalação",
+          text: "Instalamos sistemas de refrigeração e controle de umidade sob medida para a sua operação, com entrega comissionada e técnica precisa.",
+        },
+        {
+          title: "Plano de Manutenção (PMOC)",
+          text: "Manutenção preditiva, preventiva e corretiva que mantém sua produção protegida, evitando paradas e perdas por falha térmica.",
+        },
+        {
+          title: "Tanques de Resfriamento de Leite",
+          text: "Manutenção que garante a temperatura correta de conservação do leite, protegendo a qualidade e a conformidade do produto.",
+        },
+        {
+          title: "Túneis de Congelamento",
+          text: "Manutenção e controle de sistemas de congelamento rápido, assegurando a conservação e a integridade dos alimentos processados.",
+        },
+        {
+          title: "Umidade Controlada: Umidificadoras e Desumidificadores",
+          text: "Controle de umidade para cultivos, estufas e salas de secagem, garantindo o ambiente ideal e protegendo grãos e insumos.",
+        },
+        {
+          title: "RETROFIT",
+          text: "Modernizamos o seu parque de máquinas e medimos o consumo real, estendendo a vida útil e otimizando os custos energéticos da operação.",
+        },
+      ],
+    },
+  },
+  whereWeAre: {
+    kicker: "Área de atuação",
+    title: "Onde estamos",
+    intro:
+      "Hoje a Dancold está localizada nos seguintes estados: Santa Catarina, Paraná, São Paulo, Rio de Janeiro e Piauí. Nós colaboramos com múltiplos negócios e órgãos governamentais nas seguintes cidades: Curitiba, Pinhais, Araucária, Colombo, São José dos Pinhais, Almirante Tamandaré, Joinville, Brusque, Itajaí, Canoinhas, Florianópolis, São Paulo Capital, São Paulo Campo Limpo, Macaé, Floriano e Campinas. Nossa equipe está preparada para mobilização rápida, com suporte logístico para atendimento a grandes contratos em todo território nacional.",
+    hqTitle: "Sede",
+    hqText: "Av. Prefeito Maurício Fruet, 3060 — Cajuru, Curitiba-PR | CEP 82.920-330",
+    serviceTitle: "Atendimento",
+    serviceText: "Segunda a Sexta, das 8h00 às 17h30",
+    onCallTitle: "Plantão técnico",
+    onCallText: "Suporte 365 dias por ano para contratos de manutenção",
+    contactTitle: "Entre em Contato",
+    emailTitle: "E-mail",
+    statesTitle: "Estados onde atuamos",
+    states: ["Paraná", "Santa Catarina", "São Paulo", "Rio de Janeiro", "Piauí"],
+    citiesTitle: "Cidades atendidas",
+    cities: [
+      "Curitiba",
+      "Pinhais",
+      "Araucária",
+      "Colombo",
+      "São José dos Pinhais",
+      "Almirante Tamandaré",
+      "Joinville",
+      "Brusque",
+      "Itajaí",
+      "Canoinhas",
+      "Florianópolis",
+      "São Paulo Capital",
+      "São Paulo Campo Limpo",
+      "Macaé",
+      "Floriano",
+      "Campinas",
+    ],
+  },
+  contact: {
+    kicker: "Contato",
+    title: "Fale Conosco",
+    intro:
+      "Entre em contato para solicitar um orçamento ou a visita de um técnico especializado, esclarecer dúvidas ou dar sugestões:",
+    form: {
+      name: "Nome",
+      email: "Email",
+      phone: "Telefone",
+      message: "Mensagem",
+      submit: "Enviar mensagem",
+      sending: "Enviando...",
+      success: "Sua mensagem foi enviada com sucesso!",
+      error: "Desculpe, ocorreu um erro ao enviar sua mensagem. Tente novamente mais tarde!",
+    },
+    infoTitle: "Entre em Contato",
+    hoursTitle: "Horário de Atendimento",
+    hoursText: "Segunda a Sexta 8h00 às 17h30",
+    addressTitle: "Endereço",
+    addressText: "Av. Prefeito Maurício Fruet, 3060 Cajuru • Curitiba-PR • CEP 82.920-330",
+    emailTitle: "Envie-nos um e-mail",
+    phonesTitle: "Telefones",
+  },
+  cta: {
+    title: "Pronto para levar sua operação a outro nível?",
+    text: "Fale com nossa equipe técnica e descubra a solução ideal em climatização, refrigeração e automação para o seu negócio.",
+    button: "Solicitar orçamento",
+  },
+  footer: {
+    about:
+      "Fundada em 1998, a Dancold iniciou como empresa familiar em manutenção de ar-condicionado e refrigeração. A partir de 2002, expandiu sua atuação para o setor industrial, atendendo marcas reconhecidas internacionalmente.",
+    companyTitle: "A Dancold",
+    servicesTitle: "Nossos Serviços",
+    contactTitle: "Contato",
+    hoursTitle: "Seg a Sex - 8h00 às 17h30",
+    addressTitle: "Endereço",
+    emailTitle: "E-mail",
+    rights: "Todos os direitos reservados.",
+  },
+  notFound: {
+    title: "Página não encontrada",
+    text: "A página que você procura não existe ou foi movida.",
+    back: "Voltar para o início",
+  },
+};
+
+export default pt;

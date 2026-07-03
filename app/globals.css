@@ -1,26 +1,185 @@
 @import "tailwindcss";
 
+/*
+ * Light-only design system. Components use ONLY semantic tokens
+ * (bg-bg, bg-surface, text-ink, border-line, text-brand, bg-accent...).
+ * The dark footer/CTA bands opt in explicitly via `.section-dark`.
+ */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #f7f8fa;
+  --surface: #ffffff;
+  --surface-2: #eef1f5;
+  --ink: #0d1b2e;
+  --ink-2: #47566b;
+  --ink-3: #8592a4;
+  --line: #e3e8ee;
+  --line-2: #cfd7e1;
+  --brand: #14335f;
+  --ghost: rgba(13, 27, 46, 0.07);
+  --blueprint: rgba(20, 51, 95, 0.04);
+}
+
+/* dark brand bands (footer, final CTA) — intentional, not a theme */
+.section-dark {
+  --bg: #0b1424;
+  --surface: #101c30;
+  --surface-2: #14223a;
+  --ink: #eef2f8;
+  --ink-2: #a3b1c6;
+  --ink-3: #6b7a90;
+  --line: rgba(255, 255, 255, 0.1);
+  --line-2: rgba(255, 255, 255, 0.18);
+  --brand: #8fb0e0;
+  --ghost: rgba(255, 255, 255, 0.06);
+  --blueprint: rgba(143, 176, 224, 0.05);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-line: var(--line);
+  --color-line-2: var(--line-2);
+  --color-brand: var(--brand);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@theme {
+  --color-accent: #d7282f;
+  --color-accent-dark: #b01e24;
+
+  --color-navy-950: #060d1b;
+  --color-navy-900: #0a1428;
+  --color-navy-800: #112242;
+  --color-navy-700: #1a3260;
+  --color-navy-600: #234982;
+  --color-navy-500: #2f5da3;
+  --color-navy-400: #4f7dc4;
+  --color-navy-300: #678fd5;
+  --color-navy-200: #a8c1e8;
+  --color-navy-100: #d6e2f4;
+  --color-navy-50: #f4f7fb;
+
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-display: var(--font-inter), system-ui, sans-serif;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --animate-marquee: marquee 42s linear infinite;
+  --animate-marquee-slow: marquee 60s linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  overflow-x: clip;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* very subtle technical grid — used sparingly on brand bands */
+.bg-blueprint {
+  background-image:
+    linear-gradient(var(--blueprint) 1px, transparent 1px),
+    linear-gradient(90deg, var(--blueprint) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* section kicker: short accent rule + uppercase label */
+.kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.kicker::before {
+  content: "";
+  width: 28px;
+  height: 2px;
+  background: var(--color-accent);
+  flex: none;
+}
+
+/* button system — radius 8px, never pill */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  height: 48px;
+  padding: 0 1.625rem;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+.btn-primary {
+  background: var(--color-accent);
+  color: #fff;
+}
+.btn-primary:hover {
+  background: var(--color-accent-dark);
+}
+.btn-brand {
+  background: var(--brand);
+  color: #fff;
+}
+.btn-outline {
+  border: 1px solid var(--line-2);
+  color: var(--ink);
+}
+.btn-outline:hover {
+  border-color: var(--ink);
+}
+.btn .btn-arrow {
+  transition: transform 0.2s var(--ease-out-expo);
+}
+.btn:hover .btn-arrow {
+  transform: translateX(4px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-marquee,
+  .animate-marquee-slow {
+    animation: none;
+  }
 }

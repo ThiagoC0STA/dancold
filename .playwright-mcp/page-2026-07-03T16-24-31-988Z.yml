@@ -1,0 +1,250 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - link "dancold@dancold.com.br" [ref=e5] [cursor=pointer]:
+        - /url: mailto:dancold@dancold.com.br
+      - generic [ref=e7]: Seg a Sex - 8h00 às 17h30
+    - generic [ref=e8]:
+      - link "(41) 3365-4877" [ref=e9] [cursor=pointer]:
+        - /url: tel:+554133654877
+      - link "(41) 9 9246-6920" [ref=e10] [cursor=pointer]:
+        - /url: https://wa.me/+5541992466920
+  - banner [ref=e11]:
+    - generic [ref=e12]:
+      - link "Dancold - Home" [ref=e13] [cursor=pointer]:
+        - /url: /pt
+        - img "Dancold" [ref=e14]
+      - navigation "Principal" [ref=e15]:
+        - link "Home" [ref=e16] [cursor=pointer]:
+          - /url: /pt
+        - link "Sobre Nós" [ref=e17] [cursor=pointer]:
+          - /url: /pt/sobre-nos
+          - text: Sobre Nós
+        - link "Serviços" [ref=e19] [cursor=pointer]:
+          - /url: /pt/servicos
+        - link "Segmentos" [ref=e20] [cursor=pointer]:
+          - /url: /pt/segmentos
+        - link "Onde Estamos" [ref=e21] [cursor=pointer]:
+          - /url: /pt/onde-estamos
+        - link "Contato" [ref=e22] [cursor=pointer]:
+          - /url: /pt/contato
+      - generic [ref=e23]:
+        - button "Idioma" [ref=e25] [cursor=pointer]:
+          - img [ref=e26]
+          - generic [ref=e31]: pt
+          - img [ref=e32]
+        - link "Contato pelo WhatsApp" [ref=e34] [cursor=pointer]:
+          - /url: https://wa.me/+5541992466920
+          - img [ref=e35]
+          - text: Contato pelo WhatsApp
+  - main [ref=e37]:
+    - generic [ref=e43]:
+      - paragraph [ref=e44]: A Dancold
+      - heading "Sobre Nós" [level=1] [ref=e46]
+      - navigation "Breadcrumb" [ref=e47]:
+        - list [ref=e48]:
+          - listitem [ref=e49]:
+            - link "Home" [ref=e50] [cursor=pointer]:
+              - /url: /pt
+          - listitem [ref=e51]:
+            - generic [ref=e52]: /
+            - generic [ref=e53]: Sobre Nós
+    - generic [ref=e56]:
+      - generic [ref=e57]:
+        - generic [ref=e58]:
+          - paragraph [ref=e59]: Seja bem vindo!
+          - heading "Quem somos" [level=2] [ref=e61]
+        - paragraph [ref=e63]: Com dedicação, responsabilidade e constante investimento em novas tecnologias, a Dancold oferece aos seus clientes e parceiros o que há de mais inovador, competitivo e rentável no mercado.
+      - generic [ref=e64]:
+        - generic [ref=e65]:
+          - paragraph [ref=e66]:
+            - generic [ref=e67]: "+0"
+          - paragraph [ref=e68]: Anos de experiência
+        - generic [ref=e69]:
+          - paragraph [ref=e70]:
+            - generic [ref=e71]: "+0"
+          - paragraph [ref=e72]: Clientes satisfeitos
+    - generic [ref=e74]:
+      - generic [ref=e75]:
+        - img [ref=e77]
+        - heading "Missão" [level=3] [ref=e81]
+        - paragraph [ref=e82]: Projetar, vender, instalar e prestar assistência técnica para equipamentos de ar-condicionado e refrigeração, automatizando processos de forma profissional e superando as expectativas dos clientes — sempre com foco no usuário, na qualidade do ar e no menor impacto ambiental.
+      - generic [ref=e83]:
+        - img [ref=e85]
+        - heading "Visão" [level=3] [ref=e88]
+        - paragraph [ref=e89]: Ser referência nacional e internacional como grande empresa mantenedora de HVAC e refrigeração, reconhecida pela excelência técnica, capacidade de resolver desafios complexos e pela entrega de serviços de alta qualidade a qualquer organização que nos solicitar.
+      - generic [ref=e90]:
+        - img [ref=e92]
+        - heading "Valores" [level=3] [ref=e95]
+        - list [ref=e96]:
+          - listitem [ref=e97]: Foco no cliente
+          - listitem [ref=e98]: Honestidade e transparência
+          - listitem [ref=e99]: Excelência técnica
+          - listitem [ref=e100]: Valorização dos colaboradores
+          - listitem [ref=e101]: Trabalho em equipe
+          - listitem [ref=e102]: Inovação contínua
+          - listitem [ref=e103]: Responsabilidade socioambiental
+    - generic [ref=e105]:
+      - generic [ref=e106]:
+        - paragraph [ref=e107]: A Dancold
+        - heading "Nossa história" [level=2] [ref=e109]
+        - paragraph [ref=e110]: Fundada em 1998 como empresa familiar especializada em manutenção de ar-condicionado e refrigeração, a Dancold expandiu sua atuação para o setor industrial a partir de 2002, atendendo desde então marcas reconhecidas nacional e internacionalmente. Hoje, com mais de 25 anos de mercado, somos uma referência em HVAC, refrigeração industrial e automação de processos no Sul do Brasil.
+      - list [ref=e113]:
+        - listitem [ref=e114]:
+          - generic [ref=e118]:
+            - paragraph [ref=e119]: 1998 - 2002
+            - paragraph [ref=e120]: Iniciou sua trajetória como uma empresa familiar, prestando serviços de manutenção em sistemas de ar-condicionado e refrigeração nas áreas residencial e comercial.
+        - listitem [ref=e121]:
+          - generic [ref=e125]:
+            - paragraph [ref=e126]: 2004 - 2008
+            - paragraph [ref=e127]: Estende sua área de atuação para indústrias, passando a oferecer assistência para várias marcas renomadas no mercado internacional.
+        - listitem [ref=e128]:
+          - generic [ref=e132]:
+            - paragraph [ref=e133]: 2009 - 2013
+            - paragraph [ref=e134]: Deixa de ser uma empresa familiar e focaliza seu departamento comercial para prestar um atendimento para órgãos públicos.
+        - listitem [ref=e135]:
+          - generic [ref=e139]:
+            - paragraph [ref=e140]: 2014 - 2021
+            - paragraph [ref=e141]: Por conta do alto volume de demanda, começou a atuar nas áreas de consultoria, comissionamento, gerenciamento e supervisão de obras, terceirizando serviços de empreitada.
+        - listitem [ref=e142]:
+          - generic [ref=e146]:
+            - paragraph [ref=e147]: "2022"
+            - paragraph [ref=e148]: Atualiza toda a operação proporcionando dispositivos mobile para todas as equipes interligando sistemas e processos para controle mediante departamento operacional.
+        - listitem [ref=e149]:
+          - generic [ref=e153]:
+            - paragraph [ref=e154]: 2023 - 2025
+            - paragraph [ref=e155]: Expande atividades para mais 3 estados, hoje presente em 11 cidades distribuídas no Paraná, São Paulo, Rio de Janeiro e Santa Catarina. Fortalecendo cada vez mais os serviços como uma grande mantenedora garantindo aos seus clientes maior produtividade através do controle, coordenação e fiscalização integrados de seus processos.
+    - generic [ref=e156]:
+      - generic [ref=e158]:
+        - paragraph [ref=e159]: Quem confia na Dancold
+        - heading "Clientes" [level=2] [ref=e162]
+      - generic [ref=e166]:
+        - img "Ambev" [ref=e168]
+        - img "ArcelorMittal" [ref=e170]
+        - img "Brose" [ref=e172]
+        - img "Champagnat" [ref=e174]
+        - img "Daikin" [ref=e176]
+        - img "Hitachi" [ref=e178]
+        - img "Mondelez" [ref=e180]
+        - img "Mueller" [ref=e182]
+        - img "Shopping Curitiba" [ref=e184]
+        - img "Unimed" [ref=e186]
+        - img "Ambev" [ref=e188]
+        - img "ArcelorMittal" [ref=e190]
+        - img "Brose" [ref=e192]
+        - img "Champagnat" [ref=e194]
+        - img "Daikin" [ref=e196]
+        - img "Hitachi" [ref=e198]
+        - img "Mondelez" [ref=e200]
+        - img "Mueller" [ref=e202]
+        - img "Shopping Curitiba" [ref=e204]
+        - img "Unimed" [ref=e206]
+    - generic [ref=e209]:
+      - generic [ref=e210]:
+        - paragraph [ref=e211]: Top Razões
+        - heading "Porque nos escolher?" [level=2] [ref=e214]
+        - paragraph [ref=e215]: A Dancold dispõe de um departamento que oferece consultoria e manutenção capaz de prestar suporte técnico nos 365 dias do ano, de forma ininterrupta.
+      - generic [ref=e216]:
+        - generic [ref=e217]:
+          - text: "01"
+          - heading "Suporte 365 dias por ano" [level=3] [ref=e218]
+          - paragraph [ref=e219]: Departamento de manutenção com equipes dedicadas para atendimento contínuo, sem interrupções.
+        - generic [ref=e220]:
+          - text: "02"
+          - heading "Mais de 25 anos de experiência" [level=3] [ref=e221]
+          - paragraph [ref=e222]: Trajetória sólida atendendo indústrias, hospitais, shoppings e grandes corporações.
+        - generic [ref=e223]:
+          - text: "03"
+          - heading "Equipes especializadas por segmento" [level=3] [ref=e224]
+          - paragraph [ref=e225]: Técnicos certificados e experientes em cada vertical de atuação.
+        - generic [ref=e226]:
+          - text: "04"
+          - heading "Tecnologia e inovação" [level=3] [ref=e227]
+          - paragraph [ref=e228]: Uso de ferramentas digitais, monitoramento remoto e automação para máxima eficiência.
+    - generic [ref=e234]:
+      - generic [ref=e235]:
+        - heading "Pronto para levar sua operação a outro nível?" [level=2] [ref=e236]
+        - paragraph [ref=e237]: Fale com nossa equipe técnica e descubra a solução ideal em climatização, refrigeração e automação para o seu negócio.
+      - link "Solicitar orçamento" [ref=e239] [cursor=pointer]:
+        - /url: https://wa.me/+5541992466920
+        - img [ref=e240]
+        - text: Solicitar orçamento
+        - generic [ref=e242]: →
+  - contentinfo [ref=e243]:
+    - generic [ref=e245]:
+      - generic [ref=e246]:
+        - generic [ref=e247]:
+          - img "Dancold" [ref=e248]
+          - paragraph [ref=e249]: Fundada em 1998, a Dancold iniciou como empresa familiar em manutenção de ar-condicionado e refrigeração. A partir de 2002, expandiu sua atuação para o setor industrial, atendendo marcas reconhecidas internacionalmente.
+          - paragraph [ref=e250]: "CNPJ: 05.477.326/0001-28"
+          - generic [ref=e251]:
+            - link "Facebook" [ref=e252] [cursor=pointer]:
+              - /url: https://www.facebook.com/DANCOLDCLIMATIZACAO
+              - img [ref=e253]
+            - link "Instagram" [ref=e255] [cursor=pointer]:
+              - /url: https://www.instagram.com/arcondicionadodancold/
+              - img [ref=e256]
+            - link "LinkedIn" [ref=e258] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/dancoldclimatiza%C3%A7%C3%A3o/
+              - img [ref=e259]
+        - navigation "A Dancold" [ref=e261]:
+          - heading "A Dancold" [level=3] [ref=e262]
+          - list [ref=e263]:
+            - listitem [ref=e264]:
+              - link "Home" [ref=e265] [cursor=pointer]:
+                - /url: /pt
+            - listitem [ref=e266]:
+              - link "Sobre Nós" [ref=e267] [cursor=pointer]:
+                - /url: /pt/sobre-nos
+            - listitem [ref=e268]:
+              - link "Serviços" [ref=e269] [cursor=pointer]:
+                - /url: /pt/servicos
+            - listitem [ref=e270]:
+              - link "Segmentos" [ref=e271] [cursor=pointer]:
+                - /url: /pt/segmentos
+            - listitem [ref=e272]:
+              - link "Onde Estamos" [ref=e273] [cursor=pointer]:
+                - /url: /pt/onde-estamos
+            - listitem [ref=e274]:
+              - link "Contato" [ref=e275] [cursor=pointer]:
+                - /url: /pt/contato
+        - navigation "Nossos Serviços" [ref=e276]:
+          - heading "Nossos Serviços" [level=3] [ref=e277]
+          - list [ref=e278]:
+            - listitem [ref=e279]:
+              - link "Automação e Monitoramento" [ref=e280] [cursor=pointer]:
+                - /url: /pt/servicos/automacao-e-monitoramento
+            - listitem [ref=e281]:
+              - link "Projetos Personalizados" [ref=e282] [cursor=pointer]:
+                - /url: /pt/servicos/projetos-personalizados
+            - listitem [ref=e283]:
+              - link "Instalações" [ref=e284] [cursor=pointer]:
+                - /url: /pt/servicos/instalacoes
+            - listitem [ref=e285]:
+              - link "Plano de Manutenção (PMOC)" [ref=e286] [cursor=pointer]:
+                - /url: /pt/servicos/plano-de-manutencao-pmoc
+            - listitem [ref=e287]:
+              - link "Comissionamento de obras" [ref=e288] [cursor=pointer]:
+                - /url: /pt/servicos/comissionamento-de-obras
+        - generic [ref=e289]:
+          - heading "Seg a Sex - 8h00 às 17h30" [level=3] [ref=e290]
+          - generic [ref=e291]:
+            - paragraph [ref=e292]:
+              - link "(41) 3365-4877" [ref=e293] [cursor=pointer]:
+                - /url: tel:+554133654877
+              - link "(41) 9 9246-6920" [ref=e294] [cursor=pointer]:
+                - /url: https://wa.me/+5541992466920
+            - paragraph [ref=e295]:
+              - generic [ref=e296]: Endereço
+              - text: Av. Prefeito Maurício Fruet, 3060 — Cajuru, Curitiba-PR, CEP 82.920-330
+            - paragraph [ref=e297]:
+              - generic [ref=e298]: E-mail
+              - link "dancold@dancold.com.br" [ref=e299] [cursor=pointer]:
+                - /url: mailto:dancold@dancold.com.br
+      - generic [ref=e300]:
+        - paragraph [ref=e301]: 2026 © Dancold. Todos os direitos reservados.
+        - paragraph [ref=e302]: Ar condicionado / Refrigeração / Automação
+  - link "Contato pelo WhatsApp" [ref=e303] [cursor=pointer]:
+    - /url: https://wa.me/+5541992466920
+    - img [ref=e305]
+  - alert [ref=e307]
