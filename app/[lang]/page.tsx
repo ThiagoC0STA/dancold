@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getDictionary } from "@/dictionaries";
 import { isLocale, locales } from "@/lib/i18n";
-import { clients, segmentSlugs, serviceSlugs, suppliers } from "@/lib/site";
+import { clients, coverage, segmentSlugs, serviceSlugs, site, suppliers } from "@/lib/site";
 import { Hero } from "@/components/hero";
 import { Reveal } from "@/components/reveal";
 import { Counter } from "@/components/counter";
@@ -11,6 +11,7 @@ import { SectionHeading } from "@/components/section-heading";
 import { ServiceCard } from "@/components/service-card";
 import { SegmentCard } from "@/components/segment-card";
 import { LogoMarquee } from "@/components/logo-marquee";
+import { BrazilCoverageMap } from "@/components/brazil-coverage-map";
 import { CtaSection } from "@/components/cta-section";
 
 export async function generateMetadata({ params }: PageProps<"/[lang]">): Promise<Metadata> {
@@ -98,13 +99,27 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
       </section>
 
       {/* brand quote */}
-      <section className="border-y border-line bg-surface-2 py-20 lg:py-24">
-        <div className="mx-auto max-w-4xl px-6 text-center">
+      <section className="section-dark relative overflow-hidden border-y border-line bg-bg">
+        <div className="bg-blueprint absolute inset-0 opacity-60" aria-hidden />
+        <span
+          aria-hidden
+          className="pointer-events-none absolute -top-10 left-6 select-none font-display text-[13rem] leading-none text-brand/15 sm:left-16 sm:text-[17rem]"
+        >
+          &ldquo;
+        </span>
+        <div className="relative mx-auto max-w-4xl px-6 py-24 text-center lg:py-32">
           <Reveal>
-            <span aria-hidden className="mx-auto mb-8 block h-[2px] w-12 bg-accent" />
-            <p className="font-display text-2xl font-medium leading-snug text-ink text-balance lg:text-[2rem] lg:leading-[1.3]">
+            <p className="font-display text-2xl font-medium leading-snug text-ink text-balance lg:text-[2.1rem] lg:leading-[1.32]">
               {dict.home.quote}
             </p>
+            <span
+              aria-hidden
+              className="mx-auto mt-10 flex items-center justify-center gap-3 text-xs font-semibold uppercase tracking-[0.28em] text-brand"
+            >
+              <span className="h-px w-8 bg-accent" />
+              {site.name}
+              <span className="h-px w-8 bg-accent" />
+            </span>
           </Reveal>
         </div>
       </section>
@@ -119,7 +134,10 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
           />
           <Reveal delay={0.1} className="mt-12">
             <div className="overflow-hidden rounded-[10px] border border-line bg-white py-6">
-              <LogoMarquee logos={[...clients]} />
+              <LogoMarquee
+                logos={[...clients]}
+                itemClassName="opacity-70 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+              />
             </div>
           </Reveal>
         </div>
@@ -146,6 +164,35 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
               />
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* coverage signature */}
+      <section className="section-dark relative overflow-hidden border-t border-line bg-bg">
+        <div className="bg-blueprint absolute inset-0 opacity-50" aria-hidden />
+        <div className="relative mx-auto max-w-6xl px-6 py-24 lg:py-28">
+          <BrazilCoverageMap
+            variant="compact"
+            tone="dark"
+            showCities={false}
+            hqTitle={dict.whereWeAre.hqTitle}
+            header={
+              <SectionHeading
+                kicker={dict.whereWeAre.kicker}
+                title={dict.whereWeAre.statesTitle}
+              />
+            }
+            states={coverage.map((entry, index) => ({
+              id: entry.id,
+              name: dict.whereWeAre.states[index] ?? entry.id.toUpperCase(),
+              cities: [...entry.cities],
+            }))}
+          >
+            {/* <Link href={`/${lang}/onde-estamos`} className="btn btn-outline mt-8">
+              {dict.common.seeAll}
+              <span aria-hidden className="btn-arrow">→</span>
+            </Link> */}
+          </BrazilCoverageMap>
         </div>
       </section>
 

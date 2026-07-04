@@ -178,8 +178,9 @@ body {
   html {
     scroll-behavior: auto;
   }
+  /* keep the logo carousels moving (frozen track hides half the logos) — just slower */
   .animate-marquee,
   .animate-marquee-slow {
-    animation: none;
+    animation-duration: 150s;
   }
 }

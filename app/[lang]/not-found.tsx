@@ -31,7 +31,7 @@ export default function NotFound() {
     <section className="relative flex min-h-[70vh] items-center justify-center overflow-hidden bg-bg">
       <div className="bg-blueprint absolute inset-0 opacity-40" aria-hidden />
       <div className="relative px-6 py-32 text-center">
-        <p className="text-stroke font-display text-[8rem] font-bold leading-none sm:text-[11rem]">
+        <p className="font-display text-[6rem] font-bold leading-none tracking-tight text-brand sm:text-[8rem]">
           404
         </p>
         <h1 className="mt-2 font-display text-2xl font-bold text-ink sm:text-3xl">{t.title}</h1>

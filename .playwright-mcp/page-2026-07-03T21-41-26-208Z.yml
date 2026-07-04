@@ -1,0 +1,166 @@
+- generic [ref=e2]:
+  - link "Ir para o Início" [ref=e5] [cursor=pointer]:
+    - /url: "#"
+  - banner [ref=e16]:
+    - text:      
+    - generic [ref=e20]:
+      - link [ref=e23] [cursor=pointer]:
+        - /url: /
+      - list [ref=e25]:
+        - listitem [ref=e26]:
+          - link "Home" [ref=e27] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=e28]:
+          - link "Sobre Nós" [ref=e29] [cursor=pointer]:
+            - /url: /sobre-nos
+        - listitem [ref=e30]:
+          - link "Serviços" [ref=e31] [cursor=pointer]:
+            - /url: /servicos
+          - text: 
+        - listitem [ref=e32]:
+          - link "Segmentos" [ref=e33] [cursor=pointer]:
+            - /url: /segmentos
+          - text: 
+        - listitem [ref=e34]:
+          - link "Onde Estamos" [ref=e35] [cursor=pointer]:
+            - /url: /onde-estamos
+        - listitem [ref=e36]:
+          - link " Contato pelo WhatsApp" [ref=e37] [cursor=pointer]:
+            - /url: https://wa.me/+5541992466920
+            - generic [ref=e38]: 
+            - text: Contato pelo WhatsApp
+      - generic [ref=e39]:
+        - generic: 
+  - text: "\""
+  - generic [ref=e40]:
+    - generic [ref=e41]:
+      - generic [ref=e42]:
+        - button "Slide 0" [ref=e43] [cursor=pointer]
+        - button "Slide 1" [ref=e44] [cursor=pointer]
+        - button "Slide 2" [ref=e45] [cursor=pointer]
+        - button "Slide 3" [ref=e46] [cursor=pointer]
+      - generic [ref=e54]:
+        - generic [ref=e55]: Grandes Soluções
+        - heading "Projetos de Climatização de Alto Desempenho" [level=1] [ref=e56]
+        - paragraph
+        - link "Saiba mais" [ref=e58] [cursor=pointer]:
+          - /url: /servicos
+      - button "Previous" [ref=e62] [cursor=pointer]:
+        - generic [ref=e63]: 
+        - generic [ref=e64]: Previous
+      - button "Next" [ref=e65] [cursor=pointer]:
+        - generic [ref=e66]: 
+        - generic [ref=e67]: Next
+    - generic [ref=e75]:
+      - link [ref=e77] [cursor=pointer]:
+        - /url: https://wa.me/+5541992466920
+      - heading "Com dedicação, responsabilidade e constante investimento em novas tecnologias, a Dancold oferece aos seus clientes e parceiros o que há de mais inovador, competitivo e rentável no mercado." [level=3] [ref=e81]
+    - generic [ref=e94]:
+      - generic [ref=e97]:
+        - img [ref=e99]
+        - generic [ref=e100]:
+          - heading "Indústrias" [level=4] [ref=e101]
+          - paragraph [ref=e102]: Mantemos sua produção rodando sem paradas. Refrigeração e climatização crítica com manutenção especializada, reduzindo custos e protegendo seu processo contra falhas térmicas.
+          - link "Saiba mais" [ref=e103] [cursor=pointer]:
+            - /url: /segmento/3/industrias
+      - generic [ref=e106]:
+        - img [ref=e108]
+        - generic [ref=e109]:
+          - heading "Hospitais" [level=4] [ref=e110]
+          - paragraph [ref=e111]: Trabalhamos na sua operação contínua, protegendo a vida dos seus pacientes, vacinas e medicamentos em um único contrato.
+          - link "Saiba mais" [ref=e112] [cursor=pointer]:
+            - /url: /segmento/2/hospitais
+      - generic [ref=e115]:
+        - img [ref=e117]
+        - generic [ref=e118]:
+          - heading "Shopping Centers" [level=4] [ref=e119]
+          - paragraph [ref=e120]: Conforto térmico contínuo para milhares de pessoas. Cuidamos do parque completo de máquinas com equipe exclusiva, evitando paradas que afastam clientes.
+          - link "Saiba mais" [ref=e121] [cursor=pointer]:
+            - /url: /segmento/6/shopping-centers
+      - generic [ref=e124]:
+        - img [ref=e126]
+        - generic [ref=e127]:
+          - heading "Residencias e Lojas" [level=4] [ref=e128]
+          - paragraph [ref=e129]: Oferecemos soluções para o conforto e a segurança em diferentes processos, além de atendimento para balcões resfriados e câmaras frigoríficas.
+          - link "Saiba mais" [ref=e130] [cursor=pointer]:
+            - /url: /segmento/7/residencias-e-lojas
+      - generic [ref=e133]:
+        - img [ref=e135]
+        - generic [ref=e136]:
+          - heading "Prédios Corporativos" [level=4] [ref=e137]
+          - paragraph [ref=e138]: Climatização, elétrica e hidráulica do seu prédio em um único contrato. Cuidamos da edificação inteira com suporte 24/7, mantendo ocupantes confortáveis e tudo funcionando.
+          - link "Saiba mais" [ref=e139] [cursor=pointer]:
+            - /url: /segmento/8/predios-corporativos
+      - generic [ref=e142]:
+        - img [ref=e144]
+        - generic [ref=e145]:
+          - heading "Agronegócios" [level=4] [ref=e146]
+          - paragraph [ref=e147]: Proporcionamos conforto e bem-estar ao usuário ao oferecer projeto e instalação de sistemas VRV contemplando automação local e remota.
+          - link "Saiba mais" [ref=e148] [cursor=pointer]:
+            - /url: /segmento/9/agronegocios
+  - contentinfo [ref=e155]:
+    - generic [ref=e157]:
+      - generic [ref=e158]:
+        - paragraph [ref=e160]: "Fundada em 1998, a Dancold iniciou como empresa familiar em manutenção de ar-condicionado e refrigeração. A partir de 2002, expandiu sua atuação para o setor industrial, atendendo marcas reconhecidas internacionalmente. CNPJ: 05.477.326/0001-28."
+        - generic [ref=e161]:
+          - link "" [ref=e162] [cursor=pointer]:
+            - /url: https://www.facebook.com/DANCOLDCLIMATIZACAO
+            - generic [ref=e163]: 
+          - link "" [ref=e164] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/dancoldclimatiza%C3%A7%C3%A3o/
+            - generic [ref=e165]: 
+          - link "" [ref=e166] [cursor=pointer]:
+            - /url: https://www.instagram.com/dancold_/
+            - generic [ref=e167]: 
+      - generic [ref=e169]:
+        - generic [ref=e171]:
+          - heading "A Dancold" [level=5] [ref=e172]
+          - list [ref=e173]:
+            - listitem [ref=e174]:
+              - link "Home" [ref=e175] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e176]:
+              - link "Sobre Nós" [ref=e177] [cursor=pointer]:
+                - /url: /sobre-nos
+            - listitem [ref=e178]:
+              - link "Serviços" [ref=e179] [cursor=pointer]:
+                - /url: /servicos
+            - listitem [ref=e180]:
+              - link "Segmentos" [ref=e181] [cursor=pointer]:
+                - /url: /segmentos
+            - listitem [ref=e182]:
+              - link "Onde Estamos" [ref=e183] [cursor=pointer]:
+                - /url: /onde-estamos
+            - listitem [ref=e184]:
+              - link "Contato" [ref=e185] [cursor=pointer]:
+                - /url: /contato
+        - generic [ref=e187]:
+          - heading "Nossos Serviços" [level=5] [ref=e188]
+          - list [ref=e189]:
+            - listitem [ref=e190]:
+              - link "Automação e Monitoramento" [ref=e191] [cursor=pointer]:
+                - /url: /servico/10/automacao-e-monitoramento
+            - listitem [ref=e192]:
+              - link "Projetos Personalizados" [ref=e193] [cursor=pointer]:
+                - /url: /servico/6/projetos-personalizados
+            - listitem [ref=e194]:
+              - link "Instalações" [ref=e195] [cursor=pointer]:
+                - /url: /servico/7/instalacoes
+            - listitem [ref=e196]:
+              - link "Plano de Manutenção (PMOC)" [ref=e197] [cursor=pointer]:
+                - /url: /servico/8/plano-de-manutencao-pmoc
+            - listitem [ref=e198]:
+              - link "Comissionamento de obras" [ref=e199] [cursor=pointer]:
+                - /url: /servico/9/comissionamento-de-obras
+      - generic [ref=e201]:
+        - heading "Seg a Sex - 8h00 às 17h30" [level=5] [ref=e202]
+        - generic [ref=e204]:
+          - generic [ref=e205]: 
+          - text: Endereço
+        - text: Av. Prefeito Maurício Fruet, 3060
+        - text: Cajuru, Curitiba-PR, CEP 82.920-330
+        - generic [ref=e207]:
+          - generic [ref=e208]: 
+          - text: E-mail
+        - text: dancold@dancold.com.br
+    - generic [ref=e215]: 2026 © Desenvolvido por P1

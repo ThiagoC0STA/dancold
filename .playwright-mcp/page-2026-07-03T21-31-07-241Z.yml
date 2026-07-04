@@ -1,0 +1,293 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Dancold - Home" [ref=e4] [cursor=pointer]:
+        - /url: /pt
+        - img "Dancold" [ref=e5]
+      - generic [ref=e6]:
+        - button "Idioma" [ref=e8] [cursor=pointer]:
+          - img [ref=e9]
+          - generic [ref=e14]: pt
+          - img [ref=e15]
+        - button "Menu" [ref=e17]
+  - main [ref=e22]:
+    - generic [ref=e28]:
+      - generic [ref=e30]:
+        - paragraph [ref=e31]: Grandes Soluções
+        - heading "Projetos de Refrigeração de Alto Desempenho" [level=1] [ref=e33]:
+          - generic [ref=e35]: Projetos
+          - generic [ref=e37]: de
+          - generic [ref=e39]: Refrigeração
+          - generic [ref=e41]: de
+          - generic [ref=e43]: Alto
+          - generic [ref=e45]: Desempenho
+        - link "Saiba mais" [ref=e47] [cursor=pointer]:
+          - /url: /pt/servicos/projetos-personalizados
+          - text: Saiba mais
+          - generic [ref=e48]: →
+      - generic [ref=e49]:
+        - button "Grandes Soluções" [ref=e50]
+        - button "Grandes Ambientes" [ref=e52]
+        - button "Ambientes Industriais" [ref=e54]
+        - button "Manutenção" [ref=e56]
+    - generic [ref=e59]:
+      - generic [ref=e60]:
+        - paragraph [ref=e61]:
+          - generic [ref=e62]: "+0"
+        - paragraph [ref=e63]: Anos de experiência
+      - generic [ref=e64]:
+        - paragraph [ref=e65]:
+          - generic [ref=e66]: "+0"
+        - paragraph [ref=e67]: Clientes satisfeitos
+      - generic [ref=e68]:
+        - paragraph [ref=e69]: "0"
+        - paragraph [ref=e70]: Suporte técnico
+      - generic [ref=e71]:
+        - paragraph [ref=e72]: "0"
+        - paragraph [ref=e73]: Cidades atendidas
+    - generic [ref=e75]:
+      - generic [ref=e76]:
+        - generic [ref=e77]:
+          - paragraph [ref=e78]: O que fazemos
+          - heading "Serviços" [level=2] [ref=e80]
+        - link "Ver todos" [ref=e82] [cursor=pointer]:
+          - /url: /pt/servicos
+          - text: Ver todos
+          - generic [ref=e83]: →
+      - generic [ref=e84]:
+        - link "Automação e Monitoramento Automação e Monitoramento Instalamos sensores de temperatura e energia com alarme 24/7, protegendo câmaras frias, vacinas e data centers contra perdas por falha térmica ou queda de energia. Ler Mais" [ref=e86] [cursor=pointer]:
+          - /url: /pt/servicos/automacao-e-monitoramento
+          - generic [ref=e87]:
+            - img "Automação e Monitoramento" [ref=e88]
+            - generic [ref=e90]: "01"
+          - generic [ref=e91]:
+            - heading "Automação e Monitoramento" [level=3] [ref=e92]
+            - paragraph [ref=e93]: Instalamos sensores de temperatura e energia com alarme 24/7, protegendo câmaras frias, vacinas e data centers contra perdas por falha térmica ou queda de energia.
+            - generic [ref=e94]:
+              - text: Ler Mais
+              - generic [ref=e95]: →
+        - link "Projetos Personalizados Projetos Personalizados Desenvolvemos projetos executivos de climatização e refrigeração sob medida para cada empresa. Partindo do zero, visitamos o ambiente, dimensionamos com precisão técnica e entregamos sistemas que resolvem a dor de cada operação, com eficiência energética. Ler Mais" [ref=e97] [cursor=pointer]:
+          - /url: /pt/servicos/projetos-personalizados
+          - generic [ref=e98]:
+            - img "Projetos Personalizados" [ref=e99]
+            - generic [ref=e101]: "02"
+          - generic [ref=e102]:
+            - heading "Projetos Personalizados" [level=3] [ref=e103]
+            - paragraph [ref=e104]: Desenvolvemos projetos executivos de climatização e refrigeração sob medida para cada empresa. Partindo do zero, visitamos o ambiente, dimensionamos com precisão técnica e entregamos sistemas que resolvem a dor de cada operação, com eficiência energética.
+            - generic [ref=e105]:
+              - text: Ler Mais
+              - generic [ref=e106]: →
+        - link "Instalações Instalações Instalamos todos os sistemas de climatização e refrigeração, do Split ao Chiller. Certificados pelas melhores marcas do mundo, seguimos rigorosamente cada fabricante e finalizamos com comissionamento completo, testes de desempenho e relatório técnico de entrega. Ler Mais" [ref=e108] [cursor=pointer]:
+          - /url: /pt/servicos/instalacoes
+          - generic [ref=e109]:
+            - img "Instalações" [ref=e110]
+            - generic [ref=e112]: "03"
+          - generic [ref=e113]:
+            - heading "Instalações" [level=3] [ref=e114]
+            - paragraph [ref=e115]: Instalamos todos os sistemas de climatização e refrigeração, do Split ao Chiller. Certificados pelas melhores marcas do mundo, seguimos rigorosamente cada fabricante e finalizamos com comissionamento completo, testes de desempenho e relatório técnico de entrega.
+            - generic [ref=e116]:
+              - text: Ler Mais
+              - generic [ref=e117]: →
+    - paragraph [ref=e122]: Com dedicação, responsabilidade e constante investimento em novas tecnologias, a Dancold entrega aos seus clientes o que há de mais inovador e competitivo em climatização, refrigeração e automação.
+    - generic [ref=e124]:
+      - generic [ref=e125]:
+        - paragraph [ref=e126]: Quem confia na Dancold
+        - heading "Clientes" [level=2] [ref=e129]
+      - generic [ref=e133]:
+        - generic [ref=e134]:
+          - img "Ambev"
+        - generic [ref=e135]:
+          - img "ArcelorMittal"
+        - generic [ref=e136]:
+          - img "Brose"
+        - generic [ref=e137]:
+          - img "Champagnat"
+        - generic [ref=e138]:
+          - img "Daikin"
+        - generic [ref=e139]:
+          - img "Hitachi"
+        - generic [ref=e140]:
+          - img "Mondelez"
+        - generic [ref=e141]:
+          - img "Mueller"
+        - generic [ref=e142]:
+          - img "Shopping Curitiba"
+        - generic [ref=e143]:
+          - img "Unimed"
+        - generic [ref=e144]:
+          - img "Ambev"
+        - generic [ref=e145]:
+          - img "ArcelorMittal"
+        - generic [ref=e146]:
+          - img "Brose"
+        - generic [ref=e147]:
+          - img "Champagnat"
+        - generic [ref=e148]:
+          - img "Daikin"
+        - generic [ref=e149]:
+          - img "Hitachi"
+        - generic [ref=e150]:
+          - img "Mondelez"
+        - generic [ref=e151]:
+          - img "Mueller"
+        - generic [ref=e152]:
+          - img "Shopping Curitiba"
+        - generic [ref=e153]:
+          - img "Unimed"
+    - generic [ref=e155]:
+      - generic [ref=e156]:
+        - paragraph [ref=e157]: Onde atuamos
+        - heading "Segmentos" [level=2] [ref=e159]
+        - paragraph [ref=e160]: "A Dancold oferece consultoria, e implanta PMOC disponibilizando equipes com suporte técnico ininterrupto para os seguintes segmentos:"
+      - generic [ref=e161]:
+        - link "Indústria Indústria Mantemos sua produção rodando sem paradas imprevistas, com refrigeração e climatização crítica e manutenção especializada que protege seu processo contra falhas térmicas. Saiba mais" [ref=e163] [cursor=pointer]:
+          - /url: /pt/segmentos/industrias
+          - img "Indústria" [ref=e164]
+          - generic [ref=e166]: "01"
+          - generic [ref=e167]:
+            - heading "Indústria" [level=3] [ref=e169]
+            - paragraph: Mantemos sua produção rodando sem paradas imprevistas, com refrigeração e climatização crítica e manutenção especializada que protege seu processo contra falhas térmicas.
+            - generic [ref=e170]:
+              - text: Saiba mais
+              - generic [ref=e171]: →
+        - link "Hospitalar Hospitalar Operação hospitalar contínua e em conformidade com a ANVISA, protegendo pacientes, vacinas e medicamentos contra falhas térmicas em um único contrato. Saiba mais" [ref=e173] [cursor=pointer]:
+          - /url: /pt/segmentos/hospitais
+          - img "Hospitalar" [ref=e174]
+          - generic [ref=e176]: "02"
+          - generic [ref=e177]:
+            - heading "Hospitalar" [level=3] [ref=e179]
+            - paragraph: Operação hospitalar contínua e em conformidade com a ANVISA, protegendo pacientes, vacinas e medicamentos contra falhas térmicas em um único contrato.
+            - generic [ref=e180]:
+              - text: Saiba mais
+              - generic [ref=e181]: →
+        - link "Shopping Centers Shopping Centers Projetos completos de HVAC de grande porte para shopping centers, com eficiência energética e conforto térmico contínuo para lojistas e visitantes. Saiba mais" [ref=e183] [cursor=pointer]:
+          - /url: /pt/segmentos/shopping-centers
+          - img "Shopping Centers" [ref=e184]
+          - generic [ref=e186]: "03"
+          - generic [ref=e187]:
+            - heading "Shopping Centers" [level=3] [ref=e189]
+            - paragraph: Projetos completos de HVAC de grande porte para shopping centers, com eficiência energética e conforto térmico contínuo para lojistas e visitantes.
+            - generic [ref=e190]:
+              - text: Saiba mais
+              - generic [ref=e191]: →
+        - link "Comercial Comercial Climatização e refrigeração para supermercados, restaurantes e lojas, com balcões refrigerados, câmaras frias e ar-condicionado sob medida. Saiba mais" [ref=e193] [cursor=pointer]:
+          - /url: /pt/segmentos/comercial
+          - img "Comercial" [ref=e194]
+          - generic [ref=e196]: "04"
+          - generic [ref=e197]:
+            - heading "Comercial" [level=3] [ref=e199]
+            - paragraph: Climatização e refrigeração para supermercados, restaurantes e lojas, com balcões refrigerados, câmaras frias e ar-condicionado sob medida.
+            - generic [ref=e200]:
+              - text: Saiba mais
+              - generic [ref=e201]: →
+        - link "Prédios Corporativos Prédios Corporativos Sistemas VRF/VRV eficientes e silenciosos para prédios de escritórios, com PMOC gerenciado por dispositivos móveis e eficiência energética certificada. Saiba mais" [ref=e203] [cursor=pointer]:
+          - /url: /pt/segmentos/predios-corporativos
+          - img "Prédios Corporativos" [ref=e204]
+          - generic [ref=e206]: "05"
+          - generic [ref=e207]:
+            - heading "Prédios Corporativos" [level=3] [ref=e209]
+            - paragraph: Sistemas VRF/VRV eficientes e silenciosos para prédios de escritórios, com PMOC gerenciado por dispositivos móveis e eficiência energética certificada.
+            - generic [ref=e210]:
+              - text: Saiba mais
+              - generic [ref=e211]: →
+        - link "Residencial Residencial Projeto e instalação de sistemas VRV com automação local e remota, conforto térmico personalizado e acabamento premium para residências de alto padrão. Saiba mais" [ref=e213] [cursor=pointer]:
+          - /url: /pt/segmentos/residencial
+          - img "Residencial" [ref=e214]
+          - generic [ref=e216]: "06"
+          - generic [ref=e217]:
+            - heading "Residencial" [level=3] [ref=e219]
+            - paragraph: Projeto e instalação de sistemas VRV com automação local e remota, conforto térmico personalizado e acabamento premium para residências de alto padrão.
+            - generic [ref=e220]:
+              - text: Saiba mais
+              - generic [ref=e221]: →
+    - generic [ref=e224]:
+      - paragraph [ref=e225]: Marcas que representamos
+      - heading "Fornecedores" [level=2] [ref=e228]
+    - generic [ref=e248]:
+      - generic [ref=e249]:
+        - heading "Pronto para levar sua operação a outro nível?" [level=2] [ref=e250]
+        - paragraph [ref=e251]: Fale com nossa equipe técnica e descubra a solução ideal em climatização, refrigeração e automação para o seu negócio.
+      - link "Solicitar orçamento" [ref=e253] [cursor=pointer]:
+        - /url: https://wa.me/+5541992466920
+        - img [ref=e254]
+        - text: Solicitar orçamento
+        - generic [ref=e256]: →
+  - contentinfo [ref=e257]:
+    - generic [ref=e259]:
+      - generic [ref=e260]:
+        - generic [ref=e261]:
+          - img "Dancold" [ref=e262]
+          - paragraph [ref=e263]: Fundada em 1998, a Dancold iniciou como empresa familiar em manutenção de ar-condicionado e refrigeração. A partir de 2002, expandiu sua atuação para o setor industrial, atendendo marcas reconhecidas internacionalmente.
+          - paragraph [ref=e264]: "CNPJ: 05.477.326/0001-28"
+          - generic [ref=e265]:
+            - link "Facebook" [ref=e266] [cursor=pointer]:
+              - /url: https://www.facebook.com/DANCOLDCLIMATIZACAO
+              - img [ref=e267]
+            - link "Instagram" [ref=e269] [cursor=pointer]:
+              - /url: https://www.instagram.com/arcondicionadodancold/
+              - img [ref=e270]
+            - link "LinkedIn" [ref=e272] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/dancoldclimatiza%C3%A7%C3%A3o/
+              - img [ref=e273]
+        - navigation "A Dancold" [ref=e275]:
+          - heading "A Dancold" [level=3] [ref=e276]
+          - list [ref=e277]:
+            - listitem [ref=e278]:
+              - link "Home" [ref=e279] [cursor=pointer]:
+                - /url: /pt
+            - listitem [ref=e280]:
+              - link "Sobre Nós" [ref=e281] [cursor=pointer]:
+                - /url: /pt/sobre-nos
+            - listitem [ref=e282]:
+              - link "Serviços" [ref=e283] [cursor=pointer]:
+                - /url: /pt/servicos
+            - listitem [ref=e284]:
+              - link "Segmentos" [ref=e285] [cursor=pointer]:
+                - /url: /pt/segmentos
+            - listitem [ref=e286]:
+              - link "Onde Estamos" [ref=e287] [cursor=pointer]:
+                - /url: /pt/onde-estamos
+            - listitem [ref=e288]:
+              - link "Contato" [ref=e289] [cursor=pointer]:
+                - /url: /pt/contato
+        - navigation "Nossos Serviços" [ref=e290]:
+          - heading "Nossos Serviços" [level=3] [ref=e291]
+          - list [ref=e292]:
+            - listitem [ref=e293]:
+              - link "Automação e Monitoramento" [ref=e294] [cursor=pointer]:
+                - /url: /pt/servicos/automacao-e-monitoramento
+            - listitem [ref=e295]:
+              - link "Projetos Personalizados" [ref=e296] [cursor=pointer]:
+                - /url: /pt/servicos/projetos-personalizados
+            - listitem [ref=e297]:
+              - link "Instalações" [ref=e298] [cursor=pointer]:
+                - /url: /pt/servicos/instalacoes
+            - listitem [ref=e299]:
+              - link "Plano de Manutenção (PMOC)" [ref=e300] [cursor=pointer]:
+                - /url: /pt/servicos/plano-de-manutencao-pmoc
+            - listitem [ref=e301]:
+              - link "Comissionamento de obras" [ref=e302] [cursor=pointer]:
+                - /url: /pt/servicos/comissionamento-de-obras
+        - generic [ref=e303]:
+          - heading "Seg a Sex - 8h00 às 17h30" [level=3] [ref=e304]
+          - generic [ref=e305]:
+            - paragraph [ref=e306]:
+              - link "(41) 3365-4877" [ref=e307] [cursor=pointer]:
+                - /url: tel:+554133654877
+              - link "(41) 9 9246-6920" [ref=e308] [cursor=pointer]:
+                - /url: https://wa.me/+5541992466920
+            - paragraph [ref=e309]:
+              - generic [ref=e310]: Endereço
+              - text: Av. Prefeito Maurício Fruet, 3060 — Cajuru, Curitiba-PR, CEP 82.920-330
+            - paragraph [ref=e311]:
+              - generic [ref=e312]: E-mail
+              - link "dancold@dancold.com.br" [ref=e313] [cursor=pointer]:
+                - /url: mailto:dancold@dancold.com.br
+      - generic [ref=e314]:
+        - paragraph [ref=e315]: 2026 © Dancold. Todos os direitos reservados.
+        - paragraph [ref=e316]: Ar condicionado / Refrigeração / Automação
+  - link "Contato pelo WhatsApp" [ref=e317] [cursor=pointer]:
+    - /url: https://wa.me/+5541992466920
+    - img [ref=e319]
+  - button "Open Next.js Dev Tools" [ref=e326] [cursor=pointer]:
+    - img [ref=e327]

@@ -1,0 +1,188 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Dancold - Home" [ref=e4] [cursor=pointer]:
+        - /url: /pt
+        - img "Dancold" [ref=e5]
+      - navigation "Principal" [ref=e6]:
+        - link "Home" [ref=e7] [cursor=pointer]:
+          - /url: /pt
+        - link "Sobre Nós" [ref=e8] [cursor=pointer]:
+          - /url: /pt/sobre-nos
+        - link "Serviços" [ref=e9] [cursor=pointer]:
+          - /url: /pt/servicos
+          - text: Serviços
+        - link "Segmentos" [ref=e11] [cursor=pointer]:
+          - /url: /pt/segmentos
+        - link "Onde Estamos" [ref=e12] [cursor=pointer]:
+          - /url: /pt/onde-estamos
+        - link "Contato" [ref=e13] [cursor=pointer]:
+          - /url: /pt/contato
+      - button "Idioma" [ref=e16] [cursor=pointer]:
+        - img [ref=e17]
+        - generic [ref=e22]: pt
+        - img [ref=e23]
+  - main [ref=e25]:
+    - generic [ref=e29]:
+      - navigation "Breadcrumb" [ref=e30]:
+        - list [ref=e31]:
+          - listitem [ref=e32]:
+            - link "Home" [ref=e33] [cursor=pointer]:
+              - /url: /pt
+          - listitem [ref=e34]:
+            - generic [ref=e35]: /
+            - link "Serviços" [ref=e36] [cursor=pointer]:
+              - /url: /pt/servicos
+          - listitem [ref=e37]:
+            - generic [ref=e38]: /
+            - generic [ref=e39]: Instalações
+      - paragraph [ref=e40]: Nossos Serviços
+      - heading "Instalações" [level=1] [ref=e41]
+    - generic [ref=e45]:
+      - generic [ref=e46]:
+        - paragraph [ref=e48]: Executamos a instalação de sistemas de ar-condicionado (Split, VRF/VRV, Chiller, Fan Coil), refrigeração industrial (câmaras frias, túneis de congelamento, resfriadores de água) e sistemas de ventilação e pressurização.
+        - generic [ref=e49]:
+          - paragraph [ref=e51]: A qualidade de uma instalação define o comportamento do sistema pela próxima década de operação. Uma tubulação mal dimensionada gera perda de carga e consumo excessivo de energia. Um equipamento instalado fora das especificações do fabricante tem a garantia comprometida e falha antes do prazo. A Dancold executa instalações e é certificada pelas melhores marcas de ar-condicionado do mundo, seguindo rigorosamente os procedimentos de cada fabricante.
+          - paragraph [ref=e53]: "Para o setor industrial, instalamos sistemas completos de refrigeração de processo: chillers de água gelada com periféricos, torres de resfriamento, câmaras frias, túneis de congelamento e balcões frigoríficos. Para hospitais e laboratórios, executamos instalações de sistemas VRF com controle de pressurização diferencial, AHUs e UTA's com filtragem de alta eficiência e monitoramento de temperatura em ambientes críticos. Para edificações corporativas e shopping centers, trabalhamos com sistemas centralizados de grande porte com gestão integrada de energia. Em todos os casos, a instalação termina com comissionamento completo, testes de desempenho e emissão de relatório técnico de entrega."
+        - generic [ref=e54]:
+          - heading "Características" [level=2] [ref=e55]
+          - list [ref=e56]:
+            - listitem [ref=e57]:
+              - img [ref=e59]
+              - generic [ref=e61]:
+                - heading "Levantamento e especificação técnica" [level=3] [ref=e62]
+                - paragraph [ref=e63]: Antes de qualquer execução, realizamos o levantamento das condições reais do ambiente, definimos os equipamentos adequados à demanda térmica e elaboramos o plano de instalação com cronograma, rotas de tubulação e pontos elétricos mapeados.
+            - listitem [ref=e64]:
+              - img [ref=e66]
+              - generic [ref=e68]:
+                - heading "Execução com equipes técnicas certificadas" [level=3] [ref=e69]
+                - paragraph [ref=e70]: Instalamos desde splits e sistemas multi-split até VRFs, chillers, fan coils, UTAs, câmaras frias e sistemas de filtragem de alta eficiência, sempre com equipes próprias treinadas e certificadas pelas marcas que representamos, seguindo os procedimentos de instalação de cada fabricante.
+            - listitem [ref=e71]:
+              - img [ref=e73]
+              - generic [ref=e75]:
+                - heading "Comissionamento e documentação técnica" [level=3] [ref=e76]
+                - paragraph [ref=e77]: Toda instalação é finalizada com testes de carga, verificação dos parâmetros de projeto, ajustes finos de operação e entrega de relatório técnico assinado por engenheiro responsável, com documentação de ART para o CREA.
+        - link "Entre em contato" [ref=e79] [cursor=pointer]:
+          - /url: https://wa.me/+5541992466920
+          - img [ref=e80]
+          - text: Entre em contato
+          - generic [ref=e82]: →
+      - complementary [ref=e83]:
+        - generic [ref=e84]:
+          - img "Instalações" [ref=e86]
+          - navigation "Nossos Serviços" [ref=e88]:
+            - heading "Nossos Serviços" [level=2] [ref=e89]
+            - list [ref=e90]:
+              - listitem [ref=e91]:
+                - link "Automação e Monitoramento" [ref=e92] [cursor=pointer]:
+                  - /url: /pt/servicos/automacao-e-monitoramento
+                  - text: Automação e Monitoramento
+                  - generic [ref=e93]: →
+              - listitem [ref=e94]:
+                - link "Projetos Personalizados" [ref=e95] [cursor=pointer]:
+                  - /url: /pt/servicos/projetos-personalizados
+                  - text: Projetos Personalizados
+                  - generic [ref=e96]: →
+              - listitem [ref=e97]:
+                - link "Instalações" [ref=e98] [cursor=pointer]:
+                  - /url: /pt/servicos/instalacoes
+                  - text: Instalações
+                  - generic [ref=e100]: →
+              - listitem [ref=e101]:
+                - link "Plano de Manutenção (PMOC)" [ref=e102] [cursor=pointer]:
+                  - /url: /pt/servicos/plano-de-manutencao-pmoc
+                  - text: Plano de Manutenção (PMOC)
+                  - generic [ref=e103]: →
+              - listitem [ref=e104]:
+                - link "Comissionamento de obras" [ref=e105] [cursor=pointer]:
+                  - /url: /pt/servicos/comissionamento-de-obras
+                  - text: Comissionamento de obras
+                  - generic [ref=e106]: →
+    - generic [ref=e109]:
+      - generic [ref=e110]:
+        - heading "Pronto para levar sua operação a outro nível?" [level=2] [ref=e111]
+        - paragraph [ref=e112]: Fale com nossa equipe técnica e descubra a solução ideal em climatização, refrigeração e automação para o seu negócio.
+      - link "Solicitar orçamento" [ref=e114] [cursor=pointer]:
+        - /url: https://wa.me/+5541992466920
+        - img [ref=e115]
+        - text: Solicitar orçamento
+        - generic [ref=e117]: →
+  - contentinfo [ref=e118]:
+    - generic [ref=e120]:
+      - generic [ref=e121]:
+        - generic [ref=e122]:
+          - img "Dancold" [ref=e123]
+          - paragraph [ref=e124]: Fundada em 1998, a Dancold iniciou como empresa familiar em manutenção de ar-condicionado e refrigeração. A partir de 2002, expandiu sua atuação para o setor industrial, atendendo marcas reconhecidas internacionalmente.
+          - paragraph [ref=e125]: "CNPJ: 05.477.326/0001-28"
+          - generic [ref=e126]:
+            - link "Facebook" [ref=e127] [cursor=pointer]:
+              - /url: https://www.facebook.com/DANCOLDCLIMATIZACAO
+              - img [ref=e128]
+            - link "Instagram" [ref=e130] [cursor=pointer]:
+              - /url: https://www.instagram.com/arcondicionadodancold/
+              - img [ref=e131]
+            - link "LinkedIn" [ref=e133] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/dancoldclimatiza%C3%A7%C3%A3o/
+              - img [ref=e134]
+        - navigation "A Dancold" [ref=e136]:
+          - heading "A Dancold" [level=3] [ref=e137]
+          - list [ref=e138]:
+            - listitem [ref=e139]:
+              - link "Home" [ref=e140] [cursor=pointer]:
+                - /url: /pt
+            - listitem [ref=e141]:
+              - link "Sobre Nós" [ref=e142] [cursor=pointer]:
+                - /url: /pt/sobre-nos
+            - listitem [ref=e143]:
+              - link "Serviços" [ref=e144] [cursor=pointer]:
+                - /url: /pt/servicos
+            - listitem [ref=e145]:
+              - link "Segmentos" [ref=e146] [cursor=pointer]:
+                - /url: /pt/segmentos
+            - listitem [ref=e147]:
+              - link "Onde Estamos" [ref=e148] [cursor=pointer]:
+                - /url: /pt/onde-estamos
+            - listitem [ref=e149]:
+              - link "Contato" [ref=e150] [cursor=pointer]:
+                - /url: /pt/contato
+        - navigation "Nossos Serviços" [ref=e151]:
+          - heading "Nossos Serviços" [level=3] [ref=e152]
+          - list [ref=e153]:
+            - listitem [ref=e154]:
+              - link "Automação e Monitoramento" [ref=e155] [cursor=pointer]:
+                - /url: /pt/servicos/automacao-e-monitoramento
+            - listitem [ref=e156]:
+              - link "Projetos Personalizados" [ref=e157] [cursor=pointer]:
+                - /url: /pt/servicos/projetos-personalizados
+            - listitem [ref=e158]:
+              - link "Instalações" [ref=e159] [cursor=pointer]:
+                - /url: /pt/servicos/instalacoes
+            - listitem [ref=e160]:
+              - link "Plano de Manutenção (PMOC)" [ref=e161] [cursor=pointer]:
+                - /url: /pt/servicos/plano-de-manutencao-pmoc
+            - listitem [ref=e162]:
+              - link "Comissionamento de obras" [ref=e163] [cursor=pointer]:
+                - /url: /pt/servicos/comissionamento-de-obras
+        - generic [ref=e164]:
+          - heading "Seg a Sex - 8h00 às 17h30" [level=3] [ref=e165]
+          - generic [ref=e166]:
+            - paragraph [ref=e167]:
+              - link "(41) 3365-4877" [ref=e168] [cursor=pointer]:
+                - /url: tel:+554133654877
+              - link "(41) 9 9246-6920" [ref=e169] [cursor=pointer]:
+                - /url: https://wa.me/+5541992466920
+            - paragraph [ref=e170]:
+              - generic [ref=e171]: Endereço
+              - text: Av. Prefeito Maurício Fruet, 3060 — Cajuru, Curitiba-PR, CEP 82.920-330
+            - paragraph [ref=e172]:
+              - generic [ref=e173]: E-mail
+              - link "dancold@dancold.com.br" [ref=e174] [cursor=pointer]:
+                - /url: mailto:dancold@dancold.com.br
+      - generic [ref=e175]:
+        - paragraph [ref=e176]: 2026 © Dancold. Todos os direitos reservados.
+        - paragraph [ref=e177]: Ar condicionado / Refrigeração / Automação
+  - link "Contato pelo WhatsApp" [ref=e178] [cursor=pointer]:
+    - /url: https://wa.me/+5541992466920
+    - img [ref=e180]
+  - button "Open Next.js Dev Tools" [ref=e187] [cursor=pointer]:
+    - img [ref=e188]

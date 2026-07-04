@@ -22,7 +22,7 @@ export async function generateMetadata({
   if (!isLocale(lang) || !segmentSlugs.includes(slug as SegmentSlug)) return {};
   const dict = await getDictionary(lang);
   const segment = dict.segments[slug as SegmentSlug];
-  return pageMetadata(lang, `segmentos/${slug}`, segment.title, segment.short);
+  return pageMetadata(lang, `segmentos/${slug}`, segment.pageTitle, segment.short);
 }
 
 export default async function SegmentPage({ params }: PageProps<"/[lang]/segmentos/[slug]">) {
@@ -36,12 +36,13 @@ export default async function SegmentPage({ params }: PageProps<"/[lang]/segment
       <PageHero
         lang={lang}
         kicker={dict.segmentsPage.kicker}
-        title={segment.title}
+        title={segment.pageTitle}
         homeLabel={dict.common.home}
         crumbs={[
           { label: dict.segmentsPage.breadcrumb, href: `/${lang}/segmentos` },
           { label: segment.title },
         ]}
+        image="/img/heroes/building-facade.jpg"
       />
 
       <section className="relative bg-bg py-24 lg:py-28">
@@ -70,11 +71,11 @@ export default async function SegmentPage({ params }: PageProps<"/[lang]/segment
                   >
                     <span
                       aria-hidden
-                      className="text-stroke font-display text-3xl font-bold tabular-nums"
+                      className="flex h-9 w-9 items-center justify-center rounded-lg border border-line text-accent"
                     >
-                      {String(index + 1).padStart(2, "0")}
+                      <CheckIcon className="h-[18px] w-[18px]" />
                     </span>
-                    <h3 className="mt-3 font-display text-base font-semibold text-ink">
+                    <h3 className="mt-4 font-display text-base font-semibold text-ink">
                       {item.title}
                     </h3>
                     <p className="mt-2 text-sm leading-relaxed text-ink-2">{item.text}</p>
@@ -98,7 +99,7 @@ export default async function SegmentPage({ params }: PageProps<"/[lang]/segment
 
             <aside>
               <Reveal delay={0.1} className="sticky top-28 space-y-8">
-                <div className="crosshair relative h-64 overflow-hidden rounded-[10px] border border-line">
+                <div className="relative h-80 overflow-hidden rounded-[10px] border border-line">
                   <Image
                     src={segmentImages[slug as SegmentSlug]}
                     alt={segment.title}
@@ -150,5 +151,22 @@ export default async function SegmentPage({ params }: PageProps<"/[lang]/segment
 
       <CtaSection dict={dict} />
     </>
+  );
+}
+
+function CheckIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+      aria-hidden
+    >
+      <path d="M20 6 9 17l-5-5" />
+    </svg>
   );
 }

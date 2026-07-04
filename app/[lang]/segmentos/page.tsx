@@ -31,7 +31,7 @@ export default async function SegmentsPage({ params }: PageProps<"/[lang]/segmen
         title={dict.segmentsPage.title}
         homeLabel={dict.common.home}
         crumbs={[{ label: dict.segmentsPage.breadcrumb }]}
-        image="/img/segments/shoppings.webp"
+        image="/img/heroes/mall-atrium.jpg"
       />
       <section className="relative border-b border-line bg-bg py-24 lg:py-28">
         <div className="bg-blueprint absolute inset-0 opacity-40" aria-hidden />

@@ -1,0 +1,2 @@
+[     381ms] TypeError: bootstrap.Carousel is not a constructor
+    at https://v2.dancold.com.br/:262:24

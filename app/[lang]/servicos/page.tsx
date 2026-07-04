@@ -5,7 +5,7 @@ import { isLocale } from "@/lib/i18n";
 import { pageMetadata } from "@/lib/metadata";
 import { serviceSlugs } from "@/lib/site";
 import { PageHero } from "@/components/page-hero";
-import { ServiceList } from "@/components/service-list";
+import { ServiceCard } from "@/components/service-card";
 import { CtaSection } from "@/components/cta-section";
 
 export async function generateMetadata({
@@ -30,20 +30,23 @@ export default async function ServicesPage({ params }: PageProps<"/[lang]/servic
         title={dict.servicesPage.title}
         homeLabel={dict.common.home}
         crumbs={[{ label: dict.servicesPage.breadcrumb }]}
-        image="/img/services/instalacoes-2.webp"
+        image="/img/heroes/chillers.jpg"
       />
-      <section className="relative bg-bg py-24 lg:py-32">
-        <div className="bg-blueprint absolute inset-0 opacity-40" aria-hidden />
-        <div className="relative mx-auto max-w-7xl px-6">
-          <ServiceList
-            lang={lang}
-            items={serviceSlugs.map((slug) => ({
-              slug,
-              title: dict.services[slug].title,
-              text: dict.services[slug].short,
-            }))}
-            readMore={dict.common.readMore}
-          />
+      <section className="bg-bg py-24 lg:py-28">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {serviceSlugs.map((slug, index) => (
+              <ServiceCard
+                key={slug}
+                lang={lang}
+                slug={slug}
+                index={index}
+                title={dict.services[slug].title}
+                text={dict.services[slug].short}
+                readMore={dict.common.readMore}
+              />
+            ))}
+          </div>
         </div>
       </section>
       <CtaSection dict={dict} />

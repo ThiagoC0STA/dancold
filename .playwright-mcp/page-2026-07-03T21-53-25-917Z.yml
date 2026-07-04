@@ -1,0 +1,177 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Dancold - Home" [ref=e4] [cursor=pointer]:
+        - /url: /pt
+        - img "Dancold" [ref=e5]
+      - navigation "Principal" [ref=e6]:
+        - link "Home" [ref=e7] [cursor=pointer]:
+          - /url: /pt
+        - link "Sobre Nós" [ref=e8] [cursor=pointer]:
+          - /url: /pt/sobre-nos
+        - link "Serviços" [ref=e9] [cursor=pointer]:
+          - /url: /pt/servicos
+        - link "Segmentos" [ref=e10] [cursor=pointer]:
+          - /url: /pt/segmentos
+        - link "Onde Estamos" [ref=e11] [cursor=pointer]:
+          - /url: /pt/onde-estamos
+          - text: Onde Estamos
+        - link "Contato" [ref=e13] [cursor=pointer]:
+          - /url: /pt/contato
+      - button "Idioma" [ref=e16] [cursor=pointer]:
+        - img [ref=e17]
+        - generic [ref=e22]: pt
+        - img [ref=e23]
+  - main [ref=e25]:
+    - generic [ref=e29]:
+      - navigation "Breadcrumb" [ref=e30]:
+        - list [ref=e31]:
+          - listitem [ref=e32]:
+            - link "Home" [ref=e33] [cursor=pointer]:
+              - /url: /pt
+          - listitem [ref=e34]:
+            - generic [ref=e35]: /
+            - generic [ref=e36]: Onde estamos
+      - paragraph [ref=e37]: Área de atuação
+      - heading "Onde estamos" [level=1] [ref=e38]
+    - generic [ref=e44]:
+      - paragraph [ref=e46]: "Hoje a Dancold está localizada nos seguintes estados: Santa Catarina, Paraná, São Paulo, Rio de Janeiro e Piauí. Nós colaboramos com múltiplos negócios e órgãos governamentais nas seguintes cidades: Curitiba, Pinhais, Araucária, Colombo, São José dos Pinhais, Almirante Tamandaré, Joinville, Brusque, Itajaí, Canoinhas, Florianópolis, São Paulo Capital, São Paulo Campo Limpo, Macaé, Floriano e Campinas. Nossa equipe está preparada para mobilização rápida, com suporte logístico para atendimento a grandes contratos em todo território nacional."
+      - generic [ref=e47]:
+        - generic [ref=e48]:
+          - img [ref=e50]
+          - heading "Sede" [level=3] [ref=e53]
+          - paragraph [ref=e54]: Av. Prefeito Maurício Fruet, 3060 — Cajuru, Curitiba-PR | CEP 82.920-330
+        - generic [ref=e55]:
+          - img [ref=e57]
+          - heading "Atendimento" [level=3] [ref=e60]
+          - paragraph [ref=e61]: Segunda a Sexta, das 8h00 às 17h30
+        - generic [ref=e62]:
+          - img [ref=e64]
+          - heading "Plantão técnico" [level=3] [ref=e67]
+          - paragraph [ref=e68]: Suporte 365 dias por ano para contratos de manutenção
+    - generic [ref=e70]:
+      - generic [ref=e71]:
+        - paragraph [ref=e72]: Área de atuação
+        - heading "Estados onde atuamos" [level=2] [ref=e74]
+      - generic [ref=e76]:
+        - generic [ref=e77]:
+          - list [ref=e78]:
+            - listitem [ref=e79]:
+              - paragraph [ref=e80]: Paraná
+              - paragraph [ref=e82]: Curitiba · Pinhais · Araucária · Colombo · São José dos Pinhais · Almirante Tamandaré
+            - listitem [ref=e83]:
+              - paragraph [ref=e84]: Santa Catarina
+              - paragraph [ref=e86]: Joinville · Brusque · Itajaí · Canoinhas · Florianópolis
+            - listitem [ref=e87]:
+              - paragraph [ref=e88]: São Paulo
+              - paragraph [ref=e90]: São Paulo Capital · São Paulo Campo Limpo · Campinas
+            - listitem [ref=e91]:
+              - paragraph [ref=e92]: Rio de Janeiro
+              - paragraph [ref=e94]: Macaé
+            - listitem [ref=e95]:
+              - paragraph [ref=e96]: Piauí
+              - paragraph [ref=e98]: Floriano
+          - generic [ref=e99]:
+            - heading "Entre em Contato" [level=3] [ref=e100]
+            - generic [ref=e101]:
+              - paragraph [ref=e102]:
+                - text: E-mail
+                - link "dancold@dancold.com.br" [ref=e103] [cursor=pointer]:
+                  - /url: mailto:dancold@dancold.com.br
+              - paragraph [ref=e104]:
+                - link "(41) 3365-4877" [ref=e105] [cursor=pointer]:
+                  - /url: tel:+554133654877
+                - link "(41) 9 9246-6920" [ref=e106] [cursor=pointer]:
+                  - /url: https://wa.me/+5541992466920
+        - img [ref=e109]
+      - iframe [ref=e138]:
+        
+    - generic [ref=e141]:
+      - generic [ref=e142]:
+        - heading "Pronto para levar sua operação a outro nível?" [level=2] [ref=e143]
+        - paragraph [ref=e144]: Fale com nossa equipe técnica e descubra a solução ideal em climatização, refrigeração e automação para o seu negócio.
+      - link "Solicitar orçamento" [ref=e146] [cursor=pointer]:
+        - /url: https://wa.me/+5541992466920
+        - img [ref=e147]
+        - text: Solicitar orçamento
+        - generic [ref=e149]: →
+  - contentinfo [ref=e150]:
+    - generic [ref=e152]:
+      - generic [ref=e153]:
+        - generic [ref=e154]:
+          - img "Dancold" [ref=e155]
+          - paragraph [ref=e156]: Fundada em 1998, a Dancold iniciou como empresa familiar em manutenção de ar-condicionado e refrigeração. A partir de 2002, expandiu sua atuação para o setor industrial, atendendo marcas reconhecidas internacionalmente.
+          - paragraph [ref=e157]: "CNPJ: 05.477.326/0001-28"
+          - generic [ref=e158]:
+            - link "Facebook" [ref=e159] [cursor=pointer]:
+              - /url: https://www.facebook.com/DANCOLDCLIMATIZACAO
+              - img [ref=e160]
+            - link "Instagram" [ref=e162] [cursor=pointer]:
+              - /url: https://www.instagram.com/arcondicionadodancold/
+              - img [ref=e163]
+            - link "LinkedIn" [ref=e165] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/dancoldclimatiza%C3%A7%C3%A3o/
+              - img [ref=e166]
+        - navigation "A Dancold" [ref=e168]:
+          - heading "A Dancold" [level=3] [ref=e169]
+          - list [ref=e170]:
+            - listitem [ref=e171]:
+              - link "Home" [ref=e172] [cursor=pointer]:
+                - /url: /pt
+            - listitem [ref=e173]:
+              - link "Sobre Nós" [ref=e174] [cursor=pointer]:
+                - /url: /pt/sobre-nos
+            - listitem [ref=e175]:
+              - link "Serviços" [ref=e176] [cursor=pointer]:
+                - /url: /pt/servicos
+            - listitem [ref=e177]:
+              - link "Segmentos" [ref=e178] [cursor=pointer]:
+                - /url: /pt/segmentos
+            - listitem [ref=e179]:
+              - link "Onde Estamos" [ref=e180] [cursor=pointer]:
+                - /url: /pt/onde-estamos
+            - listitem [ref=e181]:
+              - link "Contato" [ref=e182] [cursor=pointer]:
+                - /url: /pt/contato
+        - navigation "Nossos Serviços" [ref=e183]:
+          - heading "Nossos Serviços" [level=3] [ref=e184]
+          - list [ref=e185]:
+            - listitem [ref=e186]:
+              - link "Automação e Monitoramento" [ref=e187] [cursor=pointer]:
+                - /url: /pt/servicos/automacao-e-monitoramento
+            - listitem [ref=e188]:
+              - link "Projetos Personalizados" [ref=e189] [cursor=pointer]:
+                - /url: /pt/servicos/projetos-personalizados
+            - listitem [ref=e190]:
+              - link "Instalações" [ref=e191] [cursor=pointer]:
+                - /url: /pt/servicos/instalacoes
+            - listitem [ref=e192]:
+              - link "Plano de Manutenção (PMOC)" [ref=e193] [cursor=pointer]:
+                - /url: /pt/servicos/plano-de-manutencao-pmoc
+            - listitem [ref=e194]:
+              - link "Comissionamento de obras" [ref=e195] [cursor=pointer]:
+                - /url: /pt/servicos/comissionamento-de-obras
+        - generic [ref=e196]:
+          - heading "Seg a Sex - 8h00 às 17h30" [level=3] [ref=e197]
+          - generic [ref=e198]:
+            - paragraph [ref=e199]:
+              - link "(41) 3365-4877" [ref=e200] [cursor=pointer]:
+                - /url: tel:+554133654877
+              - link "(41) 9 9246-6920" [ref=e201] [cursor=pointer]:
+                - /url: https://wa.me/+5541992466920
+            - paragraph [ref=e202]:
+              - generic [ref=e203]: Endereço
+              - text: Av. Prefeito Maurício Fruet, 3060 — Cajuru, Curitiba-PR, CEP 82.920-330
+            - paragraph [ref=e204]:
+              - generic [ref=e205]: E-mail
+              - link "dancold@dancold.com.br" [ref=e206] [cursor=pointer]:
+                - /url: mailto:dancold@dancold.com.br
+      - generic [ref=e207]:
+        - paragraph [ref=e208]: 2026 © Dancold. Todos os direitos reservados.
+        - paragraph [ref=e209]: Ar condicionado / Refrigeração / Automação
+  - link "Contato pelo WhatsApp" [ref=e210] [cursor=pointer]:
+    - /url: https://wa.me/+5541992466920
+    - img [ref=e212]
+  - button "Open Next.js Dev Tools" [ref=e219] [cursor=pointer]:
+    - img [ref=e220]
+  - alert [ref=e223]

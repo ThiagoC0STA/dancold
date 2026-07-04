@@ -36,9 +36,9 @@ export const segmentSlugs = [
   "industrias",
   "hospitais",
   "shopping-centers",
-  "residencias-e-lojas",
+  "comercial",
   "predios-corporativos",
-  "agronegocios",
+  "residencial",
 ] as const;
 export type SegmentSlug = (typeof segmentSlugs)[number];
 
@@ -46,10 +46,30 @@ export const segmentImages: Record<SegmentSlug, string> = {
   industrias: "/img/segments/industrias.webp",
   hospitais: "/img/segments/hospitais.webp",
   "shopping-centers": "/img/segments/shoppings.webp",
-  "residencias-e-lojas": "/img/segments/residencias.webp",
+  // placeholder (reusing the retail/shopping photo) — swap for a real commercial refrigeration photo
+  comercial: "/img/segments/shoppings.webp",
   "predios-corporativos": "/img/segments/corporativos.webp",
-  agronegocios: "/img/segments/agro.webp",
+  residencial: "/img/segments/residencias.webp",
 };
+
+// service coverage — order must match dictionaries' whereWeAre.states (localized names)
+export const coverage = [
+  {
+    id: "pr",
+    cities: [
+      "Curitiba",
+      "Pinhais",
+      "Araucária",
+      "Colombo",
+      "São José dos Pinhais",
+      "Almirante Tamandaré",
+    ],
+  },
+  { id: "sc", cities: ["Joinville", "Brusque", "Itajaí", "Canoinhas", "Florianópolis"] },
+  { id: "sp", cities: ["São Paulo Capital", "São Paulo Campo Limpo", "Campinas"] },
+  { id: "rj", cities: ["Macaé"] },
+  { id: "pi", cities: ["Floriano"] },
+] as const;
 
 export const clients = [
   { name: "Ambev", logo: "/clients/ambev.png" },

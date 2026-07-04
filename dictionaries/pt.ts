@@ -19,7 +19,7 @@ const pt = {
     segments: {
       title: "Segmentos",
       description:
-        "A Dancold oferece consultoria e implanta PMOC com equipes de suporte técnico ininterrupto para indústrias, hospitais, shopping centers, residências, prédios corporativos e agronegócios.",
+        "A Dancold oferece consultoria e implanta PMOC com equipes de suporte técnico ininterrupto para indústrias, hospitais, shopping centers, comércio, prédios corporativos e residências.",
     },
     whereWeAre: {
       title: "Onde Estamos",
@@ -312,156 +312,134 @@ const pt = {
   },
   segments: {
     industrias: {
-      title: "Indústrias",
+      pageTitle: "Soluções HVAC para Indústria",
+      title: "Indústria",
       short:
-        "Mantemos sua produção rodando sem paradas. Refrigeração e climatização crítica com manutenção especializada, reduzindo custos e protegendo seu processo contra falhas térmicas.",
+        "Mantemos sua produção rodando sem paradas imprevistas, com refrigeração e climatização crítica e manutenção especializada que protege seu processo contra falhas térmicas.",
       description:
         "Mantemos sua produção rodando sem paradas imprevistas. Atuamos na refrigeração e climatização crítica da sua indústria com manutenção especializada, reduzindo custos operacionais, prolongando a vida útil dos equipamentos e protegendo seu processo produtivo contra falhas térmicas que custam milhões em produção parada.",
       items: [
         {
-          title: "RETROFIT",
+          title: "Resfriadores de água e câmaras frias industriais",
+          text: "Sistemas de alta capacidade para processos produtivos que exigem temperaturas controladas com precisão.",
+        },
+        {
+          title: "Retrofit",
           text: "Upgrade tecnológico no seu parque de equipamentos, estendendo a vida útil dos equipamentos com automação inteligente.",
         },
         {
-          title: "Eficiência Energética",
-          text: "Medimos o consumo real e identificamos desperdícios, reduzindo até 20% dos seus custos com energia sem comprometer a produção.",
-        },
-        {
-          title: "Manutenção em Ar Comprimido e Bebedouros Industriais",
-          text: "Mantemos secadoras de ar comprimido e bebedouros industriais operando com segurança, garantindo qualidade do ar, da água e conformidade sanitária.",
-        },
-        {
-          title: "PMOC com suporte 24/7",
+          title: "PMOC e manutenção preventiva contínua",
           text: "Plano de manutenção com equipe com dedicação exclusiva, relatórios técnicos e monitoramento remoto de desempenho.",
         },
       ],
     },
     hospitais: {
-      title: "Hospitais",
+      pageTitle: "Climatização Hospitalar e de Saúde",
+      title: "Hospitalar",
       short:
-        "Trabalhamos na sua operação contínua, protegendo a vida dos seus pacientes, vacinas e medicamentos em um único contrato.",
+        "Operação hospitalar contínua e em conformidade com a ANVISA, protegendo pacientes, vacinas e medicamentos contra falhas térmicas em um único contrato.",
       description:
         "Mantemos seu hospital em operação contínua, eliminando riscos em ambientes críticos. Garantimos sua conformidade com a ANVISA, protegendo principalmente pacientes, vacinas e medicamentos contra falhas térmicas, evitando multas e centralizando todas as suas manutenções em um único contrato.",
       items: [
         {
-          title: "PMOC com suporte 24/7",
-          text: "Manutenção preditiva, preventiva e corretiva o ano inteiro, com suporte ininterrupto e gestão digital que garante conformidade total com a ANVISA.",
+          title: "Sistemas para ressonância magnética e tomógrafos",
+          text: "Instalação e manutenção de climatização especializada para equipamentos de diagnóstico por imagem, com controle preciso de temperatura.",
         },
         {
-          title: "Cadeia de Frio: Câmaras Frias, Imunobiológicos e Vacinas",
-          text: "Monitoramento remoto e redundância que protegem vacinas, medicamentos e imunobiológicos, garantindo a cadeia de frio conforme PNI e ANVISA.",
+          title: "PMOC com laudos técnicos ANVISA",
+          text: "Elaboração e gestão do Plano de Manutenção, Operação e Controle em conformidade com a RDC 09/2003 e Portaria MS 3.523/98.",
         },
         {
-          title: "Ambientes Críticos: Salas de Isolamento, Exames e Limpas",
-          text: "Controle de pressurização, temperatura e partículas que mantém cada ambiente dentro dos parâmetros normativos de alta criticidade hospitalar.",
-        },
-        {
-          title: "Câmaras de Morgue",
-          text: "Manutenção especializada que assegura a integridade dos corpos e protege laudos periciais contra falhas térmicas, com monitoramento contínuo.",
+          title: "Suporte técnico ininterrupto 365 dias",
+          text: "Equipe dedicada com atendimento 24/7 para garantir a operação contínua em ambientes críticos de saúde.",
         },
       ],
     },
     "shopping-centers": {
+      pageTitle: "HVAC para Shopping Centers",
       title: "Shopping Centers",
       short:
-        "Conforto térmico contínuo para milhares de pessoas. Cuidamos do parque completo de máquinas com equipe exclusiva, evitando paradas que afastam clientes.",
+        "Projetos completos de HVAC de grande porte para shopping centers, com eficiência energética e conforto térmico contínuo para lojistas e visitantes.",
       description:
-        "Garantimos conforto térmico contínuo para milhares de pessoas em circulação. Cuidamos do parque completo de máquinas do seu shopping com equipe de dedicação exclusiva, evitando paradas que afastam clientes, mantendo cada ambiente na temperatura ideal o ano todo.",
+        "Shopping centers demandam sistemas de climatização de grande porte com eficiência energética e confiabilidade operacional. A Dancold coordena projetos completos de HVAC para shopping centers, desde o dimensionamento de centrais de água gelada e chillers até a instalação e manutenção de fan coils, sistemas de ventilação e pressurização de escadas e garagens. Garantimos conforto térmico para lojistas e visitantes, com atendimento especializado e contratos de manutenção flexíveis.",
       items: [
         {
-          title: "Instalação",
-          text: "Instalamos parques de máquinas completos. Com comissionamento e relatório técnico de entrega.",
+          title: "Centrais de água gelada e chillers de grande porte",
+          text: "Projeto e instalação de sistemas centralizados de alto desempenho para grandes áreas de circulação.",
         },
         {
-          title: "PMOC com equipe dedicada",
-          text: "Manutenção preditiva, preventiva e corretiva com equipe de dedicação exclusiva no local, garantindo resposta imediata e operação sem interrupções.",
+          title: "Ventilação e pressurização",
+          text: "Sistemas de ventilação para garagens, pressurização de escadas e controle de qualidade do ar em áreas de alta circulação.",
         },
         {
-          title: "RETROFIT",
-          text: "Atualização de tecnologia: modernizamos o seu parque de máquinas, estendendo a vida útil com automação inteligente.",
-        },
-        {
-          title: "Eficiência Energética",
-          text: "Medimos o consumo real do seu sistema e identificamos onde está o desperdício, otimizando um dos maiores gastos do shopping.",
+          title: "Contratos de manutenção e PMOC",
+          text: "Equipes volantes ou fixas com monitoramento contínuo, relatórios técnicos e gestão energética dos sistemas.",
         },
       ],
     },
-    "residencias-e-lojas": {
-      title: "Residências e Lojas",
+    comercial: {
+      pageTitle: "Climatização e Refrigeração Comercial",
+      title: "Comercial",
       short:
-        "Oferecemos soluções para o conforto e a segurança em diferentes processos, além de atendimento para balcões resfriados e câmaras frigoríficas.",
+        "Climatização e refrigeração para supermercados, restaurantes e lojas, com balcões refrigerados, câmaras frias e ar-condicionado sob medida.",
       description:
-        "Levamos conforto térmico com projeto e instalação sob medida para o seu espaço. Da residência à loja, dimensionamos o sistema ideal para o ambiente e mantemos tudo funcionando com manutenção contínua, garantindo climatização eficiente e sem dor de cabeça no dia a dia.",
+        "Para estabelecimentos comerciais, a Dancold oferece soluções de climatização e refrigeração que garantem conforto aos clientes e segurança para os produtos. Atendemos supermercados, padarias, restaurantes, lojas e outros negócios com instalação e manutenção de balcões refrigerados, câmaras frias, sistemas de ar-condicionado e controle de temperatura para estocagem. Soluções sob medida para cada tipo de operação comercial.",
       items: [
         {
-          title: "Projetos Personalizados",
-          text: "Desenvolvemos o projeto de climatização sob medida para o seu espaço, dimensionando o sistema ideal antes de qualquer instalação.",
+          title: "Balcões refrigerados e câmaras frias",
+          text: "Instalação e manutenção de equipamentos de refrigeração para conservação de alimentos e produtos perecíveis.",
         },
         {
-          title: "Instalação",
-          text: "Instalamos sistemas de pequeno e médio porte com técnica precisa, seguindo os procedimentos do fabricante e garantindo a garantia do equipamento.",
+          title: "Climatização de ambientes comerciais",
+          text: "Sistemas de ar-condicionado adequados para o conforto de clientes e colaboradores em lojas e estabelecimentos.",
         },
         {
-          title: "Plano de Manutenção (PMOC)",
-          text: "Manutenção preventiva e corretiva que mantém seu sistema sempre eficiente, prolongando a vida útil e evitando a transmissão de doenças respiratórias.",
+          title: "Manutenção preventiva e corretiva",
+          text: "Contratos flexíveis de manutenção para reduzir paradas não planejadas e garantir a operação contínua do negócio.",
         },
       ],
     },
     "predios-corporativos": {
+      pageTitle: "HVAC para Prédios Corporativos",
       title: "Prédios Corporativos",
       short:
-        "Climatização, elétrica e hidráulica do seu prédio em um único contrato. Cuidamos da edificação inteira com suporte 24/7, mantendo ocupantes confortáveis e tudo funcionando.",
+        "Sistemas VRF/VRV eficientes e silenciosos para prédios de escritórios, com PMOC gerenciado por dispositivos móveis e eficiência energética certificada.",
       description:
-        "Garantimos conforto térmico e ar de qualidade para quem trabalha no seu prédio. Cuidamos da climatização, elétrica e hidráulica da edificação em um único contrato, do projeto à manutenção contínua, evitando paradas que desagradam ocupantes e mantendo tudo funcionando com suporte 24/7 o ano todo.",
+        "Prédios de escritórios e complexos corporativos exigem sistemas de climatização eficientes, silenciosos e de baixo consumo energético. A Dancold implanta e gerencia o PMOC com equipes dedicadas fixas ou volantes, utilizando dispositivos móveis para controle e monitoramento remoto das atividades. Oferecemos soluções em VRF/VRV, fan coil, cassete e sistemas centralizados, garantindo conforto e produtividade para colaboradores e inquilinos.",
       items: [
         {
-          title: "Projetos Personalizados",
-          text: "Desenvolvemos o projeto de climatização sob medida para a sua edificação, dimensionando o sistema ideal para cada ambiente.",
+          title: "Sistemas VRF/VRV e fan coil para escritórios",
+          text: "Soluções de climatização silenciosas, eficientes e individualizáveis para ambientes corporativos de diferentes portes.",
         },
         {
-          title: "Instalação",
-          text: "Instalamos o parque completo de climatização do seu prédio, de sistemas centralizados a máquinas individuais, com entrega comissionada.",
+          title: "Gestão de PMOC via dispositivos móveis",
+          text: "Controle e monitoramento remoto das atividades de manutenção, com relatórios em tempo real para gestores e síndicos.",
         },
         {
-          title: "Plano de Manutenção (PMOC)",
-          text: "Manutenção preditiva, preventiva e corretiva de climatização, elétrica e hidráulica, mantendo o prédio inteiro operando sem interrupções.",
-        },
-        {
-          title: "RETROFIT",
-          text: "Atualização de tecnologia: modernizamos o seu parque de máquinas, estendendo a vida útil com automação inteligente e reduzindo custos energéticos.",
+          title: "Eficiência energética certificada",
+          text: "Projetos orientados à redução do consumo de energia, com análise de desempenho e relatórios de eficiência periódicos.",
         },
       ],
     },
-    agronegocios: {
-      title: "Agronegócios",
+    residencial: {
+      pageTitle: "Climatização Residencial de Alto Padrão",
+      title: "Residencial",
       short:
-        "Proporcionamos conforto e bem-estar ao usuário ao oferecer projeto e instalação de sistemas VRV contemplando automação local e remota.",
+        "Projeto e instalação de sistemas VRV com automação local e remota, conforto térmico personalizado e acabamento premium para residências de alto padrão.",
       description:
-        "Protegemos a qualidade da sua produção do campo ao armazenamento. Cuidamos da refrigeração e do controle de umidade críticos do agronegócio, garantindo a conservação de leite, grãos, cultivos e alimentos congelados, evitando perdas por falha térmica e mantendo sua operação rodando sem problemas.",
+        "Para residências e condomínios de alto padrão, a Dancold oferece projeto e instalação de sistemas VRV com automação local e remota, proporcionando conforto térmico personalizado em cada ambiente. Nossos projetos residenciais incluem levantamento técnico, dimensionamento correto dos sistemas, instalação com acabamento impecável e treinamento para uso inteligente do ar-condicionado. Climatização que valoriza o imóvel e o bem-estar dos moradores.",
       items: [
         {
-          title: "Instalação",
-          text: "Instalamos sistemas de refrigeração e controle de umidade sob medida para a sua operação, com entrega comissionada e técnica precisa.",
+          title: "Sistemas VRV com automação local e remota",
+          text: "Controle individualizado por ambiente via aplicativo ou painel, com programação de horários e temperatura.",
         },
         {
-          title: "Plano de Manutenção (PMOC)",
-          text: "Manutenção preditiva, preventiva e corretiva que mantém sua produção protegida, evitando paradas e perdas por falha térmica.",
+          title: "Projeto técnico personalizado",
+          text: "Dimensionamento correto dos equipamentos para cada planta, evitando gastos desnecessários com superequipamento.",
         },
         {
-          title: "Tanques de Resfriamento de Leite",
-          text: "Manutenção que garante a temperatura correta de conservação do leite, protegendo a qualidade e a conformidade do produto.",
-        },
-        {
-          title: "Túneis de Congelamento",
-          text: "Manutenção e controle de sistemas de congelamento rápido, assegurando a conservação e a integridade dos alimentos processados.",
-        },
-        {
-          title: "Umidade Controlada: Umidificadoras e Desumidificadores",
-          text: "Controle de umidade para cultivos, estufas e salas de secagem, garantindo o ambiente ideal e protegendo grãos e insumos.",
-        },
-        {
-          title: "RETROFIT",
-          text: "Modernizamos o seu parque de máquinas e medimos o consumo real, estendendo a vida útil e otimizando os custos energéticos da operação.",
+          title: "Instalação com acabamento premium",
+          text: "Execução caprichada com infraestrutura embutida, sem interferência na estética do imóvel.",
         },
       ],
     },
@@ -481,25 +459,6 @@ const pt = {
     emailTitle: "E-mail",
     statesTitle: "Estados onde atuamos",
     states: ["Paraná", "Santa Catarina", "São Paulo", "Rio de Janeiro", "Piauí"],
-    citiesTitle: "Cidades atendidas",
-    cities: [
-      "Curitiba",
-      "Pinhais",
-      "Araucária",
-      "Colombo",
-      "São José dos Pinhais",
-      "Almirante Tamandaré",
-      "Joinville",
-      "Brusque",
-      "Itajaí",
-      "Canoinhas",
-      "Florianópolis",
-      "São Paulo Capital",
-      "São Paulo Campo Limpo",
-      "Macaé",
-      "Floriano",
-      "Campinas",
-    ],
   },
   contact: {
     kicker: "Contato",

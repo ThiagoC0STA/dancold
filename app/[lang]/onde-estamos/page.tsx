@@ -3,11 +3,14 @@ import { notFound } from "next/navigation";
 import { getDictionary } from "@/dictionaries";
 import { isLocale } from "@/lib/i18n";
 import { pageMetadata } from "@/lib/metadata";
-import { site } from "@/lib/site";
+import { coverage, site } from "@/lib/site";
+import { BrazilCoverageMap } from "@/components/brazil-coverage-map";
 import { PageHero } from "@/components/page-hero";
 import { Reveal } from "@/components/reveal";
+import { Counter } from "@/components/counter";
 import { SectionHeading } from "@/components/section-heading";
 import { CtaSection } from "@/components/cta-section";
+import { WhatsAppIcon } from "@/components/header";
 
 export async function generateMetadata({
   params,
@@ -35,6 +38,20 @@ export default async function WhereWeArePage({ params }: PageProps<"/[lang]/onde
     { title: data.onCallTitle, text: data.onCallText, icon: <ShieldIcon /> },
   ];
 
+  const mapStates = coverage.map((entry, index) => ({
+    id: entry.id,
+    name: data.states[index] ?? entry.id.toUpperCase(),
+    cities: [...entry.cities],
+  }));
+
+  const totalCities = coverage.reduce((sum, entry) => sum + entry.cities.length, 0);
+
+  const stats = [
+    { value: totalCities, prefix: "", label: dict.home.statsCities },
+    { value: 365, prefix: "", label: dict.home.statsSupport },
+    { value: 25, prefix: "+", label: dict.home.statsYears },
+  ];
+
   return (
     <>
       <PageHero
@@ -43,27 +60,27 @@ export default async function WhereWeArePage({ params }: PageProps<"/[lang]/onde
         title={data.title}
         homeLabel={dict.common.home}
         crumbs={[{ label: data.title }]}
-        image="/img/slides/3.webp"
+        image="/img/heroes/city-curitiba.jpg"
       />
 
-      <section className="relative bg-bg py-24">
+      {/* intro + operational highlights */}
+      <section className="relative bg-bg py-20 lg:py-24">
         <div className="bg-blueprint absolute inset-0 opacity-40" aria-hidden />
         <div className="relative mx-auto max-w-7xl px-6">
           <Reveal>
             <p className="max-w-4xl text-lg leading-[1.85] text-ink-2">{data.intro}</p>
           </Reveal>
-
-          <div className="mt-14 grid gap-7 md:grid-cols-3">
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
             {infoCards.map((card, index) => (
               <Reveal
                 key={card.title}
                 delay={index * 0.1}
-                className="rounded-[10px] border border-line bg-surface p-7 transition hover:border-line-2"
+                className="group rounded-[10px] border border-line bg-surface p-8 transition hover:border-navy-300 hover:shadow-sm"
               >
-                <span className="flex h-12 w-12 items-center justify-center rounded-lg border border-line text-accent">
+                <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10 text-accent transition group-hover:bg-accent group-hover:text-white">
                   {card.icon}
                 </span>
-                <h3 className="mt-5 font-display text-lg font-semibold text-ink">{card.title}</h3>
+                <h3 className="mt-6 font-display text-lg font-semibold text-ink">{card.title}</h3>
                 <p className="mt-2.5 text-sm leading-relaxed text-ink-2">{card.text}</p>
               </Reveal>
             ))}
@@ -71,57 +88,66 @@ export default async function WhereWeArePage({ params }: PageProps<"/[lang]/onde
         </div>
       </section>
 
-      {/* states and cities */}
-      <section className="border-y border-line bg-surface-2 py-20">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="grid gap-14 lg:grid-cols-2">
-            <div>
-              <SectionHeading kicker={data.kicker} title={data.statesTitle} />
-              <div className="mt-8 flex flex-wrap gap-3">
-                {data.states.map((state, index) => (
-                  <Reveal key={state} delay={index * 0.06}>
-                    <span className="inline-flex items-center gap-2.5 rounded-md border border-line-2 bg-surface px-4 py-2 text-sm font-semibold text-ink">
-                      <span className="h-1.5 w-1.5 rounded-full bg-accent" aria-hidden />
-                      {state}
-                    </span>
-                  </Reveal>
+      {/* coverage map — dark centerpiece */}
+      <section className="section-dark relative overflow-hidden border-y border-line bg-bg">
+        <div className="bg-blueprint absolute inset-0 opacity-50" aria-hidden />
+        <div className="relative mx-auto max-w-7xl px-6 py-24 lg:py-28">
+          <div className="flex flex-wrap items-end justify-between gap-x-12 gap-y-8">
+            <SectionHeading kicker={data.kicker} title={data.statesTitle} />
+            <Reveal delay={0.15}>
+              <div className="flex flex-wrap gap-x-12 gap-y-6">
+                {stats.map((stat) => (
+                  <div key={stat.label}>
+                    <p className="font-display text-4xl font-bold tracking-tight text-brand tabular-nums">
+                      <Counter to={stat.value} prefix={stat.prefix} />
+                    </p>
+                    <p className="mt-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-ink-3">
+                      {stat.label}
+                    </p>
+                  </div>
                 ))}
               </div>
+            </Reveal>
+          </div>
 
-              <Reveal delay={0.2} className="mt-12">
-                <h3 className="text-xs font-semibold uppercase tracking-[0.2em] text-ink-3">
-                  {data.citiesTitle}
-                </h3>
-                <ul className="mt-5 flex flex-wrap gap-2">
-                  {data.cities.map((city) => (
-                    <li
-                      key={city}
-                      className="rounded-md border border-line bg-surface px-3.5 py-1.5 text-[13px] text-ink-2"
-                    >
-                      {city}
-                    </li>
-                  ))}
-                </ul>
-              </Reveal>
+          <Reveal delay={0.1} className="mt-14">
+            <BrazilCoverageMap states={mapStates} tone="dark" hqTitle={data.hqTitle} />
+          </Reveal>
+        </div>
+      </section>
 
-              <Reveal
-                delay={0.25}
-                className="mt-12 rounded-[10px] border border-line bg-surface p-7"
-              >
-                <h3 className="font-display text-lg font-semibold text-ink">{data.contactTitle}</h3>
-                <div className="mt-4 space-y-2 text-sm text-ink-2">
-                  <p>
-                    <span className="mr-2 text-xs uppercase tracking-wider text-ink-3">
-                      {data.emailTitle}
-                    </span>
+      {/* headquarters + map */}
+      <section className="bg-bg py-24 lg:py-28">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="grid items-stretch gap-8 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]">
+            <Reveal className="flex flex-col rounded-[10px] border border-line bg-surface p-8 lg:p-10">
+              <SectionHeading kicker={data.hqTitle} title={data.contactTitle} />
+
+              <dl className="mt-8 space-y-6 text-sm">
+                <div>
+                  <dt className="text-xs font-semibold uppercase tracking-[0.16em] text-ink-3">
+                    {data.hqTitle}
+                  </dt>
+                  <dd className="mt-2 leading-relaxed text-ink-2">{data.hqText}</dd>
+                </div>
+                <div>
+                  <dt className="text-xs font-semibold uppercase tracking-[0.16em] text-ink-3">
+                    {data.emailTitle}
+                  </dt>
+                  <dd className="mt-2">
                     <a
                       href={`mailto:${site.email}`}
                       className="font-medium text-ink transition hover:text-accent"
                     >
                       {site.email}
                     </a>
-                  </p>
-                  <p className="flex flex-wrap gap-x-6">
+                  </dd>
+                </div>
+                <div>
+                  <dt className="text-xs font-semibold uppercase tracking-[0.16em] text-ink-3">
+                    {dict.contact.phonesTitle}
+                  </dt>
+                  <dd className="mt-2 flex flex-wrap gap-x-6 gap-y-1">
                     <a
                       href="tel:+554133654877"
                       className="font-medium tabular-nums text-ink transition hover:text-accent"
@@ -136,19 +162,27 @@ export default async function WhereWeArePage({ params }: PageProps<"/[lang]/onde
                     >
                       {site.phoneMobile}
                     </a>
-                  </p>
+                  </dd>
                 </div>
-              </Reveal>
-            </div>
+              </dl>
 
-            <Reveal
-              delay={0.15}
-              className="overflow-hidden rounded-[10px] border border-line"
-            >
+              <a
+                href={site.whatsapp}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary mt-10 self-start lg:mt-auto"
+              >
+                <WhatsAppIcon className="h-5 w-5" />
+                {dict.common.whatsapp}
+                <span aria-hidden className="btn-arrow">→</span>
+              </a>
+            </Reveal>
+
+            <Reveal delay={0.12} className="overflow-hidden rounded-[10px] border border-line">
               <iframe
                 title="Dancold - Google Maps"
                 src="https://www.google.com/maps?q=Av.+Prefeito+Maur%C3%ADcio+Fruet,+3060,+Cajuru,+Curitiba+-+PR&output=embed"
-                className="h-full min-h-[480px] w-full grayscale-[35%] contrast-[1.05]"
+                className="h-full min-h-[460px] w-full grayscale-35 contrast-105"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 allowFullScreen

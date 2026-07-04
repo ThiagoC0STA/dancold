@@ -42,7 +42,7 @@ export default async function ServicePage({ params }: PageProps<"/[lang]/servico
           { label: dict.servicesPage.breadcrumb, href: `/${lang}/servicos` },
           { label: service.title },
         ]}
-        image={serviceImages[slug as ServiceSlug]}
+        image="/img/heroes/chillers.jpg"
       />
 
       <section className="relative bg-bg py-24 lg:py-28">
@@ -68,16 +68,16 @@ export default async function ServicePage({ params }: PageProps<"/[lang]/servico
                   {service.characteristicsTitle}
                 </h2>
                 <ol className="mt-8 space-y-4">
-                  {service.characteristics.map((item, index) => (
+                  {service.characteristics.map((item) => (
                     <li
                       key={item.title}
                       className="flex gap-5 rounded-[10px] border border-line bg-surface p-6 transition-colors duration-300 hover:border-line-2"
                     >
                       <span
                         aria-hidden
-                        className="text-stroke font-display text-3xl font-bold tabular-nums"
+                        className="mt-0.5 flex h-9 w-9 flex-none items-center justify-center rounded-lg border border-line text-accent"
                       >
-                        {String(index + 1).padStart(2, "0")}
+                        <CheckIcon className="h-[18px] w-[18px]" />
                       </span>
                       <div>
                         <h3 className="font-display text-base font-semibold text-ink">
@@ -164,5 +164,22 @@ export default async function ServicePage({ params }: PageProps<"/[lang]/servico
 
       <CtaSection dict={dict} />
     </>
+  );
+}
+
+function CheckIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+      aria-hidden
+    >
+      <path d="M20 6 9 17l-5-5" />
+    </svg>
   );
 }
