@@ -13,18 +13,35 @@ const flags: Record<Locale, React.ComponentType<{ className?: string }>> = {
   es: FlagES,
 };
 
+const LANG_LABEL: Record<Locale, string> = {
+  pt: "Selecionar idioma",
+  en: "Select language",
+  es: "Seleccionar idioma",
+};
+
 export function LocaleSwitcher({ current }: { current: Locale }) {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
   const pathname = usePathname();
 
   useEffect(() => {
     function onClickOutside(event: MouseEvent) {
       if (ref.current && !ref.current.contains(event.target as Node)) setOpen(false);
     }
+    function onKey(event: KeyboardEvent) {
+      if (event.key === "Escape" && open) {
+        setOpen(false);
+        buttonRef.current?.focus();
+      }
+    }
     document.addEventListener("mousedown", onClickOutside);
-    return () => document.removeEventListener("mousedown", onClickOutside);
-  }, []);
+    document.addEventListener("keydown", onKey);
+    return () => {
+      document.removeEventListener("mousedown", onClickOutside);
+      document.removeEventListener("keydown", onKey);
+    };
+  }, [open]);
 
   const rest = pathname.replace(/^\/(pt|en|es)(?=\/|$)/, "");
   const CurrentFlag = flags[current];
@@ -32,10 +49,12 @@ export function LocaleSwitcher({ current }: { current: Locale }) {
   return (
     <div ref={ref} className="relative">
       <button
+        ref={buttonRef}
         type="button"
         onClick={() => setOpen((v) => !v)}
-        aria-label="Idioma"
+        aria-label={LANG_LABEL[current]}
         aria-expanded={open}
+        aria-haspopup="menu"
         className="flex h-10 cursor-pointer items-center gap-2 rounded-lg border border-line px-3 text-xs font-semibold tracking-wide text-ink-2 transition hover:border-line-2 hover:text-ink"
       >
         <CurrentFlag className="h-4.5 w-4.5" />

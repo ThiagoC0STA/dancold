@@ -10,6 +10,8 @@ import { PageHero } from "@/components/page-hero";
 import { Reveal } from "@/components/reveal";
 import { CtaSection } from "@/components/cta-section";
 import { WhatsAppIcon } from "@/components/header";
+import { JsonLd } from "@/components/json-ld";
+import { breadcrumb, serviceSchema } from "@/lib/schema";
 
 export async function generateStaticParams() {
   return locales.flatMap((lang) => serviceSlugs.map((slug) => ({ lang, slug })));
@@ -33,6 +35,23 @@ export default async function ServicePage({ params }: PageProps<"/[lang]/servico
 
   return (
     <>
+      <JsonLd
+        data={breadcrumb(lang, [
+          { name: dict.common.home, path: "" },
+          { name: dict.servicesPage.breadcrumb, path: "/servicos" },
+          { name: service.title, path: `/servicos/${slug}` },
+        ])}
+      />
+      <JsonLd
+        data={serviceSchema(
+          lang,
+          slug,
+          service.title,
+          service.short,
+          serviceImages[slug as ServiceSlug],
+          dict.whereWeAre.states,
+        )}
+      />
       <PageHero
         lang={lang}
         kicker={dict.servicesPage.kicker}
@@ -43,6 +62,7 @@ export default async function ServicePage({ params }: PageProps<"/[lang]/servico
           { label: service.title },
         ]}
         image="/img/heroes/chillers.jpg"
+        imageAlt="Chillers de um sistema de climatização central"
       />
 
       <section className="relative bg-bg py-24 lg:py-28">

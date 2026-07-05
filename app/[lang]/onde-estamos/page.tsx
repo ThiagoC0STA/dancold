@@ -11,6 +11,8 @@ import { Counter } from "@/components/counter";
 import { SectionHeading } from "@/components/section-heading";
 import { CtaSection } from "@/components/cta-section";
 import { WhatsAppIcon } from "@/components/header";
+import { JsonLd } from "@/components/json-ld";
+import { breadcrumb } from "@/lib/schema";
 
 export async function generateMetadata({
   params,
@@ -54,6 +56,12 @@ export default async function WhereWeArePage({ params }: PageProps<"/[lang]/onde
 
   return (
     <>
+      <JsonLd
+        data={breadcrumb(lang, [
+          { name: dict.common.home, path: "" },
+          { name: data.title, path: "/onde-estamos" },
+        ])}
+      />
       <PageHero
         lang={lang}
         kicker={data.kicker}
@@ -61,6 +69,7 @@ export default async function WhereWeArePage({ params }: PageProps<"/[lang]/onde
         homeLabel={dict.common.home}
         crumbs={[{ label: data.title }]}
         image="/img/heroes/city-curitiba.jpg"
+        imageAlt="Vista aérea da cidade de Curitiba ao entardecer"
       />
 
       {/* intro + operational highlights */}
@@ -80,7 +89,7 @@ export default async function WhereWeArePage({ params }: PageProps<"/[lang]/onde
                 <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10 text-accent transition group-hover:bg-accent group-hover:text-white">
                   {card.icon}
                 </span>
-                <h3 className="mt-6 font-display text-lg font-semibold text-ink">{card.title}</h3>
+                <h2 className="mt-6 font-display text-lg font-semibold text-ink">{card.title}</h2>
                 <p className="mt-2.5 text-sm leading-relaxed text-ink-2">{card.text}</p>
               </Reveal>
             ))}
@@ -178,6 +187,9 @@ export default async function WhereWeArePage({ params }: PageProps<"/[lang]/onde
               </a>
             </Reveal>
 
+            <link rel="preconnect" href="https://maps.gstatic.com" crossOrigin="" />
+            <link rel="dns-prefetch" href="https://maps.gstatic.com" />
+            <link rel="dns-prefetch" href="https://www.google.com" />
             <Reveal delay={0.12} className="overflow-hidden rounded-[10px] border border-line">
               <iframe
                 title="Dancold - Google Maps"

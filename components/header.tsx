@@ -19,6 +19,12 @@ type NavLabels = {
   hours: string;
 };
 
+const A11Y: Record<Locale, { homeLink: string; nav: string; menu: string }> = {
+  pt: { homeLink: "Dancold — página inicial", nav: "Principal", menu: "Menu" },
+  en: { homeLink: "Dancold — home", nav: "Main", menu: "Menu" },
+  es: { homeLink: "Dancold — inicio", nav: "Principal", menu: "Menú" },
+};
+
 export function Header({ lang, labels }: { lang: Locale; labels: NavLabels }) {
   const [scrolled, setScrolled] = useState(false);
   const [openedAt, setOpenedAt] = useState<string | null>(null);
@@ -26,6 +32,7 @@ export function Header({ lang, labels }: { lang: Locale; labels: NavLabels }) {
   // Track which route the menu was opened on so navigation closes it.
   const mobileOpen = openedAt === pathname;
   const setMobileOpen = (open: boolean) => setOpenedAt(open ? pathname : null);
+  const a11y = A11Y[lang];
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -39,6 +46,16 @@ export function Header({ lang, labels }: { lang: Locale; labels: NavLabels }) {
     return () => {
       document.body.style.overflow = "";
     };
+  }, [mobileOpen]);
+
+  useEffect(() => {
+    if (!mobileOpen) return;
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setMobileOpen(false);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [mobileOpen]);
 
   const items = [
@@ -60,10 +77,10 @@ export function Header({ lang, labels }: { lang: Locale; labels: NavLabels }) {
       }`}
     >
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-6 px-6">
-        <Link href={`/${lang}`} className="shrink-0" aria-label="Dancold - Home">
+        <Link href={`/${lang}`} className="shrink-0" aria-label={a11y.homeLink}>
           <Image
             src="/logo.webp"
-            alt="Dancold"
+            alt=""
             width={190}
             height={44}
             priority
@@ -71,7 +88,7 @@ export function Header({ lang, labels }: { lang: Locale; labels: NavLabels }) {
           />
         </Link>
 
-        <nav className="hidden items-center gap-1 lg:flex" aria-label="Principal">
+        <nav className="hidden items-center gap-1 lg:flex" aria-label={a11y.nav}>
           {items.map((item) => (
             <Link
               key={item.href}
@@ -97,8 +114,9 @@ export function Header({ lang, labels }: { lang: Locale; labels: NavLabels }) {
           <button
             type="button"
             onClick={() => setMobileOpen(!mobileOpen)}
-            aria-label="Menu"
+            aria-label={a11y.menu}
             aria-expanded={mobileOpen}
+            aria-controls="mobile-menu"
             className="flex h-10 w-10 items-center justify-center rounded-lg border border-line text-ink lg:hidden"
           >
             <div className="relative h-3.5 w-5">
@@ -125,7 +143,7 @@ export function Header({ lang, labels }: { lang: Locale; labels: NavLabels }) {
             transition={{ duration: 0.28, ease: "easeInOut" }}
             className="overflow-hidden border-t border-line bg-surface lg:hidden"
           >
-            <nav className="flex flex-col gap-1 px-6 py-5" aria-label="Menu móvel">
+            <nav id="mobile-menu" className="flex flex-col gap-1 px-6 py-5" aria-label={a11y.menu}>
               {items.map((item, index) => (
                 <motion.div
                   key={item.href}

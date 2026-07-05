@@ -11,7 +11,7 @@
   --surface-2: #eef1f5;
   --ink: #0d1b2e;
   --ink-2: #47566b;
-  --ink-3: #8592a4;
+  --ink-3: #566276;
   --line: #e3e8ee;
   --line-2: #cfd7e1;
   --brand: #14335f;
@@ -26,7 +26,7 @@
   --surface-2: #14223a;
   --ink: #eef2f8;
   --ink-2: #a3b1c6;
-  --ink-3: #6b7a90;
+  --ink-3: #8291a8;
   --line: rgba(255, 255, 255, 0.1);
   --line-2: rgba(255, 255, 255, 0.18);
   --brand: #8fb0e0;
@@ -178,9 +178,14 @@ body {
   html {
     scroll-behavior: auto;
   }
-  /* keep the logo carousels moving (frozen track hides half the logos) — just slower */
+  /* keep the logo carousels moving (frozen track hides half the logos) — just slower.
+     WCAG 2.2.2 is satisfied by the keyboard-accessible pause control on the marquee. */
   .animate-marquee,
   .animate-marquee-slow {
     animation-duration: 150s;
+  }
+  /* stop purely decorative infinite pulses for motion-sensitive users */
+  .animate-ping {
+    animation: none;
   }
 }

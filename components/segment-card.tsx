@@ -44,12 +44,12 @@ export function SegmentCard({
           {String(index + 1).padStart(2, "0")}
         </span>
         <div className="absolute inset-x-0 bottom-0 p-7">
-          <span aria-hidden className="mb-4 block h-px w-8 bg-accent transition-all duration-500 group-hover:w-14" />
+          <span aria-hidden className="mb-4 block h-px w-8 bg-accent transition-all duration-500 group-hover:w-14 group-focus-within:w-14" />
           <h3 className="font-display text-2xl font-semibold text-white">{title}</h3>
-          <p className="mt-2.5 max-h-0 overflow-hidden text-sm leading-relaxed text-white/75 opacity-0 transition-all duration-500 group-hover:max-h-44 group-hover:opacity-100">
+          <p className="mt-2.5 max-h-0 overflow-hidden text-sm leading-relaxed text-white/75 opacity-0 transition-all duration-500 group-hover:max-h-44 group-hover:opacity-100 group-focus-within:max-h-44 group-focus-within:opacity-100">
             {text}
           </p>
-          <span className="mt-4 inline-flex items-center gap-2 text-[12px] font-semibold uppercase tracking-[0.16em] text-white/60 transition-all duration-300 group-hover:gap-3.5 group-hover:text-white">
+          <span className="mt-4 inline-flex items-center gap-2 text-[12px] font-semibold uppercase tracking-[0.16em] text-white/60 transition-all duration-300 group-hover:gap-3.5 group-hover:text-white group-focus-within:gap-3.5 group-focus-within:text-white">
             {learnMore}
             <span aria-hidden>→</span>
           </span>

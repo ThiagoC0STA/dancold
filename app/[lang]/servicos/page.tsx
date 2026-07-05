@@ -7,6 +7,8 @@ import { serviceSlugs } from "@/lib/site";
 import { PageHero } from "@/components/page-hero";
 import { ServiceCard } from "@/components/service-card";
 import { CtaSection } from "@/components/cta-section";
+import { JsonLd } from "@/components/json-ld";
+import { breadcrumb } from "@/lib/schema";
 
 export async function generateMetadata({
   params,
@@ -24,6 +26,12 @@ export default async function ServicesPage({ params }: PageProps<"/[lang]/servic
 
   return (
     <>
+      <JsonLd
+        data={breadcrumb(lang, [
+          { name: dict.common.home, path: "" },
+          { name: dict.servicesPage.breadcrumb, path: "/servicos" },
+        ])}
+      />
       <PageHero
         lang={lang}
         kicker={dict.servicesPage.kicker}
@@ -31,6 +39,7 @@ export default async function ServicesPage({ params }: PageProps<"/[lang]/servic
         homeLabel={dict.common.home}
         crumbs={[{ label: dict.servicesPage.breadcrumb }]}
         image="/img/heroes/chillers.jpg"
+        imageAlt="Chillers de um sistema de climatização central"
       />
       <section className="bg-bg py-24 lg:py-28">
         <div className="mx-auto max-w-7xl px-6">

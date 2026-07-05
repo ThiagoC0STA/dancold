@@ -7,6 +7,8 @@ import { site } from "@/lib/site";
 import { PageHero } from "@/components/page-hero";
 import { Reveal } from "@/components/reveal";
 import { WhatsAppIcon } from "@/components/header";
+import { JsonLd } from "@/components/json-ld";
+import { breadcrumb } from "@/lib/schema";
 
 export async function generateMetadata({
   params,
@@ -31,6 +33,15 @@ export default async function ContactPage({ params }: PageProps<"/[lang]/contato
 
   return (
     <>
+      <JsonLd
+        data={breadcrumb(lang, [
+          { name: dict.common.home, path: "" },
+          { name: c.kicker, path: "/contato" },
+        ])}
+      />
+      <link rel="preconnect" href="https://maps.gstatic.com" crossOrigin="" />
+      <link rel="dns-prefetch" href="https://maps.gstatic.com" />
+      <link rel="dns-prefetch" href="https://www.google.com" />
       <PageHero
         lang={lang}
         kicker={c.kicker}
@@ -38,6 +49,7 @@ export default async function ContactPage({ params }: PageProps<"/[lang]/contato
         homeLabel={dict.common.home}
         crumbs={[{ label: c.kicker }]}
         image="/img/heroes/gauge.jpg"
+        imageAlt="Manômetros de um sistema de refrigeração industrial"
       />
 
       {/* contact channels — no form, direct actions */}

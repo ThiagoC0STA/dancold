@@ -10,6 +10,8 @@ import { PageHero } from "@/components/page-hero";
 import { Reveal } from "@/components/reveal";
 import { CtaSection } from "@/components/cta-section";
 import { WhatsAppIcon } from "@/components/header";
+import { JsonLd } from "@/components/json-ld";
+import { breadcrumb } from "@/lib/schema";
 
 export async function generateStaticParams() {
   return locales.flatMap((lang) => segmentSlugs.map((slug) => ({ lang, slug })));
@@ -33,6 +35,13 @@ export default async function SegmentPage({ params }: PageProps<"/[lang]/segment
 
   return (
     <>
+      <JsonLd
+        data={breadcrumb(lang, [
+          { name: dict.common.home, path: "" },
+          { name: dict.segmentsPage.breadcrumb, path: "/segmentos" },
+          { name: segment.title, path: `/segmentos/${slug}` },
+        ])}
+      />
       <PageHero
         lang={lang}
         kicker={dict.segmentsPage.kicker}
@@ -43,6 +52,7 @@ export default async function SegmentPage({ params }: PageProps<"/[lang]/segment
           { label: segment.title },
         ]}
         image="/img/heroes/building-facade.jpg"
+        imageAlt="Fachada de edifício corporativo climatizado"
       />
 
       <section className="relative bg-bg py-24 lg:py-28">

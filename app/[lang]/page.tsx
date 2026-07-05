@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getDictionary } from "@/dictionaries";
-import { isLocale, locales } from "@/lib/i18n";
+import { isLocale } from "@/lib/i18n";
 import { clients, coverage, segmentSlugs, serviceSlugs, site, suppliers } from "@/lib/site";
 import { Hero } from "@/components/hero";
 import { Reveal } from "@/components/reveal";
@@ -18,13 +18,10 @@ export async function generateMetadata({ params }: PageProps<"/[lang]">): Promis
   const { lang } = await params;
   if (!isLocale(lang)) return {};
   const dict = await getDictionary(lang);
+  // canonical, hreflang (incl. x-default), openGraph and twitter come from the root layout.
   return {
     title: { absolute: dict.meta.home.title },
     description: dict.meta.home.description,
-    alternates: {
-      canonical: `/${lang}`,
-      languages: Object.fromEntries(locales.map((locale) => [locale, `/${locale}`])),
-    },
   };
 }
 
@@ -136,6 +133,7 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
             <div className="overflow-hidden rounded-[10px] border border-line bg-white py-6">
               <LogoMarquee
                 logos={[...clients]}
+                lang={lang}
                 itemClassName="opacity-70 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
               />
             </div>
@@ -208,6 +206,7 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
         <Reveal delay={0.1} className="mt-10">
           <LogoMarquee
             logos={suppliers}
+            lang={lang}
             slow
             itemClassName="opacity-60 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
           />

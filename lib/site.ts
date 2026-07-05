@@ -46,8 +46,7 @@ export const segmentImages: Record<SegmentSlug, string> = {
   industrias: "/img/segments/industrias.webp",
   hospitais: "/img/segments/hospitais.webp",
   "shopping-centers": "/img/segments/shoppings.webp",
-  // placeholder (reusing the retail/shopping photo) — swap for a real commercial refrigeration photo
-  comercial: "/img/segments/shoppings.webp",
+  comercial: "/img/segments/comercial.jpg",
   "predios-corporativos": "/img/segments/corporativos.webp",
   residencial: "/img/segments/residencias.webp",
 };

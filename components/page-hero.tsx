@@ -14,6 +14,7 @@ export function PageHero({
   homeLabel,
   crumbs = [],
   image,
+  imageAlt = "",
 }: {
   lang: Locale;
   kicker: string;
@@ -21,6 +22,7 @@ export function PageHero({
   homeLabel: string;
   crumbs?: { label: string; href?: string }[];
   image?: string;
+  imageAlt?: string;
 }) {
   return (
     <section className="relative flex min-h-[46svh] flex-col justify-end overflow-hidden bg-navy-950 lg:min-h-[54svh]">
@@ -32,7 +34,7 @@ export function PageHero({
           animate={{ scale: 1 }}
           transition={{ duration: 2.4, ease: EASE_EXPO }}
         >
-          <Image src={image} alt="" fill priority sizes="100vw" className="object-cover" />
+          <Image src={image} alt={imageAlt} fill priority sizes="100vw" className="object-cover" />
         </motion.div>
       )}
 
@@ -48,7 +50,7 @@ export function PageHero({
 
       <div className="relative mx-auto w-full max-w-7xl px-6 pt-36 pb-14 lg:pb-20">
         <motion.nav
-          aria-label="Breadcrumb"
+          aria-label={lang === "pt" ? "Trilha de navegação" : lang === "es" ? "Ruta de navegación" : "Breadcrumb"}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.4 }}

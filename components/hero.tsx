@@ -18,6 +18,12 @@ const SLIDE_LINKS = ["servicos/projetos-personalizados", "segmentos", "servicos/
 const INTERVAL = 6500;
 const EASE_EXPO: [number, number, number, number] = [0.16, 1, 0.3, 1];
 
+const CONTROL_LABELS: Record<Locale, { pause: string; play: string }> = {
+  pt: { pause: "Pausar apresentação", play: "Reproduzir apresentação" },
+  en: { pause: "Pause slideshow", play: "Play slideshow" },
+  es: { pause: "Pausar presentación", play: "Reproducir presentación" },
+};
+
 export function Hero({
   lang,
   slides,
@@ -30,33 +36,46 @@ export function Hero({
   scroll?: string;
 }) {
   const [active, setActive] = useState(0);
+  const [paused, setPaused] = useState(false);
   const timer = useRef<ReturnType<typeof setInterval> | null>(null);
 
-  const goTo = useCallback((index: number) => {
-    setActive(index);
+  const clear = () => {
     if (timer.current) clearInterval(timer.current);
-    timer.current = setInterval(
-      () => setActive((current) => (current + 1) % SLIDE_IMAGES.length),
-      INTERVAL,
-    );
-  }, []);
+    timer.current = null;
+  };
 
   useEffect(() => {
+    if (paused) {
+      clear();
+      return;
+    }
     timer.current = setInterval(
       () => setActive((current) => (current + 1) % SLIDE_IMAGES.length),
       INTERVAL,
     );
-    return () => {
-      if (timer.current) clearInterval(timer.current);
-    };
-  }, []);
+    return clear;
+  }, [paused]);
+
+  const goTo = useCallback(
+    (index: number) => {
+      setActive(index);
+      if (paused) return;
+      clear();
+      timer.current = setInterval(
+        () => setActive((current) => (current + 1) % SLIDE_IMAGES.length),
+        INTERVAL,
+      );
+    },
+    [paused],
+  );
 
   const slide = slides[active];
+  const labels = CONTROL_LABELS[lang];
 
   return (
-    <section className="relative flex min-h-[86svh] flex-col overflow-hidden">
+    <section className="relative flex min-h-[86svh] flex-col overflow-hidden" aria-roledescription="carousel">
       {/* background images with slow zoom */}
-      <AnimatePresence>
+      <AnimatePresence initial={false}>
         <motion.div
           key={active}
           className="absolute inset-0"
@@ -73,7 +92,7 @@ export function Hero({
           >
             <Image
               src={SLIDE_IMAGES[active]}
-              alt=""
+              alt={slide.title}
               fill
               priority={active === 0}
               sizes="100vw"
@@ -144,18 +163,36 @@ export function Hero({
           </AnimatePresence>
         </div>
 
-        {/* slide progress controls */}
-        <div className="mt-16 flex items-center gap-3">
+        {/* slide controls: pause/play + progress */}
+        <div className="mt-16 flex items-center gap-4">
+          <button
+            type="button"
+            onClick={() => setPaused((value) => !value)}
+            aria-label={paused ? labels.play : labels.pause}
+            aria-pressed={paused}
+            className="flex h-8 w-8 flex-none items-center justify-center rounded-full border border-white/25 text-white/70 transition hover:border-white/50 hover:text-white"
+          >
+            {paused ? (
+              <svg viewBox="0 0 24 24" fill="currentColor" className="h-3.5 w-3.5" aria-hidden>
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            ) : (
+              <svg viewBox="0 0 24 24" fill="currentColor" className="h-3.5 w-3.5" aria-hidden>
+                <path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z" />
+              </svg>
+            )}
+          </button>
           {slides.map((item, index) => (
             <button
               key={index}
               type="button"
               onClick={() => goTo(index)}
               aria-label={item.kicker}
+              aria-current={index === active ? "true" : undefined}
               className="group relative h-8 w-12"
             >
               <span className="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 overflow-hidden bg-white/30">
-                {index === active && (
+                {index === active && !paused && (
                   <motion.span
                     key={`bar-${active}`}
                     className="absolute inset-y-0 left-0 bg-accent"
@@ -163,6 +200,9 @@ export function Hero({
                     animate={{ width: "100%" }}
                     transition={{ duration: INTERVAL / 1000, ease: "linear" }}
                   />
+                )}
+                {index === active && paused && (
+                  <span className="absolute inset-y-0 left-0 w-full bg-accent" />
                 )}
               </span>
             </button>
