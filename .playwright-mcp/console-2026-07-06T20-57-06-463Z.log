@@ -1,0 +1,178 @@
+[     208ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[     277ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[    1573ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[    1613ms] [LOG] [Fast Refresh] done in 158ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[    2057ms] [WARNING] WebSocket connection to 'wss://xs48itxv.api.sanity.io/v2022-06-30/socket/production?tag=sanity.studio' failed: WebSocket is closed before the connection is established. @ http://localhost:3000/_next/static/chunks/node_modules_%40sanity_1e24rd2._.js:3104
+[    2146ms] [WARNING] WebSocket connection to 'wss://xs48itxv.api.sanity.io/v2022-06-30/socket/production?tag=sanity.studio' failed: WebSocket is closed before the connection is established. @ http://localhost:3000/_next/static/chunks/node_modules_%40sanity_1e24rd2._.js:3104
+[    2243ms] [WARNING] WebSocket connection to 'wss://xs48itxv.api.sanity.io/v2022-06-30/socket/production?tag=sanity.studio' failed: WebSocket is closed before the connection is established. @ http://localhost:3000/_next/static/chunks/node_modules_%40sanity_1e24rd2._.js:3104
+[  127018ms] AbortError: signal is aborted without reason
+    at Object.abort (http://localhost:3000/_next/static/chunks/node_modules_10_gdqj._.js:541:28)
+    at EventSourcePolyfill.close [as _close] (http://localhost:3000/_next/static/chunks/node_modules_10_gdqj._.js:857:33)
+    at push.EventSourcePolyfill.close (http://localhost:3000/_next/static/chunks/node_modules_10_gdqj._.js:941:14)
+    at http://localhost:3000/_next/static/chunks/node_modules_%40sanity_client_dist_0bhy_v5._.js:1023:182
+    at execFinalizer (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:220:9)
+    at Subscription.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:137:29)
+    at Subscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:449:42)
+    at OperatorSubscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:1542:42)
+    at execFinalizer (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:222:19)
+    at Subscription.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:137:29)
+    at Subscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:449:42)
+    at OperatorSubscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:1542:42)
+    at execFinalizer (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:222:19)
+    at Subscription.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:137:29)
+    at Subscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:449:42)
+    at OperatorSubscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:1542:42)
+    at execFinalizer (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:222:19)
+    at Subscription.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:137:29)
+    at Subscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:449:42)
+    at OperatorSubscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:1542:42)
+    at execFinalizer (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:222:19)
+    at Subscription.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:137:29)
+    at Subscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:449:42)
+    at OperatorSubscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:1542:42)
+    at execFinalizer (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:222:19)
+    at Subscription.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:137:29)
+    at Subscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:449:42)
+    at resetAndUnsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:2985:62)
+    at handleReset (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:3029:9)
+    at http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:2996:39
+    at execFinalizer (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:220:9)
+    at Subscription.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:137:29)
+    at Subscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:449:42)
+    at OperatorSubscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:1542:42)
+    at execFinalizer (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:222:19)
+    at Subscription.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:137:29)
+    at Subscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:449:42)
+    at OperatorSubscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:1542:42)
+    at execFinalizer (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:222:19)
+    at Subscription.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:137:29)
+    at Subscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:449:42)
+    at OperatorSubscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:1542:42)
+    at execFinalizer (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:222:19)
+    at Subscription.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:137:29)
+    at Subscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:449:42)
+    at OperatorSubscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:1542:42)
+    at execFinalizer (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:222:19)
+    at Subscription.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:137:29)
+    at Subscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:449:42)
+    at OperatorSubscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:1542:42)
+[  127192ms] AbortError: signal is aborted without reason
+    at Object.abort (http://localhost:3000/_next/static/chunks/node_modules_10_gdqj._.js:541:28)
+    at EventSourcePolyfill.close [as _close] (http://localhost:3000/_next/static/chunks/node_modules_10_gdqj._.js:857:33)
+    at push.EventSourcePolyfill.close (http://localhost:3000/_next/static/chunks/node_modules_10_gdqj._.js:941:14)
+    at http://localhost:3000/_next/static/chunks/node_modules_%40sanity_client_dist_0bhy_v5._.js:1023:182
+    at execFinalizer (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:220:9)
+    at Subscription.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:137:29)
+    at Subscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:449:42)
+    at OperatorSubscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:1542:42)
+    at execFinalizer (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:222:19)
+    at Subscription.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:137:29)
+    at Subscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:449:42)
+    at OperatorSubscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:1542:42)
+    at execFinalizer (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:222:19)
+    at Subscription.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:137:29)
+    at Subscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:449:42)
+    at OperatorSubscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:1542:42)
+    at execFinalizer (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:222:19)
+    at Subscription.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:137:29)
+    at Subscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:449:42)
+    at OperatorSubscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:1542:42)
+    at execFinalizer (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:222:19)
+    at Subscription.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:137:29)
+    at Subscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:449:42)
+    at OperatorSubscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:1542:42)
+    at execFinalizer (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:222:19)
+    at Subscription.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:137:29)
+    at Subscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:449:42)
+    at resetAndUnsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:2985:62)
+    at handleReset (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:3029:9)
+    at http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:2996:39
+    at execFinalizer (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:220:9)
+    at Subscription.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:137:29)
+    at Subscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:449:42)
+    at OperatorSubscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:1542:42)
+    at execFinalizer (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:222:19)
+    at Subscription.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:137:29)
+    at Subscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:449:42)
+    at OperatorSubscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:1542:42)
+    at execFinalizer (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:222:19)
+    at Subscription.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:137:29)
+    at Subscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:449:42)
+    at OperatorSubscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:1542:42)
+    at execFinalizer (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:222:19)
+    at Subscription.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:137:29)
+    at Subscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:449:42)
+    at OperatorSubscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:1542:42)
+    at execFinalizer (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:222:19)
+    at Subscription.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:137:29)
+    at Subscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:449:42)
+    at OperatorSubscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:1542:42)
+[  127227ms] AbortError: signal is aborted without reason
+    at Object.abort (http://localhost:3000/_next/static/chunks/node_modules_10_gdqj._.js:541:28)
+    at EventSourcePolyfill.close [as _close] (http://localhost:3000/_next/static/chunks/node_modules_10_gdqj._.js:857:33)
+    at push.EventSourcePolyfill.close (http://localhost:3000/_next/static/chunks/node_modules_10_gdqj._.js:941:14)
+    at http://localhost:3000/_next/static/chunks/node_modules_%40sanity_client_dist_0bhy_v5._.js:1023:182
+    at execFinalizer (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:220:9)
+    at Subscription.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:137:29)
+    at Subscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:449:42)
+    at OperatorSubscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:1542:42)
+    at execFinalizer (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:222:19)
+    at Subscription.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:137:29)
+    at Subscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:449:42)
+    at OperatorSubscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:1542:42)
+    at execFinalizer (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:222:19)
+    at Subscription.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:137:29)
+    at Subscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:449:42)
+    at OperatorSubscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:1542:42)
+    at execFinalizer (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:222:19)
+    at Subscription.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:137:29)
+    at Subscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:449:42)
+    at OperatorSubscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:1542:42)
+    at execFinalizer (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:222:19)
+    at Subscription.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:137:29)
+    at Subscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:449:42)
+    at OperatorSubscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:1542:42)
+    at execFinalizer (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:222:19)
+    at Subscription.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:137:29)
+    at Subscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:449:42)
+    at resetAndUnsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:2985:62)
+    at handleReset (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:3029:9)
+    at http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:2996:39
+    at execFinalizer (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:220:9)
+    at Subscription.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:137:29)
+    at Subscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:449:42)
+    at OperatorSubscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:1542:42)
+    at execFinalizer (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:222:19)
+    at Subscription.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:137:29)
+    at Subscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:449:42)
+    at OperatorSubscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:1542:42)
+    at execFinalizer (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:222:19)
+    at Subscription.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:137:29)
+    at Subscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:449:42)
+    at OperatorSubscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:1542:42)
+    at execFinalizer (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:222:19)
+    at Subscription.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:137:29)
+    at Subscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:449:42)
+    at OperatorSubscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:1542:42)
+    at execFinalizer (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:222:19)
+    at Subscription.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:137:29)
+    at Subscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:449:42)
+    at OperatorSubscriber.unsubscribe (http://localhost:3000/_next/static/chunks/node_modules_rxjs_dist_esm5_internal_1qmvr19._.js:1542:42)
+[  355349ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=HnP0hqCbHRi_0K9PpR_Tj' failed:  @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13422
+[  363405ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=HnP0hqCbHRi_0K9PpR_Tj' failed:  @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13422
+[  365902ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[  368844ms] [ERROR] WebSocket is already in CLOSING or CLOSED state. @ http://localhost:3000/_next/static/chunks/node_modules_%40sanity_1e24rd2._.js:3063
+[  398843ms] [ERROR] WebSocket is already in CLOSING or CLOSED state. @ http://localhost:3000/_next/static/chunks/node_modules_%40sanity_1e24rd2._.js:3063
+[  428842ms] [ERROR] WebSocket is already in CLOSING or CLOSED state. @ http://localhost:3000/_next/static/chunks/node_modules_%40sanity_1e24rd2._.js:3063
+[  458842ms] [ERROR] WebSocket is already in CLOSING or CLOSED state. @ http://localhost:3000/_next/static/chunks/node_modules_%40sanity_1e24rd2._.js:3063
+[  488842ms] [ERROR] WebSocket is already in CLOSING or CLOSED state. @ http://localhost:3000/_next/static/chunks/node_modules_%40sanity_1e24rd2._.js:3063
+[  518842ms] [ERROR] WebSocket is already in CLOSING or CLOSED state. @ http://localhost:3000/_next/static/chunks/node_modules_%40sanity_1e24rd2._.js:3063
+[  548843ms] [ERROR] WebSocket is already in CLOSING or CLOSED state. @ http://localhost:3000/_next/static/chunks/node_modules_%40sanity_1e24rd2._.js:3063
+[  578842ms] [ERROR] WebSocket is already in CLOSING or CLOSED state. @ http://localhost:3000/_next/static/chunks/node_modules_%40sanity_1e24rd2._.js:3063
+[  608845ms] [ERROR] WebSocket is already in CLOSING or CLOSED state. @ http://localhost:3000/_next/static/chunks/node_modules_%40sanity_1e24rd2._.js:3063
+[  638843ms] [ERROR] WebSocket is already in CLOSING or CLOSED state. @ http://localhost:3000/_next/static/chunks/node_modules_%40sanity_1e24rd2._.js:3063
+[  668855ms] [ERROR] WebSocket is already in CLOSING or CLOSED state. @ http://localhost:3000/_next/static/chunks/node_modules_%40sanity_1e24rd2._.js:3063
+[  698843ms] [ERROR] WebSocket is already in CLOSING or CLOSED state. @ http://localhost:3000/_next/static/chunks/node_modules_%40sanity_1e24rd2._.js:3063
+[  728843ms] [ERROR] WebSocket is already in CLOSING or CLOSED state. @ http://localhost:3000/_next/static/chunks/node_modules_%40sanity_1e24rd2._.js:3063
+[  758842ms] [ERROR] WebSocket is already in CLOSING or CLOSED state. @ http://localhost:3000/_next/static/chunks/node_modules_%40sanity_1e24rd2._.js:3063
+[  788842ms] [ERROR] WebSocket is already in CLOSING or CLOSED state. @ http://localhost:3000/_next/static/chunks/node_modules_%40sanity_1e24rd2._.js:3063

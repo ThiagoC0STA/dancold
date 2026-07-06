@@ -31,6 +31,11 @@ const pt = {
       description:
         "Entre em contato com a Dancold para solicitar um orçamento ou a visita de um técnico especializado, esclarecer dúvidas ou dar sugestões.",
     },
+    blog: {
+      title: "Blog",
+      description:
+        "Artigos técnicos sobre climatização, refrigeração industrial, PMOC, automação e eficiência energética, escritos pela equipe da Dancold.",
+    },
   },
   common: {
     learnMore: "Saiba mais",
@@ -49,6 +54,7 @@ const pt = {
     services: "Serviços",
     segments: "Segmentos",
     whereWeAre: "Onde Estamos",
+    blog: "Blog",
     contact: "Contato",
   },
   hero: {
@@ -503,6 +509,23 @@ const pt = {
     title: "Página não encontrada",
     text: "A página que você procura não existe ou foi movida.",
     back: "Voltar para o início",
+  },
+  blog: {
+    kicker: "Conteúdo técnico",
+    title: "Blog",
+    breadcrumb: "Blog",
+    intro:
+      "Artigos sobre climatização, refrigeração industrial, PMOC, automação e eficiência energética, escritos por quem está em campo há mais de 25 anos.",
+    readArticle: "Ler artigo",
+    backToBlog: "Voltar para o blog",
+    publishedOn: "Publicado em",
+    empty: "Nenhum artigo publicado ainda. Volte em breve!",
+    minRead: "min de leitura",
+    share: "Compartilhar",
+    copyLink: "Copiar link",
+    copied: "Link copiado",
+    author: "Equipe Dancold",
+    relatedKicker: "Continue lendo",
   },
 };
 

@@ -1,0 +1,196 @@
+- generic [active] [ref=e1]:
+  - link "Pular para o conteúdo" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "Dancold — página inicial" [ref=e5] [cursor=pointer]:
+        - /url: /pt
+      - generic [ref=e6]:
+        - button "Selecionar idioma" [ref=e8] [cursor=pointer]:
+          - img [ref=e9]
+          - generic [ref=e14]: pt
+          - img [ref=e15]
+        - button "Menu" [ref=e17]
+  - main [ref=e22]:
+    - generic [ref=e24]:
+      - img "Técnicos da Dancold realizando manutenção em equipamento de refrigeração" [ref=e26]
+      - generic [ref=e29]:
+        - navigation "Trilha de navegação" [ref=e30]:
+          - list [ref=e31]:
+            - listitem [ref=e32]:
+              - link "Home" [ref=e33] [cursor=pointer]:
+                - /url: /pt
+            - listitem [ref=e34]:
+              - generic [ref=e35]: /
+              - link "Blog" [ref=e36] [cursor=pointer]:
+                - /url: /pt/blog
+            - listitem [ref=e37]:
+              - generic [ref=e38]: /
+              - generic [ref=e39]: "Manutenção preventiva ou corretiva: qual sai mais barato para a sua operação?"
+        - paragraph [ref=e40]: 6 de julho de 2026
+        - 'heading "Manutenção preventiva ou corretiva: qual sai mais barato para a sua operação?" [level=1] [ref=e42]':
+          - generic [ref=e44]: Manutenção
+          - generic [ref=e46]: preventiva
+          - generic [ref=e48]: ou
+          - generic [ref=e50]: "corretiva:"
+          - generic [ref=e52]: qual
+          - generic [ref=e54]: sai
+          - generic [ref=e56]: mais
+          - generic [ref=e58]: barato
+          - generic [ref=e60]: para
+          - generic [ref=e62]: a
+          - generic [ref=e64]: sua
+          - generic [ref=e66]: operação?
+    - article [ref=e67]:
+      - generic [ref=e69]:
+        - generic [ref=e70]:
+          - generic [ref=e71]:
+            - generic [ref=e72]: D
+            - generic [ref=e73]:
+              - paragraph [ref=e74]: Equipe Dancold
+              - paragraph [ref=e75]: 6 de julho de 2026·3 min de leitura
+          - generic [ref=e77]:
+            - generic [ref=e78]: Compartilhar
+            - link "WhatsApp" [ref=e79] [cursor=pointer]:
+              - /url: https://wa.me/?text=Manuten%C3%A7%C3%A3o%20preventiva%20ou%20corretiva%3A%20qual%20sai%20mais%20barato%20para%20a%20sua%20opera%C3%A7%C3%A3o%3F%20%E2%80%94%20https%3A%2F%2Fwww.dancold.com.br%2Fpt%2Fblog%2Fmanutencao-preventiva-ou-corretiva-qual-sai-mais-barato
+              - img [ref=e80]
+            - link "LinkedIn" [ref=e82] [cursor=pointer]:
+              - /url: https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.dancold.com.br%2Fpt%2Fblog%2Fmanutencao-preventiva-ou-corretiva-qual-sai-mais-barato
+              - img [ref=e83]
+            - button "Copiar link" [ref=e85]:
+              - img [ref=e86]
+        - paragraph [ref=e90]: Esperar o equipamento quebrar parece economia, mas quase sempre é a opção mais cara. Entenda a diferença entre manutenção preventiva e corretiva e como escolher a estratégia certa para climatização e refrigeração.
+        - img "Técnicos da Dancold realizando manutenção em equipamento de refrigeração" [ref=e92]
+        - generic [ref=e93]:
+          - paragraph [ref=e94]: "Toda empresa que depende de climatização ou refrigeração enfrenta a mesma decisão, mesmo sem perceber: consertar quando quebra ou manter antes de quebrar. A escolha parece detalhe operacional, mas define diretamente quanto você gasta, quanto tempo sua operação fica parada e por quantos anos seus equipamentos vão durar."
+          - heading "O que é manutenção corretiva" [level=2] [ref=e95]:
+            - generic [ref=e97]: O que é manutenção corretiva
+          - paragraph [ref=e98]: Manutenção corretiva é a que acontece depois da falha. O compressor para, a câmara fria esquenta, o ambiente perde o conforto — e só então a equipe é acionada. É o modelo “se não está quebrado, não mexe”.
+          - paragraph [ref=e99]: "O problema é que a falha nunca escolhe uma hora conveniente. Ela costuma acontecer no pico de calor, no fim de semana ou no meio de um lote de produção. E o custo não é só o do conserto: é o da produção parada, do produto perdido, do cliente insatisfeito e, muitas vezes, do equipamento que precisa ser trocado inteiro porque a quebra foi grave demais."
+          - heading "O que é manutenção preventiva" [level=2] [ref=e100]:
+            - generic [ref=e102]: O que é manutenção preventiva
+          - paragraph [ref=e103]: Manutenção preventiva é a que acontece antes da falha, em intervalos planejados. Limpeza de trocadores, verificação de pressões, análise de consumo, troca de filtros, aperto de conexões elétricas — tudo dentro de um cronograma, com o equipamento ainda funcionando.
+          - paragraph [ref=e104]: "O objetivo é simples: encontrar o pequeno problema antes que ele vire o grande problema. Um filtro sujo detectado a tempo custa alguns reais; o mesmo filtro ignorado sobrecarrega o compressor e pode custar dezenas de milhares."
+          - heading "A conta que a maioria não faz" [level=2] [ref=e105]:
+            - generic [ref=e107]: A conta que a maioria não faz
+          - paragraph [ref=e108]: "Na comparação direta, a manutenção preventiva sempre parece “gasto a mais” — afinal, você paga mesmo quando está tudo funcionando. Mas a conta certa não é essa. A conta certa inclui:"
+          - list [ref=e109]:
+            - listitem [ref=e110]: O custo de uma parada não planejada (produção, vendas, atendimento).
+            - listitem [ref=e111]: A perda de produtos perecíveis, vacinas ou matéria-prima refrigerada.
+            - listitem [ref=e112]: O consumo extra de energia de um sistema operando fora do ponto ideal.
+            - listitem [ref=e113]: A redução da vida útil do equipamento por operar sob estresse.
+          - paragraph [ref=e114]: Quando esses valores entram na conta, a preventiva quase sempre custa uma fração da corretiva. Não é opinião — é a diferença entre gastar pouco de forma previsível ou gastar muito de forma imprevisível.
+          - heading "Quando a corretiva ainda faz sentido" [level=2] [ref=e115]:
+            - generic [ref=e117]: Quando a corretiva ainda faz sentido
+          - paragraph [ref=e118]: "Ser honesto ajuda: nem todo equipamento justifica um plano robusto. Um split isolado, de baixo uso e fácil reposição, pode conviver bem com a manutenção corretiva. O cálculo muda quando o equipamento é crítico — ou seja, quando a falha dele para a operação, estraga produto ou coloca pessoas em risco. Aí, prevenir deixa de ser opção e vira necessidade."
+          - heading "Como a Dancold estrutura a manutenção" [level=2] [ref=e119]:
+            - generic [ref=e121]: Como a Dancold estrutura a manutenção
+          - paragraph [ref=e122]: "Na Dancold, a manutenção preventiva não é uma visita solta de vez em quando: é um plano vivo. Trabalhamos com contratos que incluem cronograma de rotinas, equipes fixas ou volantes, relatórios técnicos periódicos e monitoramento contínuo de temperatura e energia com alarme 24/7 para os ambientes mais críticos."
+          - paragraph [ref=e123]: Assim, o cliente troca o susto da quebra pela previsibilidade do controle — com um único contrato, documentação em dia e o equipamento durando o que deveria durar.
+          - paragraph [ref=e124]: Se a sua operação depende de climatização ou refrigeração para funcionar, vale conversar. Nossa equipe técnica avalia o seu cenário e monta o plano que faz sentido para o seu caso.
+        - generic [ref=e125]:
+          - link "Voltar para o blog" [ref=e126] [cursor=pointer]:
+            - /url: /pt/blog
+            - generic [ref=e127]: ←
+            - text: Voltar para o blog
+          - generic [ref=e128]:
+            - generic [ref=e129]: Compartilhar
+            - link "WhatsApp" [ref=e130] [cursor=pointer]:
+              - /url: https://wa.me/?text=Manuten%C3%A7%C3%A3o%20preventiva%20ou%20corretiva%3A%20qual%20sai%20mais%20barato%20para%20a%20sua%20opera%C3%A7%C3%A3o%3F%20%E2%80%94%20https%3A%2F%2Fwww.dancold.com.br%2Fpt%2Fblog%2Fmanutencao-preventiva-ou-corretiva-qual-sai-mais-barato
+              - img [ref=e131]
+            - link "LinkedIn" [ref=e133] [cursor=pointer]:
+              - /url: https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.dancold.com.br%2Fpt%2Fblog%2Fmanutencao-preventiva-ou-corretiva-qual-sai-mais-barato
+              - img [ref=e134]
+            - button "Copiar link" [ref=e136]:
+              - img [ref=e137]
+    - generic [ref=e142]:
+      - generic [ref=e143]:
+        - heading "Pronto para levar sua operação a outro nível?" [level=2] [ref=e144]
+        - paragraph [ref=e145]: Fale com nossa equipe técnica e descubra a solução ideal em climatização, refrigeração e automação para o seu negócio.
+      - link "Solicitar orçamento" [ref=e147] [cursor=pointer]:
+        - /url: https://wa.me/+5541992466920
+        - img [ref=e148]
+        - text: Solicitar orçamento
+        - generic [ref=e150]: →
+  - contentinfo [ref=e151]:
+    - generic [ref=e153]:
+      - generic [ref=e154]:
+        - generic [ref=e155]:
+          - img "Dancold" [ref=e156]
+          - paragraph [ref=e157]: Fundada em 1998, a Dancold iniciou como empresa familiar em manutenção de ar-condicionado e refrigeração. A partir de 2002, expandiu sua atuação para o setor industrial, atendendo marcas reconhecidas internacionalmente.
+          - paragraph [ref=e158]: "CNPJ: 05.477.326/0001-28"
+          - generic [ref=e159]:
+            - link "Facebook" [ref=e160] [cursor=pointer]:
+              - /url: https://www.facebook.com/DANCOLDCLIMATIZACAO
+              - img [ref=e161]
+            - link "Instagram" [ref=e163] [cursor=pointer]:
+              - /url: https://www.instagram.com/arcondicionadodancold/
+              - img [ref=e164]
+            - link "LinkedIn" [ref=e166] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/dancoldclimatiza%C3%A7%C3%A3o/
+              - img [ref=e167]
+        - navigation "A Dancold" [ref=e169]:
+          - heading "A Dancold" [level=3] [ref=e170]
+          - list [ref=e171]:
+            - listitem [ref=e172]:
+              - link "Home" [ref=e173] [cursor=pointer]:
+                - /url: /pt
+            - listitem [ref=e174]:
+              - link "Sobre Nós" [ref=e175] [cursor=pointer]:
+                - /url: /pt/sobre-nos
+            - listitem [ref=e176]:
+              - link "Serviços" [ref=e177] [cursor=pointer]:
+                - /url: /pt/servicos
+            - listitem [ref=e178]:
+              - link "Segmentos" [ref=e179] [cursor=pointer]:
+                - /url: /pt/segmentos
+            - listitem [ref=e180]:
+              - link "Onde Estamos" [ref=e181] [cursor=pointer]:
+                - /url: /pt/onde-estamos
+            - listitem [ref=e182]:
+              - link "Blog" [ref=e183] [cursor=pointer]:
+                - /url: /pt/blog
+            - listitem [ref=e184]:
+              - link "Contato" [ref=e185] [cursor=pointer]:
+                - /url: /pt/contato
+        - navigation "Nossos Serviços" [ref=e186]:
+          - heading "Nossos Serviços" [level=3] [ref=e187]
+          - list [ref=e188]:
+            - listitem [ref=e189]:
+              - link "Automação e Monitoramento" [ref=e190] [cursor=pointer]:
+                - /url: /pt/servicos/automacao-e-monitoramento
+            - listitem [ref=e191]:
+              - link "Projetos Personalizados" [ref=e192] [cursor=pointer]:
+                - /url: /pt/servicos/projetos-personalizados
+            - listitem [ref=e193]:
+              - link "Instalações" [ref=e194] [cursor=pointer]:
+                - /url: /pt/servicos/instalacoes
+            - listitem [ref=e195]:
+              - link "Plano de Manutenção (PMOC)" [ref=e196] [cursor=pointer]:
+                - /url: /pt/servicos/plano-de-manutencao-pmoc
+            - listitem [ref=e197]:
+              - link "Comissionamento de obras" [ref=e198] [cursor=pointer]:
+                - /url: /pt/servicos/comissionamento-de-obras
+        - generic [ref=e199]:
+          - heading "Seg a Sex - 8h00 às 17h30" [level=3] [ref=e200]
+          - generic [ref=e201]:
+            - paragraph [ref=e202]:
+              - link "(41) 3365-4877" [ref=e203] [cursor=pointer]:
+                - /url: tel:+554133654877
+              - link "(41) 9 9246-6920" [ref=e204] [cursor=pointer]:
+                - /url: https://wa.me/+5541992466920
+            - paragraph [ref=e205]:
+              - generic [ref=e206]: Endereço
+              - text: Av. Prefeito Maurício Fruet, 3060 — Cajuru, Curitiba-PR, CEP 82.920-330
+            - paragraph [ref=e207]:
+              - generic [ref=e208]: E-mail
+              - link "dancold@dancold.com.br" [ref=e209] [cursor=pointer]:
+                - /url: mailto:dancold@dancold.com.br
+      - generic [ref=e210]:
+        - paragraph [ref=e211]: 2026 © Dancold. Todos os direitos reservados.
+        - paragraph [ref=e212]: Ar condicionado / Refrigeração / Automação
+  - link "Contato pelo WhatsApp" [ref=e213] [cursor=pointer]:
+    - /url: https://wa.me/+5541992466920
+    - img [ref=e215]
+  - button "Open Next.js Dev Tools" [ref=e222] [cursor=pointer]:
+    - img [ref=e223]

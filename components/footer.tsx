@@ -13,6 +13,7 @@ export function Footer({ lang, dict }: { lang: Locale; dict: Dictionary }) {
     { href: `/${lang}/servicos`, label: dict.nav.services },
     { href: `/${lang}/segmentos`, label: dict.nav.segments },
     { href: `/${lang}/onde-estamos`, label: dict.nav.whereWeAre },
+    { href: `/${lang}/blog`, label: dict.nav.blog },
     { href: `/${lang}/contato`, label: dict.nav.contact },
   ];
 

@@ -33,6 +33,11 @@ const en: typeof pt = {
       description:
         "Contact Dancold to request a quote or a visit from a specialized technician, ask questions or make suggestions.",
     },
+    blog: {
+      title: "Blog",
+      description:
+        "Technical articles on HVAC, industrial refrigeration, PMOC, automation and energy efficiency, written by the Dancold team.",
+    },
   },
   common: {
     learnMore: "Learn more",
@@ -51,6 +56,7 @@ const en: typeof pt = {
     services: "Services",
     segments: "Segments",
     whereWeAre: "Where We Are",
+    blog: "Blog",
     contact: "Contact",
   },
   hero: {
@@ -505,6 +511,23 @@ const en: typeof pt = {
     title: "Page not found",
     text: "The page you are looking for does not exist or has been moved.",
     back: "Back to home",
+  },
+  blog: {
+    kicker: "Technical content",
+    title: "Blog",
+    breadcrumb: "Blog",
+    intro:
+      "Articles on HVAC, industrial refrigeration, PMOC, automation and energy efficiency, written by a team with over 25 years in the field.",
+    readArticle: "Read article",
+    backToBlog: "Back to blog",
+    publishedOn: "Published on",
+    empty: "No articles published yet. Come back soon!",
+    minRead: "min read",
+    share: "Share",
+    copyLink: "Copy link",
+    copied: "Link copied",
+    author: "Dancold Team",
+    relatedKicker: "Keep reading",
   },
 };
 

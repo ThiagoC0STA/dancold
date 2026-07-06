@@ -1,8 +1,13 @@
 import type { MetadataRoute } from "next";
 import { locales } from "@/lib/i18n";
 import { segmentSlugs, serviceSlugs, site } from "@/lib/site";
+import { getAllSlugs } from "@/lib/blog";
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export const revalidate = 3600;
+
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const blogSlugs = await getAllSlugs();
+
   const paths = [
     "",
     "/sobre-nos",
@@ -11,6 +16,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/segmentos",
     ...segmentSlugs.map((slug) => `/segmentos/${slug}`),
     "/onde-estamos",
+    "/blog",
+    ...blogSlugs.map((slug) => `/blog/${slug}`),
     "/contato",
   ];
 

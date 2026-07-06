@@ -89,6 +89,32 @@ export function breadcrumb(lang: Locale, trail: { name: string; path: string }[]
   };
 }
 
+/** BlogPosting JSON-LD for a post detail page, linked back to the business. */
+export function articleSchema(
+  lang: Locale,
+  slug: string,
+  headline: string,
+  description: string,
+  imageUrl: string,
+  publishedAt: string,
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "@id": `${site.url}/${lang}/blog/${slug}#article`,
+    headline,
+    description,
+    image: imageUrl.startsWith("http") ? imageUrl : abs(imageUrl),
+    datePublished: publishedAt,
+    dateModified: publishedAt,
+    inLanguage: lang === "pt" ? "pt-BR" : lang,
+    url: abs(`/${lang}/blog/${slug}`),
+    mainEntityOfPage: abs(`/${lang}/blog/${slug}`),
+    author: { "@id": `${site.url}/#business` },
+    publisher: { "@id": `${site.url}/#business` },
+  };
+}
+
 /** Service JSON-LD for a service detail page, linked back to the business. */
 export function serviceSchema(
   lang: Locale,

@@ -14,6 +14,7 @@ type NavLabels = {
   services: string;
   segments: string;
   whereWeAre: string;
+  blog: string;
   contact: string;
   whatsapp: string;
   hours: string;
@@ -64,6 +65,7 @@ export function Header({ lang, labels }: { lang: Locale; labels: NavLabels }) {
     { href: `/${lang}/servicos`, label: labels.services },
     { href: `/${lang}/segmentos`, label: labels.segments },
     { href: `/${lang}/onde-estamos`, label: labels.whereWeAre },
+    { href: `/${lang}/blog`, label: labels.blog },
     { href: `/${lang}/contato`, label: labels.contact },
   ];
 
