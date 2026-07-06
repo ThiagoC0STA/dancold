@@ -48,7 +48,7 @@ export const segmentImages: Record<SegmentSlug, string> = {
   "shopping-centers": "/img/segments/shoppings.webp",
   comercial: "/img/segments/comercial.jpg",
   "predios-corporativos": "/img/segments/corporativos.webp",
-  residencial: "/img/segments/residencias.webp",
+  residencial: "/img/segments/residencias-v2.webp",
 };
 
 // service coverage — order must match dictionaries' whereWeAre.states (localized names)
@@ -56,12 +56,10 @@ export const coverage = [
   {
     id: "pr",
     cities: [
-      "Curitiba",
-      "Pinhais",
-      "Araucária",
-      "Colombo",
-      "São José dos Pinhais",
-      "Almirante Tamandaré",
+      "Curitiba e região",
+      "Londrina",
+      "Maringá",
+      "Santo Antônio da Platina",
     ],
   },
   { id: "sc", cities: ["Joinville", "Brusque", "Itajaí", "Canoinhas", "Florianópolis"] },

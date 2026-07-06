@@ -258,7 +258,7 @@ const es: typeof pt = {
       short:
         "Elaboramos e implantamos el Plan de Mantenimiento, Operación y Control (PMOC) conforme a la legislación vigente, con equipos fijos o volantes, informes técnicos periódicos y certificados de calidad del aire.",
       summary:
-        "Elaboramos e implantamos el Plan de Mantenimiento, Operación y Control (PMOC) conforme a la legislación vigente (Ley 13.589/2018, ANVISA RDC 09/2003 y Ordenanza MS 3.523/98). Equipos fijos o volantes, con informes técnicos periódicos y certificados de calidad del aire.",
+        "Elaboramos e implantamos el Plan de Mantenimiento, Operación y Control (PMOC) conforme a la legislación vigente (Ley 13.589/2018, ANVISA RDC nº 886/2024). Equipos fijos o volantes, con informes técnicos periódicos y certificados de calidad del aire.",
       body: [
         "El PMOC no es un documento, es un sistema de gestión de activos. La mayoría de las empresas que operan sin PMOC estructurado lo descubre de la peor forma: con una falla de compresor en medio del día, una auditoría de ANVISA que identifica ausencia de trazabilidad en los mantenimientos, o un colapso térmico en cámara fría con pérdida de materia prima. Dancold implanta el PMOC como un proceso vivo, integrado a la rutina operacional de la empresa, no como un archivo que queda parado en un cajón.",
         "El proceso comienza con el inventario técnico completo de todos los activos de climatización y refrigeración, levantamiento de la carga térmica, clasificación de los ambientes y definición de las frecuencias de intervención predictiva, preventiva y correctiva. Uno de nuestros ingenieros mecánicos define el cronograma y emite el ART. Los equipos — fijos para contratos de alta criticidad, volantes para operaciones distribuidas — ejecutan cada intervención con registro en plataforma de gestión digital, accesible en desktop y móvil, con historial técnico completo de cada equipo. Para industrias, el resultado es una reducción de hasta 15% en los costos operacionales de mantenimiento y extensión de la vida útil de los equipos. La eliminación del riesgo de multas de ANVISA de hasta R$1,5 millones por falta de conformidad. Garantía de continuidad operacional en ambientes donde una falla técnica pone vidas en riesgo.",
@@ -322,7 +322,7 @@ const es: typeof pt = {
         "Mantenemos su producción funcionando sin paradas imprevistas. Actuamos en la refrigeración y climatización crítica de su industria con mantenimiento especializado, reduciendo costos operacionales, prolongando la vida útil de los equipos y protegiendo su proceso productivo contra fallas térmicas que cuestan millones en producción detenida.",
       items: [
         {
-          title: "Enfriadores de agua y cámaras frías industriales",
+          title: "Centrales de agua helada, túneles de congelado y mucho más",
           text: "Sistemas de alta capacidad para procesos productivos que exigen temperaturas controladas con precisión.",
         },
         {
@@ -344,12 +344,12 @@ const es: typeof pt = {
         "Mantenemos su hospital en operación continua, eliminando riesgos en ambientes críticos. Garantizamos su conformidad con ANVISA, protegiendo principalmente a pacientes, vacunas y medicamentos contra fallas térmicas, evitando multas y centralizando todos sus mantenimientos en un único contrato.",
       items: [
         {
-          title: "Sistemas para resonancia magnética y tomógrafos",
-          text: "Instalación y mantenimiento de climatización especializada para equipos de diagnóstico por imagen, con control preciso de temperatura.",
+          title: "Centrales dedicadas para refrigerar áreas críticas y confort",
+          text: "Instalación y mantenimiento de climatización especializada para ambientes y equipos, con control preciso de temperatura.",
         },
         {
           title: "PMOC con informes técnicos ANVISA",
-          text: "Elaboración y gestión del Plan de Mantenimiento, Operación y Control conforme a la RDC 09/2003 y la Ordenanza MS 3.523/98.",
+          text: "Elaboración y gestión del Plan de Mantenimiento, Operación y Control conforme a la RDC nº 886/2024.",
         },
         {
           title: "Soporte técnico ininterrumpido los 365 días",
@@ -363,7 +363,7 @@ const es: typeof pt = {
       short:
         "Proyectos completos de HVAC de gran porte para centros comerciales, con eficiencia energética y confort térmico continuo para comerciantes y visitantes.",
       description:
-        "Los centros comerciales demandan sistemas de climatización de gran porte con eficiencia energética y confiabilidad operacional. Dancold coordina proyectos completos de HVAC para centros comerciales, desde el dimensionamiento de centrales de agua helada y chillers hasta la instalación y mantenimiento de fan coils, sistemas de ventilación y presurización de escaleras y estacionamientos. Garantizamos confort térmico para comerciantes y visitantes, con atención especializada y contratos de mantenimiento flexibles.",
+        "Los centros comerciales demandan sistemas de climatización de gran porte con eficiencia energética y confiabilidad operacional. Dancold coordina proyectos completos de HVAC para centros comerciales, desde el dimensionamiento de centrales de agua helada y chillers hasta la instalación y mantenimiento de fan coils, sistemas de ventilación, presurización de escaleras y extracción de estacionamientos. Garantizamos confort térmico para comerciantes y visitantes, con atención especializada y contratos de mantenimiento flexibles.",
       items: [
         {
           title: "Centrales de agua helada y chillers de gran porte",
@@ -410,7 +410,7 @@ const es: typeof pt = {
         "Los edificios de oficinas y complejos corporativos exigen sistemas de climatización eficientes, silenciosos y de bajo consumo energético. Dancold implanta y gestiona el PMOC con equipos dedicados fijos o volantes, utilizando dispositivos móviles para el control y monitoreo remoto de las actividades. Ofrecemos soluciones en VRF/VRV, fan coil, cassette y sistemas centralizados, garantizando confort y productividad para colaboradores e inquilinos.",
       items: [
         {
-          title: "Sistemas VRF/VRV y fan coil para oficinas",
+          title: "Aire acondicionado central, sistema VRF/VRV",
           text: "Soluciones de climatización silenciosas, eficientes e individualizables para ambientes corporativos de diferentes portes.",
         },
         {
@@ -450,7 +450,7 @@ const es: typeof pt = {
     kicker: "Área de actuación",
     title: "Dónde estamos",
     intro:
-      "Hoy Dancold está localizada en los siguientes estados: Santa Catarina, Paraná, São Paulo, Río de Janeiro y Piauí. Colaboramos con múltiples negocios y organismos gubernamentales en las siguientes ciudades: Curitiba, Pinhais, Araucária, Colombo, São José dos Pinhais, Almirante Tamandaré, Joinville, Brusque, Itajaí, Canoinhas, Florianópolis, São Paulo Capital, São Paulo Campo Limpo, Macaé, Floriano y Campinas. Nuestro equipo está preparado para movilización rápida, con soporte logístico para atención a grandes contratos en todo el territorio nacional.",
+      "Hoy Dancold está localizada en los siguientes estados: Santa Catarina, Paraná, São Paulo, Río de Janeiro y Piauí. Colaboramos con organismos privados y gubernamentales. Nuestro equipo está preparado para movilización rápida, con soporte logístico para atención a grandes contratos en todo el territorio nacional.",
     hqTitle: "Sede",
     hqText: "Av. Prefeito Maurício Fruet, 3060 — Cajuru, Curitiba-PR | CEP 82.920-330",
     serviceTitle: "Atención",

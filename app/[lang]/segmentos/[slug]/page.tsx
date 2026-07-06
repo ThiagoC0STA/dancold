@@ -115,7 +115,7 @@ export default async function SegmentPage({ params }: PageProps<"/[lang]/segment
                     alt={segment.title}
                     fill
                     sizes="(max-width: 1024px) 100vw, 33vw"
-                    className="object-cover"
+                    className={`object-cover ${slug === "hospitais" ? "object-top" : ""}`}
                   />
                   {/* scrim sits on photography — theme-independent navy */}
                   <div

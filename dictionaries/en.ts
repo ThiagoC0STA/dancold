@@ -258,7 +258,7 @@ const en: typeof pt = {
       short:
         "We prepare and implement the Maintenance, Operation and Control Plan (PMOC) in accordance with current legislation, with fixed or mobile teams, periodic technical reports and air quality certificates.",
       summary:
-        "We prepare and implement the Maintenance, Operation and Control Plan (PMOC) in accordance with current legislation (Law 13,589/2018, ANVISA RDC 09/2003 and MS Ordinance 3,523/98). Fixed or mobile teams, with periodic technical reports and air quality certificates.",
+        "We prepare and implement the Maintenance, Operation and Control Plan (PMOC) in accordance with current legislation (Law 13,589/2018, ANVISA RDC No. 886/2024). Fixed or mobile teams, with periodic technical reports and air quality certificates.",
       body: [
         "The PMOC is not a document, it is an asset management system. Most companies operating without a structured PMOC find this out the hard way: with a compressor failure in the middle of the day, an ANVISA audit identifying lack of maintenance traceability, or a thermal collapse in a cold room with loss of raw material. Dancold implements the PMOC as a living process, integrated into the company's operational routine, not as a file sitting in a drawer.",
         "The process begins with a complete technical inventory of all HVAC and refrigeration assets, thermal load survey, classification of environments and definition of predictive, preventive and corrective intervention frequencies. One of our mechanical engineers defines the schedule and issues the ART. The teams — fixed for high-criticality contracts, mobile for distributed operations — perform each intervention with records on a digital management platform, accessible on desktop and mobile, with the complete technical history of each piece of equipment. For industries, the result is a reduction of up to 15% in operational maintenance costs and extended equipment life. The elimination of the risk of ANVISA fines of up to R$1.5 million for non-compliance. Guaranteed operational continuity in environments where a technical failure puts lives at risk.",
@@ -322,7 +322,7 @@ const en: typeof pt = {
         "We keep your production running without unexpected downtime. We handle your industry's critical refrigeration and HVAC with specialized maintenance, reducing operating costs, extending equipment life and protecting your production process against thermal failures that cost millions in stopped production.",
       items: [
         {
-          title: "Industrial water chillers and cold rooms",
+          title: "Chilled water plants, freezing tunnels and much more",
           text: "High-capacity systems for production processes that require precisely controlled temperatures.",
         },
         {
@@ -344,12 +344,12 @@ const en: typeof pt = {
         "We keep your hospital running continuously, eliminating risks in critical environments. We ensure your compliance with ANVISA, protecting above all patients, vaccines and medicines against thermal failures, avoiding fines and centralizing all your maintenance under a single contract.",
       items: [
         {
-          title: "Systems for MRI and CT scanners",
-          text: "Installation and maintenance of specialized air conditioning for diagnostic imaging equipment, with precise temperature control.",
+          title: "Dedicated plants to cool critical areas and comfort",
+          text: "Installation and maintenance of specialized air conditioning for environments and equipment, with precise temperature control.",
         },
         {
           title: "PMOC with ANVISA technical reports",
-          text: "Preparation and management of the Maintenance, Operation and Control Plan in compliance with RDC 09/2003 and Ordinance MS 3,523/98.",
+          text: "Preparation and management of the Maintenance, Operation and Control Plan in compliance with RDC No. 886/2024.",
         },
         {
           title: "Uninterrupted technical support, 365 days a year",
@@ -363,7 +363,7 @@ const en: typeof pt = {
       short:
         "Complete large-scale HVAC projects for shopping centers, with energy efficiency and continuous thermal comfort for retailers and visitors.",
       description:
-        "Shopping centers require large-scale air conditioning systems with energy efficiency and operational reliability. Dancold coordinates complete HVAC projects for shopping centers, from sizing chilled water plants and chillers to the installation and maintenance of fan coils, ventilation systems and stairwell and garage pressurization. We ensure thermal comfort for retailers and visitors, with specialized service and flexible maintenance contracts.",
+        "Shopping centers require large-scale air conditioning systems with energy efficiency and operational reliability. Dancold coordinates complete HVAC projects for shopping centers, from sizing chilled water plants and chillers to the installation and maintenance of fan coils, ventilation systems, stairwell pressurization and garage exhaust. We ensure thermal comfort for retailers and visitors, with specialized service and flexible maintenance contracts.",
       items: [
         {
           title: "Large-scale chilled water plants and chillers",
@@ -410,7 +410,7 @@ const en: typeof pt = {
         "Office buildings and corporate complexes require efficient, quiet, low-energy-consumption air conditioning systems. Dancold implements and manages PMOC with dedicated fixed or mobile teams, using mobile devices for remote control and monitoring of activities. We offer VRF/VRV, fan coil, cassette and centralized system solutions, ensuring comfort and productivity for employees and tenants.",
       items: [
         {
-          title: "VRF/VRV and fan coil systems for offices",
+          title: "Central air conditioning, VRF/VRV system",
           text: "Quiet, efficient and individually adjustable air conditioning solutions for corporate environments of different sizes.",
         },
         {
@@ -450,7 +450,7 @@ const en: typeof pt = {
     kicker: "Service reach",
     title: "Where we are",
     intro:
-      "Today Dancold is located in the following states: Santa Catarina, Paraná, São Paulo, Rio de Janeiro and Piauí. We collaborate with multiple businesses and government agencies in the following cities: Curitiba, Pinhais, Araucária, Colombo, São José dos Pinhais, Almirante Tamandaré, Joinville, Brusque, Itajaí, Canoinhas, Florianópolis, São Paulo Capital, São Paulo Campo Limpo, Macaé, Floriano and Campinas. Our team is prepared for fast mobilization, with logistical support to serve large contracts throughout the national territory.",
+      "Today Dancold is located in the following states: Santa Catarina, Paraná, São Paulo, Rio de Janeiro and Piauí. We collaborate with private and government organizations. Our team is prepared for fast mobilization, with logistical support to serve large contracts throughout the national territory.",
     hqTitle: "Headquarters",
     hqText: "Av. Prefeito Maurício Fruet, 3060 — Cajuru, Curitiba-PR | ZIP 82.920-330",
     serviceTitle: "Service hours",
