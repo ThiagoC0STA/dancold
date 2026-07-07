@@ -144,6 +144,7 @@ export default async function LangLayout({ children, params }: LayoutProps<"/[la
               whereWeAre: dict.nav.whereWeAre,
               blog: dict.nav.blog,
               contact: dict.nav.contact,
+              careers: dict.nav.careers,
               whatsapp: dict.common.whatsapp,
               hours: dict.common.hours,
             }}

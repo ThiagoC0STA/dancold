@@ -38,6 +38,11 @@ const en: typeof pt = {
       description:
         "Technical articles on HVAC, industrial refrigeration, PMOC, automation and energy efficiency, written by the Dancold team.",
     },
+    careers: {
+      title: "Work With Us",
+      description:
+        "Join the Dancold team. Check out our open positions in engineering, refrigeration and air conditioning and send your résumé to rh@dancold.com.br.",
+    },
   },
   common: {
     learnMore: "Learn more",
@@ -58,6 +63,7 @@ const en: typeof pt = {
     whereWeAre: "Where We Are",
     blog: "Blog",
     contact: "Contact",
+    careers: "Work With Us",
   },
   hero: {
     slides: [
@@ -490,6 +496,79 @@ const en: typeof pt = {
     addressText: "Av. Prefeito Maurício Fruet, 3060 Cajuru • Curitiba-PR • ZIP 82.920-330",
     emailTitle: "Send us an e-mail",
     phonesTitle: "Phones",
+  },
+  careers: {
+    kicker: "Work with us",
+    title: "Join the Dancold team",
+    intro:
+      "We are a team with over 25 years in HVAC, industrial refrigeration and automation. We are always looking for committed, technical people to grow together with Dancold.",
+    whyKicker: "Why Dancold",
+    whyTitle: "A great place to grow",
+    whyIntro:
+      "Over two decades delivering HVAC and refrigeration projects for major industries, hospitals and malls. Here you learn hands-on and grow with the team.",
+    reasons: [
+      {
+        title: "Solid company",
+        text: "In the market since 1998, with maintenance contracts and technical support 365 days a year.",
+      },
+      {
+        title: "Large projects",
+        text: "You work on projects for brands like Ambev, ArcelorMittal, hospitals and shopping malls.",
+      },
+      {
+        title: "Technical learning",
+        text: "Industrial refrigeration, chillers, VRF, building automation and commissioning every day.",
+      },
+      {
+        title: "A team that supports you",
+        text: "An experienced team and real room to grow in your technical career.",
+      },
+    ],
+    areasKicker: "Areas of work",
+    areasTitle: "Where you can work",
+    areasIntro:
+      "We work across the entire HVAC and refrigeration chain. These are the teams that make up Dancold.",
+    areas: [
+      {
+        title: "Engineering",
+        text: "Electrical, mechanical and automation design for HVAC and refrigeration systems.",
+      },
+      {
+        title: "Refrigeration & air conditioning",
+        text: "Installation and maintenance of splits, VRF, chillers and cold rooms.",
+      },
+      {
+        title: "Field operations",
+        text: "Technical teams on site and preventive and corrective maintenance across Brazil.",
+      },
+      {
+        title: "Automation & monitoring",
+        text: "Control, supervision and energy efficiency of building and industrial systems.",
+      },
+    ],
+    stepsKicker: "How to apply",
+    stepsTitle: "Simple and direct",
+    steps: [
+      {
+        title: "Prepare your résumé",
+        text: "Put your experience and education together in an up-to-date résumé.",
+      },
+      {
+        title: "Send it to HR",
+        text: "E-mail it to us and mention the area you're interested in.",
+      },
+      {
+        title: "We'll get back to you",
+        text: "We review your profile and reach out when a matching opportunity comes up.",
+      },
+    ],
+    emailKicker: "Send your résumé",
+    emailTitle: "Let's talk",
+    emailText:
+      "To apply, send your résumé to our HR e-mail. As soon as an opportunity that matches your profile comes up, we'll get in touch.",
+    emailLabel: "HR e-mail",
+    emailCtaLabel: "Send résumé",
+    emailSubject: "Application - Dancold",
   },
   cta: {
     title: "Ready to take your operation to another level?",

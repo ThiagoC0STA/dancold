@@ -2,6 +2,7 @@ export const site = {
   name: "Dancold",
   url: "https://www.dancold.com.br",
   email: "dancold@dancold.com.br",
+  emailCareers: "rh@dancold.com.br",
   phoneFixed: "(41) 3365-4877",
   phoneMobile: "(41) 9 9246-6920",
   whatsapp: "https://wa.me/+5541992466920",

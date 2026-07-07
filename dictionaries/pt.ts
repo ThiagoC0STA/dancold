@@ -36,6 +36,11 @@ const pt = {
       description:
         "Artigos técnicos sobre climatização, refrigeração industrial, PMOC, automação e eficiência energética, escritos pela equipe da Dancold.",
     },
+    careers: {
+      title: "Trabalhe Conosco",
+      description:
+        "Faça parte do time Dancold. Confira as vagas em aberto para engenharia, refrigeração e ar condicionado e envie seu currículo para rh@dancold.com.br.",
+    },
   },
   common: {
     learnMore: "Saiba mais",
@@ -56,6 +61,7 @@ const pt = {
     whereWeAre: "Onde Estamos",
     blog: "Blog",
     contact: "Contato",
+    careers: "Trabalhe Conosco",
   },
   hero: {
     slides: [
@@ -488,6 +494,79 @@ const pt = {
     addressText: "Av. Prefeito Maurício Fruet, 3060 Cajuru • Curitiba-PR • CEP 82.920-330",
     emailTitle: "Envie-nos um e-mail",
     phonesTitle: "Telefones",
+  },
+  careers: {
+    kicker: "Trabalhe conosco",
+    title: "Faça parte do time Dancold",
+    intro:
+      "Somos uma equipe de mais de 25 anos em climatização, refrigeração industrial e automação. Estamos sempre em busca de gente comprometida e técnica para crescer junto com a Dancold.",
+    whyKicker: "Por que a Dancold",
+    whyTitle: "Um bom lugar para crescer",
+    whyIntro:
+      "Mais de duas décadas entregando projetos de climatização e refrigeração para grandes indústrias, hospitais e shoppings. Aqui você aprende na prática e evolui com o time.",
+    reasons: [
+      {
+        title: "Empresa sólida",
+        text: "No mercado desde 1998, com contratos de manutenção e suporte técnico 365 dias por ano.",
+      },
+      {
+        title: "Grandes projetos",
+        text: "Você atua em obras para marcas como Ambev, ArcelorMittal, hospitais e shopping centers.",
+      },
+      {
+        title: "Aprendizado técnico",
+        text: "Refrigeração industrial, chillers, VRF, automação predial e comissionamento no dia a dia.",
+      },
+      {
+        title: "Time que apoia",
+        text: "Equipe experiente e espaço real para evoluir na sua carreira técnica.",
+      },
+    ],
+    areasKicker: "Áreas de atuação",
+    areasTitle: "Onde você pode atuar",
+    areasIntro:
+      "Trabalhamos com toda a cadeia de climatização e refrigeração. Estes são os times que formam a Dancold.",
+    areas: [
+      {
+        title: "Engenharia",
+        text: "Projetos elétricos, mecânicos e de automação para sistemas de climatização e refrigeração.",
+      },
+      {
+        title: "Refrigeração e ar condicionado",
+        text: "Instalação e manutenção de splits, VRF, chillers e câmaras frias.",
+      },
+      {
+        title: "Operações de campo",
+        text: "Equipes técnicas em obra e manutenção preventiva e corretiva em todo o Brasil.",
+      },
+      {
+        title: "Automação e monitoramento",
+        text: "Controle, supervisão e eficiência energética de sistemas prediais e industriais.",
+      },
+    ],
+    stepsKicker: "Como se candidatar",
+    stepsTitle: "Simples e direto",
+    steps: [
+      {
+        title: "Prepare seu currículo",
+        text: "Reúna sua experiência e formação em um currículo atualizado.",
+      },
+      {
+        title: "Envie para o RH",
+        text: "Mande para o nosso e-mail informando a área do seu interesse.",
+      },
+      {
+        title: "A gente te retorna",
+        text: "Avaliamos o seu perfil e entramos em contato quando houver uma oportunidade compatível.",
+      },
+    ],
+    emailKicker: "Envie seu currículo",
+    emailTitle: "Vamos conversar",
+    emailText:
+      "Para se candidatar, envie seu currículo para o e-mail do nosso RH. Assim que surgir uma oportunidade compatível com o seu perfil, entramos em contato.",
+    emailLabel: "E-mail do RH",
+    emailCtaLabel: "Enviar currículo",
+    emailSubject: "Candidatura - Dancold",
   },
   cta: {
     title: "Pronto para levar sua operação a outro nível?",

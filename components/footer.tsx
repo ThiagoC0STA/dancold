@@ -15,6 +15,7 @@ export function Footer({ lang, dict }: { lang: Locale; dict: Dictionary }) {
     { href: `/${lang}/onde-estamos`, label: dict.nav.whereWeAre },
     { href: `/${lang}/blog`, label: dict.nav.blog },
     { href: `/${lang}/contato`, label: dict.nav.contact },
+    { href: `/${lang}/trabalhe-conosco`, label: dict.nav.careers },
   ];
 
   return (

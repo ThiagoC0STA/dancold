@@ -16,6 +16,7 @@ type NavLabels = {
   whereWeAre: string;
   blog: string;
   contact: string;
+  careers: string;
   whatsapp: string;
   hours: string;
 };
@@ -67,6 +68,7 @@ export function Header({ lang, labels }: { lang: Locale; labels: NavLabels }) {
     { href: `/${lang}/onde-estamos`, label: labels.whereWeAre },
     { href: `/${lang}/blog`, label: labels.blog },
     { href: `/${lang}/contato`, label: labels.contact },
+    { href: `/${lang}/trabalhe-conosco`, label: labels.careers },
   ];
 
   const isActive = (item: { href: string; exact?: boolean }) =>
