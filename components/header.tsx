@@ -6,6 +6,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "motion/react";
 import type { Locale } from "@/lib/i18n";
+import { site } from "@/lib/site";
 import { LocaleSwitcher } from "./locale-switcher";
 
 type NavLabels = {
@@ -21,10 +22,10 @@ type NavLabels = {
   hours: string;
 };
 
-const A11Y: Record<Locale, { homeLink: string; nav: string; menu: string }> = {
-  pt: { homeLink: "Dancold — página inicial", nav: "Principal", menu: "Menu" },
-  en: { homeLink: "Dancold — home", nav: "Main", menu: "Menu" },
-  es: { homeLink: "Dancold — inicio", nav: "Principal", menu: "Menú" },
+const A11Y: Record<Locale, { homeLink: string; nav: string; menu: string; close: string }> = {
+  pt: { homeLink: "Dancold — página inicial", nav: "Principal", menu: "Menu", close: "Fechar menu" },
+  en: { homeLink: "Dancold — home", nav: "Main", menu: "Menu", close: "Close menu" },
+  es: { homeLink: "Dancold — inicio", nav: "Principal", menu: "Menú", close: "Cerrar menú" },
 };
 
 export function Header({ lang, labels }: { lang: Locale; labels: NavLabels }) {
@@ -117,56 +118,110 @@ export function Header({ lang, labels }: { lang: Locale; labels: NavLabels }) {
           <LocaleSwitcher current={lang} />
           <button
             type="button"
-            onClick={() => setMobileOpen(!mobileOpen)}
+            onClick={() => setMobileOpen(true)}
             aria-label={a11y.menu}
             aria-expanded={mobileOpen}
             aria-controls="mobile-menu"
-            className="flex h-10 w-10 items-center justify-center rounded-lg border border-line text-ink lg:hidden"
+            className="flex h-10 w-10 items-center justify-center rounded-lg border border-line text-ink transition-colors hover:border-line-2 lg:hidden"
           >
-            <div className="relative h-3.5 w-5">
-              <span
-                className={`absolute left-0 top-0 h-0.5 w-full bg-current transition-all duration-300 ${mobileOpen ? "top-1.5 rotate-45" : ""}`}
-              />
-              <span
-                className={`absolute left-0 top-1.5 h-0.5 w-full bg-current transition-opacity duration-200 ${mobileOpen ? "opacity-0" : ""}`}
-              />
-              <span
-                className={`absolute left-0 top-3 h-0.5 w-full bg-current transition-all duration-300 ${mobileOpen ? "top-1.5 -rotate-45" : ""}`}
-              />
-            </div>
+            <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" aria-hidden>
+              <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" />
+            </svg>
           </button>
         </div>
       </div>
 
       <AnimatePresence>
         {mobileOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.28, ease: "easeInOut" }}
-            className="overflow-hidden border-t border-line bg-surface lg:hidden"
-          >
-            <nav id="mobile-menu" className="flex flex-col gap-1 px-6 py-5" aria-label={a11y.menu}>
-              {items.map((item, index) => (
-                <motion.div
-                  key={item.href}
-                  initial={{ opacity: 0, x: -14 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.05 * index }}
+          <div className="lg:hidden">
+            <motion.button
+              type="button"
+              aria-label={a11y.menu}
+              onClick={() => setMobileOpen(false)}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.25, ease: "easeOut" }}
+              className="fixed inset-0 z-50 bg-navy-950/40 backdrop-blur-sm"
+            />
+            <motion.aside
+              id="mobile-menu"
+              initial={{ x: "100%" }}
+              animate={{ x: 0 }}
+              exit={{ x: "100%" }}
+              transition={{ type: "spring", stiffness: 380, damping: 40 }}
+              className="fixed inset-y-0 right-0 z-50 flex w-[86%] max-w-sm flex-col border-l border-line bg-surface shadow-[-24px_0_60px_rgba(6,13,27,0.18)]"
+            >
+              <div className="flex h-20 shrink-0 items-center justify-between border-b border-line px-6">
+                <span className="text-[11px] font-semibold uppercase tracking-[0.16em] text-ink-3">
+                  {a11y.menu}
+                </span>
+                <button
+                  type="button"
+                  onClick={() => setMobileOpen(false)}
+                  aria-label={a11y.close}
+                  className="flex h-10 w-10 items-center justify-center rounded-lg border border-line text-ink transition-colors hover:border-line-2 hover:text-accent"
                 >
-                  <Link
-                    href={item.href}
-                    className={`block rounded-lg px-4 py-3 text-[15px] font-medium ${
-                      isActive(item) ? "bg-surface-2 text-ink" : "text-ink-2"
-                    }`}
-                  >
-                    {item.label}
-                  </Link>
-                </motion.div>
-              ))}
-            </nav>
-          </motion.div>
+                  <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" aria-hidden>
+                    <path
+                      d="M6 6l12 12M18 6L6 18"
+                      stroke="currentColor"
+                      strokeWidth="1.75"
+                      strokeLinecap="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+
+              <nav
+                className="flex flex-1 flex-col gap-0.5 overflow-y-auto px-4 py-5"
+                aria-label={a11y.nav}
+              >
+                {items.map((item) => {
+                  const active = isActive(item);
+                  return (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      aria-current={active ? "page" : undefined}
+                      className={`group flex items-center justify-between rounded-lg px-4 py-3.5 text-[15px] font-medium transition-colors ${
+                        active ? "bg-surface-2 text-ink" : "text-ink-2 hover:bg-surface-2 hover:text-ink"
+                      }`}
+                    >
+                      <span className="flex items-center gap-3">
+                        <span
+                          className={`h-4 w-0.5 rounded-full transition-colors ${
+                            active ? "bg-accent" : "bg-transparent"
+                          }`}
+                        />
+                        {item.label}
+                      </span>
+                      <svg
+                        viewBox="0 0 12 12"
+                        className="h-3 w-3 -translate-x-1 text-ink-3 opacity-0 transition-all group-hover:translate-x-0 group-hover:opacity-100"
+                        aria-hidden
+                      >
+                        <path d="M3 2l4 4-4 4" fill="none" stroke="currentColor" strokeWidth="1.6" />
+                      </svg>
+                    </Link>
+                  );
+                })}
+              </nav>
+
+              <div className="shrink-0 border-t border-line p-4">
+                <a
+                  href={site.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary w-full"
+                >
+                  <WhatsAppIcon className="h-4.5 w-4.5" />
+                  {labels.whatsapp}
+                </a>
+                <p className="mt-3 text-center text-xs text-ink-3">{labels.hours}</p>
+              </div>
+            </motion.aside>
+          </div>
         )}
       </AnimatePresence>
     </header>
