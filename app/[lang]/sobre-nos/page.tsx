@@ -29,10 +29,10 @@ export default async function AboutPage({ params }: PageProps<"/[lang]/sobre-nos
   const dict = await getDictionary(lang);
 
   const stats = [
-    { value: 25, prefix: "+", label: dict.home.statsYears },
-    { value: 3000, prefix: "+", label: dict.home.statsClients },
-    { value: 365, prefix: "", label: dict.home.statsSupport },
-    { value: 16, prefix: "", label: dict.home.statsCities },
+    { value: 25, prefix: "+", suffix: "", label: dict.home.statsYears },
+    { value: 3000, prefix: "+", suffix: "", label: dict.home.statsClients },
+    { value: 365, prefix: "", suffix: dict.home.statsSupportUnit, label: dict.home.statsSupport },
+    { value: 16, prefix: "", suffix: "", label: dict.home.statsCities },
   ];
 
   const reasonIcons = [ShieldIcon, MedalIcon, UsersIcon, ChipIcon];
@@ -220,6 +220,11 @@ export default async function AboutPage({ params }: PageProps<"/[lang]/sobre-nos
               <span aria-hidden className="mb-5 block h-[2px] w-8 bg-accent" />
               <p className="font-display text-4xl font-bold tracking-tight text-white tabular-nums sm:text-5xl">
                 <Counter to={stat.value} prefix={stat.prefix} />
+                {stat.suffix && (
+                  <span className="ml-1 align-baseline text-base font-semibold tracking-normal text-white/60 sm:text-lg">
+                    {stat.suffix}
+                  </span>
+                )}
               </p>
               <p className="mt-2.5 text-xs font-semibold uppercase tracking-[0.16em] text-white/60">
                 {stat.label}

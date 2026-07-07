@@ -49,9 +49,9 @@ export default async function WhereWeArePage({ params }: PageProps<"/[lang]/onde
   const totalCities = coverage.reduce((sum, entry) => sum + entry.cities.length, 0);
 
   const stats = [
-    { value: totalCities, prefix: "", label: dict.home.statsCities },
-    { value: 365, prefix: "", label: dict.home.statsSupport },
-    { value: 25, prefix: "+", label: dict.home.statsYears },
+    { value: totalCities, prefix: "", suffix: "", label: dict.home.statsCities },
+    { value: 365, prefix: "", suffix: dict.home.statsSupportUnit, label: dict.home.statsSupport },
+    { value: 25, prefix: "+", suffix: "", label: dict.home.statsYears },
   ];
 
   return (
@@ -109,6 +109,11 @@ export default async function WhereWeArePage({ params }: PageProps<"/[lang]/onde
                   <div key={stat.label}>
                     <p className="font-display text-4xl font-bold tracking-tight text-brand tabular-nums">
                       <Counter to={stat.value} prefix={stat.prefix} />
+                      {stat.suffix && (
+                        <span className="ml-1 align-baseline text-sm font-semibold tracking-normal text-ink-3">
+                          {stat.suffix}
+                        </span>
+                      )}
                     </p>
                     <p className="mt-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-ink-3">
                       {stat.label}

@@ -33,10 +33,10 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
   const homeServices = serviceSlugs.slice(0, 3);
 
   const stats = [
-    { value: 25, prefix: "+", label: dict.home.statsYears },
-    { value: 3000, prefix: "+", label: dict.home.statsClients },
-    { value: 365, prefix: "", label: dict.home.statsSupport },
-    { value: 16, prefix: "", label: dict.home.statsCities },
+    { value: 25, prefix: "+", suffix: "", label: dict.home.statsYears },
+    { value: 3000, prefix: "+", suffix: "", label: dict.home.statsClients },
+    { value: 365, prefix: "", suffix: dict.home.statsSupportUnit, label: dict.home.statsSupport },
+    { value: 16, prefix: "", suffix: "", label: dict.home.statsCities },
   ];
 
   return (
@@ -57,7 +57,12 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
               className="px-2 py-12 lg:px-10 lg:first:pl-0"
             >
               <p className="font-display text-4xl font-bold tracking-tight text-brand tabular-nums sm:text-5xl">
-                <Counter to={stat.value} prefix={stat.prefix} suffix="" />
+                <Counter to={stat.value} prefix={stat.prefix} />
+                {stat.suffix && (
+                  <span className="ml-1 align-baseline text-base font-semibold tracking-normal text-ink-3 sm:text-lg">
+                    {stat.suffix}
+                  </span>
+                )}
               </p>
               <p className="mt-2 text-[13px] font-medium uppercase tracking-[0.12em] text-ink-3">
                 {stat.label}

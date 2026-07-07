@@ -101,6 +101,7 @@ const en: typeof pt = {
     statsYears: "Years of experience",
     statsClients: "Satisfied clients",
     statsSupport: "Technical support",
+    statsSupportUnit: "days",
     statsCities: "Cities served",
   },
   about: {

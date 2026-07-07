@@ -99,6 +99,7 @@ const pt = {
     statsYears: "Anos de experiência",
     statsClients: "Clientes satisfeitos",
     statsSupport: "Suporte técnico",
+    statsSupportUnit: "dias",
     statsCities: "Cidades atendidas",
   },
   about: {
