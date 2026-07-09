@@ -216,8 +216,8 @@ export default async function AboutPage({ params }: PageProps<"/[lang]/sobre-nos
         <div className="bg-blueprint absolute inset-0 opacity-30" aria-hidden />
         <div className="relative mx-auto grid max-w-7xl grid-cols-2 gap-x-6 gap-y-12 px-6 py-20 lg:grid-cols-4 lg:py-24">
           {stats.map((stat, index) => (
-            <Reveal key={stat.label} delay={index * 0.08}>
-              <span aria-hidden className="mb-5 block h-[2px] w-8 bg-accent" />
+            <Reveal key={stat.label} delay={index * 0.08} className="text-center">
+              <span aria-hidden className="mx-auto mb-5 block h-[2px] w-8 bg-accent" />
               <p className="font-display text-4xl font-bold tracking-tight text-white tabular-nums sm:text-5xl">
                 <Counter to={stat.value} prefix={stat.prefix} />
                 {stat.suffix && (

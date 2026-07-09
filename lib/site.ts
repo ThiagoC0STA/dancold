@@ -6,7 +6,7 @@ export const site = {
   phoneFixed: "(41) 3365-4877",
   phoneMobile: "(41) 9 9246-6920",
   whatsapp: "https://wa.me/+5541992466920",
-  address: "Av. Prefeito Maurício Fruet, 3060 — Cajuru, Curitiba-PR, CEP 82.920-330",
+  address: "Av. Prefeito Maurício Fruet, 3060, Cajuru, Curitiba, PR, CEP 82.920-330.",
   cnpj: "05.477.326/0001-28",
   foundedYear: 1998,
   social: {
@@ -64,7 +64,7 @@ export const coverage = [
     ],
   },
   { id: "sc", cities: ["Joinville", "Brusque", "Itajaí", "Canoinhas", "Florianópolis"] },
-  { id: "sp", cities: ["São Paulo Capital", "São Paulo Campo Limpo", "Campinas"] },
+  { id: "sp", cities: ["São Paulo Capital", "Campo Limpo Paulista", "Campinas"] },
   { id: "rj", cities: ["Macaé"] },
   { id: "pi", cities: ["Floriano"] },
 ] as const;
@@ -77,8 +77,6 @@ export const clients = [
   { name: "Daikin", logo: "/clients/daikin.png" },
   { name: "Hitachi", logo: "/clients/hitachi.png" },
   { name: "Mondelez", logo: "/clients/Mondelez.png" },
-  { name: "Mueller", logo: "/clients/mueller.png" },
-  { name: "Shopping Curitiba", logo: "/clients/shopping-curitiba.png" },
   { name: "Unimed", logo: "/clients/unimed.png" },
 ] as const;
 

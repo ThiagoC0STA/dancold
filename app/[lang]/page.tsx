@@ -54,7 +54,7 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
             <Reveal
               key={stat.label}
               delay={index * 0.08}
-              className="px-2 py-12 lg:px-10 lg:first:pl-0"
+              className="px-2 py-12 text-center lg:px-10"
             >
               <p className="font-display text-4xl font-bold tracking-tight text-brand tabular-nums sm:text-5xl">
                 <Counter to={stat.value} prefix={stat.prefix} />

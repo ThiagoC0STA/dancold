@@ -47,7 +47,7 @@ export default async function SegmentsPage({ params }: PageProps<"/[lang]/segmen
         <div className="relative mx-auto max-w-7xl px-6">
           <Reveal>
             <p className="max-w-3xl text-lg leading-relaxed text-ink-2">
-              {dict.home.segmentsIntro}
+              {dict.segmentsPage.intro}
             </p>
           </Reveal>
           <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">

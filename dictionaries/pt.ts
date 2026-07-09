@@ -66,20 +66,24 @@ const pt = {
   hero: {
     slides: [
       {
-        kicker: "Grandes Soluções",
+        kicker: "Grandes soluções",
         title: "Projetos de Refrigeração de Alto Desempenho",
       },
       {
-        kicker: "Grandes Ambientes",
+        kicker: "Grandes ambientes",
         title: "Conforto Térmico para Grandes Ambientes",
       },
       {
-        kicker: "Ambientes Industriais",
-        title: "Eficiência Térmica e PMOC de alta qualidade",
+        kicker: "Ambientes industriais",
+        title: "Eficiência energética, Retrofit e PMOC",
       },
       {
         kicker: "Manutenção",
-        title: "Contratos de Manutenção Preventiva e Corretiva",
+        title: "Contratos de manutenção preventiva e corretiva",
+      },
+      {
+        kicker: "Projetos Seguros",
+        title: "Comissionamento de Obras focando nos detalhes",
       },
     ],
   },
@@ -93,7 +97,7 @@ const pt = {
     segmentsTitle: "Segmentos",
     segmentsKicker: "Onde atuamos",
     segmentsIntro:
-      "A Dancold oferece consultoria, e implanta PMOC disponibilizando equipes com suporte técnico ininterrupto para os seguintes segmentos:",
+      "A Dancold oferece uma série de serviços dentro da área de refrigeração de processos e ar-condicionado, disponibilizando equipes com suporte técnico ininterrupto para os seguintes segmentos:",
     suppliersTitle: "Fornecedores",
     suppliersKicker: "Marcas que representamos",
     statsYears: "Anos de experiência",
@@ -111,10 +115,10 @@ const pt = {
     whoWeAre: "Quem somos",
     missionTitle: "Missão",
     mission:
-      "Projetar, vender, instalar e prestar assistência técnica para equipamentos de ar-condicionado e refrigeração, automatizando processos de forma profissional e superando as expectativas dos clientes — sempre com foco no usuário, na qualidade do ar e no menor impacto ambiental.",
+      "Projetar, vender, instalar e prestar assistência técnica para equipamentos de ar condicionado e refrigeração, automatizando processos de forma profissional e superando as expectativas dos clientes, sempre com foco no cliente, na qualidade do ar e no menor impacto ambiental.",
     visionTitle: "Visão",
     vision:
-      "Ser referência nacional e internacional como grande empresa mantenedora de HVAC e refrigeração, reconhecida pela excelência técnica, capacidade de resolver desafios complexos e pela entrega de serviços de alta qualidade a qualquer organização que nos solicitar.",
+      "Cooperar com cada vez mais empresas sendo uma mantenedora de ativos em processos de refrigeração e climatização de conforto, reconhecida pela excelência técnica, capacidade de resolver desafios complexos de maneira rápida, e pela entrega de serviços de alta qualidade a qualquer um que nos solicitar.",
     valuesTitle: "Valores",
     values: [
       "Foco no cliente",
@@ -124,41 +128,38 @@ const pt = {
       "Trabalho em equipe",
       "Inovação contínua",
       "Responsabilidade socioambiental",
+      "Monitoramento 24h nos ativos",
     ],
     yearsLabel: "Anos de experiência",
     clientsLabel: "Clientes satisfeitos",
     morePrefix: "+ de",
     historyTitle: "Nossa história",
     history:
-      "Fundada em 1998 como empresa familiar especializada em manutenção de ar-condicionado e refrigeração, a Dancold expandiu sua atuação para o setor industrial a partir de 2002, atendendo desde então marcas reconhecidas nacional e internacionalmente. Hoje, com mais de 25 anos de mercado, somos uma referência em HVAC, refrigeração industrial e automação de processos no Sul do Brasil.",
+      "Fundada em 1998 como empresa familiar especializada em manutenção de ar condicionado e refrigeração, a Dancold expandiu sua atuação para múltiplos setores, atendendo marcas reconhecidas nacional e internacionalmente. Hoje, com mais de 25 anos de mercado, somos uma referência em climatização, refrigeração e automação de processos no Brasil.",
     timeline: [
       {
-        period: "1998 - 2002",
-        text: "Iniciou sua trajetória como uma empresa familiar, prestando serviços de manutenção em sistemas de ar-condicionado e refrigeração nas áreas residencial e comercial.",
+        period: "1998 a 2002",
+        text: "Iniciou sua trajetória como uma empresa familiar, prestando serviços de manutenção em sistemas de ar condicionado e refrigeração nas áreas residencial e comercial.",
       },
       {
-        period: "2004 - 2008",
-        text: "Estende sua área de atuação para indústrias, passando a oferecer assistência para várias marcas renomadas no mercado internacional.",
+        period: "2002 a 2013",
+        text: "Estende sua área de atuação para B2B, passando a oferecer assistência para várias marcas renomadas no mercado nacional e internacional.",
       },
       {
-        period: "2009 - 2013",
-        text: "Deixa de ser uma empresa familiar e focaliza seu departamento comercial para prestar um atendimento para órgãos públicos.",
-      },
-      {
-        period: "2014 - 2021",
-        text: "Por conta do alto volume de demanda, começou a atuar nas áreas de consultoria, comissionamento, gerenciamento e supervisão de obras, terceirizando serviços de empreitada.",
+        period: "2014 a 2021",
+        text: "Começou a atuar nas áreas de consultoria, comissionamento, gerenciamento e supervisão de obras, terceirizando serviços de empreitada.",
       },
       {
         period: "2022",
-        text: "Atualiza toda a operação proporcionando dispositivos mobile para todas as equipes interligando sistemas e processos para controle mediante departamento operacional.",
+        text: "Atualiza toda a operação, proporcionando dispositivos mobile para todas as equipes, interligando sistemas e processos para mais controle de qualidade de serviços.",
       },
       {
-        period: "2023 - 2025",
-        text: "Expande atividades para mais 3 estados, hoje presente em 11 cidades distribuídas no Paraná, São Paulo, Rio de Janeiro e Santa Catarina. Fortalecendo cada vez mais os serviços como uma grande mantenedora garantindo aos seus clientes maior produtividade através do controle, coordenação e fiscalização integrados de seus processos.",
+        period: "2023 a 2026",
+        text: "Expandiu atividades com bases em 5 estados. Hoje está presente em 15 cidades com equipes fixas e volantes distribuídas por todo o território nacional, garantindo aos clientes melhor pronto atendimento em operações que necessitam de mais urgência.",
       },
     ],
     whyKicker: "Top Razões",
-    whyTitle: "Porque nos escolher?",
+    whyTitle: "Por que nos escolher",
     whyIntro:
       "A Dancold dispõe de um departamento que oferece consultoria e manutenção capaz de prestar suporte técnico nos 365 dias do ano, de forma ininterrupta.",
     reasons: [
@@ -168,7 +169,7 @@ const pt = {
       },
       {
         title: "Mais de 25 anos de experiência",
-        text: "Trajetória sólida atendendo indústrias, hospitais, shoppings e grandes corporações.",
+        text: "Trajetória sólida atendendo grandes corporações em múltiplos segmentos.",
       },
       {
         title: "Equipes especializadas por segmento",
@@ -176,7 +177,7 @@ const pt = {
       },
       {
         title: "Tecnologia e inovação",
-        text: "Uso de ferramentas digitais, monitoramento remoto e automação para máxima eficiência.",
+        text: "Retrofit, monitoramento remoto e automação para máxima eficiência.",
       },
     ],
   },
@@ -293,12 +294,12 @@ const pt = {
     "comissionamento-de-obras": {
       title: "Comissionamento de obras",
       short:
-        "Realizamos o comissionamento completo de sistemas HVAC, assegurando que todos os equipamentos operem conforme os parâmetros de projeto antes da entrega final da obra.",
+        "Realizamos o comissionamento completo de sistemas de refrigeração, assegurando que todos os equipamentos operem conforme os parâmetros de projeto antes da entrega final da obra.",
       summary:
-        "Realizamos o comissionamento completo de sistemas HVAC, assegurando que todos os equipamentos operem conforme os parâmetros de projeto antes da entrega final da obra. Inclui testes de desempenho, ajustes e emissão de relatório técnico.",
+        "Realizamos o comissionamento completo de sistemas de refrigeração, assegurando que todos os equipamentos operem conforme os parâmetros de projeto antes da entrega final da obra. Inclui testes de desempenho, ajustes e emissão de relatório técnico.",
       body: [
         "A diferença entre um sistema que simplesmente funciona e um sistema que opera dentro dos parâmetros de projeto pode representar 20 a 30% de consumo de energia a mais, vida útil reduzida e performance abaixo do especificado desde o primeiro dia de operação. O comissionamento é o processo técnico que fecha essa lacuna, e que a maior parte das obras entrega incompleto ou simplesmente ignora.",
-        "A Dancold realiza o comissionamento completo de sistemas HVAC após a instalação, cobrindo desde a verificação de partida dos equipamentos até os testes de carga plena e ajuste fino de todos os parâmetros operacionais. Cada equipamento é testado individualmente e em conjunto com o sistema, com medição de pressão, temperatura, vazão de ar, consumo elétrico e coeficiente de performance real. O processo inclui treinamento da equipe de operação do cliente nos procedimentos de uso correto e manutenção de primeiro nível. A entrega é formalizada com relatório técnico assinado por engenheiro responsável, documentando o estado operacional do sistema e servindo como baseline para todo o PMOC subsequente. A entrega é o ponto de partida da operação — não o fim do nosso trabalho. Por isso, cada comissionamento é documentado com precisão suficiente para sustentar auditorias, vistorias técnicas e qualquer processo regulatório que o cliente venha a enfrentar ao longo da vida útil do sistema.",
+        "A Dancold realiza o comissionamento completo de sistemas de refrigeração após a instalação, cobrindo desde a verificação de partida dos equipamentos até os testes de carga plena e ajuste fino de todos os parâmetros operacionais. Cada equipamento é testado individualmente e em conjunto com o sistema, com medição de pressão, temperatura, vazão de ar, consumo elétrico e coeficiente de performance real. O processo inclui treinamento da equipe de operação do cliente nos procedimentos de uso correto e manutenção de primeiro nível. A entrega é formalizada com relatório técnico assinado por engenheiro responsável, documentando o estado operacional do sistema e servindo como baseline para todo o PMOC subsequente. A entrega é o ponto de partida da operação — não o fim do nosso trabalho. Por isso, cada comissionamento é documentado com precisão suficiente para sustentar auditorias, vistorias técnicas e qualquer processo regulatório que o cliente venha a enfrentar ao longo da vida útil do sistema.",
       ],
       characteristicsTitle: "Características",
       characteristics: [
@@ -321,6 +322,8 @@ const pt = {
     kicker: "Onde atuamos",
     title: "Segmentos",
     breadcrumb: "Segmentos",
+    intro:
+      "A Dancold oferece consultoria e implementa PMOC, disponibilizando equipes com suporte técnico ininterrupto para os seguintes segmentos:",
     servicesInclude: "Nossos serviços incluem:",
   },
   segments: {
@@ -394,7 +397,7 @@ const pt = {
       pageTitle: "Climatização e Refrigeração Comercial",
       title: "Comercial",
       short:
-        "Climatização e refrigeração para supermercados, restaurantes e lojas, com balcões refrigerados, câmaras frias e ar-condicionado sob medida.",
+        "Pmoc para climatização e refrigeração de supermercados, restaurantes e lojas, com balcões refrigerados, câmaras frias.",
       description:
         "Para estabelecimentos comerciais, a Dancold oferece soluções de climatização e refrigeração que garantem conforto aos clientes e segurança para os produtos. Atendemos supermercados, padarias, restaurantes, lojas e outros negócios com instalação e manutenção de balcões refrigerados, câmaras frias, sistemas de ar-condicionado e controle de temperatura para estocagem. Soluções sob medida para cada tipo de operação comercial.",
       items: [
@@ -463,11 +466,11 @@ const pt = {
     intro:
       "Hoje a Dancold está localizada nos seguintes estados: Santa Catarina, Paraná, São Paulo, Rio de Janeiro e Piauí. Nós colaboramos com órgãos privados e governamentais. Nossa equipe está preparada para mobilização rápida, com suporte logístico para atendimento a grandes contratos em todo território nacional.",
     hqTitle: "Sede",
-    hqText: "Av. Prefeito Maurício Fruet, 3060 — Cajuru, Curitiba-PR | CEP 82.920-330",
+    hqText: "Av. Prefeito Maurício Fruet, 3060, Cajuru, Curitiba, PR, CEP 82.920-330.",
     serviceTitle: "Atendimento",
-    serviceText: "Segunda a Sexta, das 8h00 às 17h30",
+    serviceText: "Segunda a sexta, das 8h00 às 17h30.",
     onCallTitle: "Plantão técnico",
-    onCallText: "Suporte 365 dias por ano para contratos de manutenção",
+    onCallText: "Suporte 365 dias por ano para contratos de manutenção.",
     contactTitle: "Entre em Contato",
     emailTitle: "E-mail",
     statesTitle: "Estados onde atuamos",
@@ -475,9 +478,9 @@ const pt = {
   },
   contact: {
     kicker: "Contato",
-    title: "Fale Conosco",
+    title: "Fale conosco",
     intro:
-      "Entre em contato para solicitar um orçamento ou a visita de um técnico especializado, esclarecer dúvidas ou dar sugestões:",
+      "Entre em contato para solicitar um orçamento ou a visita de um técnico especializado, esclarecer dúvidas ou dar sugestões.",
     form: {
       name: "Nome",
       email: "Email",
@@ -490,9 +493,9 @@ const pt = {
     },
     infoTitle: "Entre em Contato",
     hoursTitle: "Horário de Atendimento",
-    hoursText: "Segunda a Sexta 8h00 às 17h30",
+    hoursText: "Segunda a sexta, das 8h00 às 17h30.",
     addressTitle: "Endereço",
-    addressText: "Av. Prefeito Maurício Fruet, 3060 Cajuru • Curitiba-PR • CEP 82.920-330",
+    addressText: "Av. Prefeito Maurício Fruet, 3060, Cajuru, Curitiba, PR, CEP 82.920-330.",
     emailTitle: "Envie-nos um e-mail",
     phonesTitle: "Telefones",
   },
@@ -557,7 +560,7 @@ const pt = {
         text: "Mande para o nosso e-mail informando a área do seu interesse.",
       },
       {
-        title: "A gente te retorna",
+        title: "Retornamos o contato",
         text: "Avaliamos o seu perfil e entramos em contato quando houver uma oportunidade compatível.",
       },
     ],
@@ -571,16 +574,16 @@ const pt = {
   },
   cta: {
     title: "Pronto para levar sua operação a outro nível?",
-    text: "Fale com nossa equipe técnica e descubra a solução ideal em climatização, refrigeração e automação para o seu negócio.",
+    text: "Entre em contato com a nossa equipe técnica e conte mais sobre sua demanda atual.",
     button: "Solicitar orçamento",
   },
   footer: {
     about:
-      "Fundada em 1998, a Dancold iniciou como empresa familiar em manutenção de ar-condicionado e refrigeração. A partir de 2002, expandiu sua atuação para o setor industrial, atendendo marcas reconhecidas internacionalmente.",
+      "Fundada em 1998, a Dancold iniciou como empresa familiar em manutenção de ar condicionado e refrigeração. A partir de 2002, expandiu sua atuação para o setor industrial, atendendo marcas reconhecidas internacionalmente.",
     companyTitle: "A Dancold",
     servicesTitle: "Nossos Serviços",
     contactTitle: "Contato",
-    hoursTitle: "Seg a Sex - 8h00 às 17h30",
+    hoursTitle: "Segunda a sexta, das 8h00 às 17h30.",
     addressTitle: "Endereço",
     emailTitle: "E-mail",
     rights: "Todos os direitos reservados.",
@@ -595,7 +598,7 @@ const pt = {
     title: "Blog",
     breadcrumb: "Blog",
     intro:
-      "Artigos sobre climatização, refrigeração industrial, PMOC, automação e eficiência energética, escritos por quem está em campo há mais de 25 anos.",
+      "Com a nossa jornada de +25 anos criamos um blog para ajudar a entender melhor o que fazemos na prática e como você de maneira independente pode melhorar sua operação ajustando pequenos detalhes.",
     readArticle: "Ler artigo",
     backToBlog: "Voltar para o blog",
     publishedOn: "Publicado em",

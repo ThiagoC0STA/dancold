@@ -68,20 +68,24 @@ const en: typeof pt = {
   hero: {
     slides: [
       {
-        kicker: "Great Solutions",
+        kicker: "Great solutions",
         title: "High-Performance Refrigeration Projects",
       },
       {
-        kicker: "Large Spaces",
+        kicker: "Large spaces",
         title: "Thermal Comfort for Large Environments",
       },
       {
-        kicker: "Industrial Environments",
-        title: "Thermal Efficiency and High-Quality PMOC",
+        kicker: "Industrial environments",
+        title: "Energy Efficiency, Retrofit and PMOC",
       },
       {
         kicker: "Maintenance",
-        title: "Preventive and Corrective Maintenance Contracts",
+        title: "Preventive and corrective maintenance contracts",
+      },
+      {
+        kicker: "Safe Projects",
+        title: "Construction Commissioning down to the detail",
       },
     ],
   },
@@ -95,7 +99,7 @@ const en: typeof pt = {
     segmentsTitle: "Segments",
     segmentsKicker: "Where we operate",
     segmentsIntro:
-      "Dancold provides consulting and implements PMOC, offering teams with uninterrupted technical support for the following segments:",
+      "Dancold offers a range of services within process refrigeration and air conditioning, providing teams with uninterrupted technical support for the following segments:",
     suppliersTitle: "Suppliers",
     suppliersKicker: "Brands we represent",
     statsYears: "Years of experience",
@@ -113,10 +117,10 @@ const en: typeof pt = {
     whoWeAre: "Who we are",
     missionTitle: "Mission",
     mission:
-      "To design, sell, install and provide technical assistance for air-conditioning and refrigeration equipment, automating processes professionally and exceeding client expectations — always focused on the user, air quality and the lowest environmental impact.",
+      "To design, sell, install and provide technical assistance for air conditioning and refrigeration equipment, automating processes professionally and exceeding client expectations, always focused on the client, air quality and the lowest environmental impact.",
     visionTitle: "Vision",
     vision:
-      "To be a national and international reference as a major HVAC and refrigeration maintenance company, recognized for technical excellence, the ability to solve complex challenges and the delivery of high-quality services to any organization that requests us.",
+      "To work with more and more companies as a maintainer of assets in refrigeration and comfort air conditioning processes, recognized for technical excellence, the ability to solve complex challenges quickly, and the delivery of high-quality services to anyone who requests us.",
     valuesTitle: "Values",
     values: [
       "Client focus",
@@ -126,41 +130,38 @@ const en: typeof pt = {
       "Teamwork",
       "Continuous innovation",
       "Social and environmental responsibility",
+      "24h asset monitoring",
     ],
     yearsLabel: "Years of experience",
     clientsLabel: "Satisfied clients",
     morePrefix: "Over",
     historyTitle: "Our history",
     history:
-      "Founded in 1998 as a family business specialized in air-conditioning and refrigeration maintenance, Dancold expanded into the industrial sector in 2002, serving nationally and internationally recognized brands ever since. Today, with over 25 years in the market, we are a reference in HVAC, industrial refrigeration and process automation in Southern Brazil.",
+      "Founded in 1998 as a family business specialized in air conditioning and refrigeration maintenance, Dancold expanded its operations into multiple sectors, serving nationally and internationally recognized brands. Today, with over 25 years in the market, we are a reference in air conditioning, refrigeration and process automation in Brazil.",
     timeline: [
       {
-        period: "1998 - 2002",
-        text: "Began its journey as a family business, providing maintenance services for air-conditioning and refrigeration systems in the residential and commercial areas.",
+        period: "1998 to 2002",
+        text: "Began its journey as a family business, providing maintenance services for air conditioning and refrigeration systems in the residential and commercial areas.",
       },
       {
-        period: "2004 - 2008",
-        text: "Extended its operations to industries, offering assistance for several renowned brands in the international market.",
+        period: "2002 to 2013",
+        text: "Extended its operations to B2B, offering assistance for several renowned brands in the national and international market.",
       },
       {
-        period: "2009 - 2013",
-        text: "Ceased to be a family business and focused its commercial department on serving government agencies.",
-      },
-      {
-        period: "2014 - 2021",
-        text: "Due to the high volume of demand, began operating in consulting, commissioning, management and construction supervision, outsourcing contract services.",
+        period: "2014 to 2021",
+        text: "Began operating in consulting, commissioning, management and construction supervision, outsourcing contract services.",
       },
       {
         period: "2022",
-        text: "Updated the entire operation, providing mobile devices for all teams, interconnecting systems and processes for control through an operational department.",
+        text: "Updated the entire operation, providing mobile devices for all teams, interconnecting systems and processes for greater service quality control.",
       },
       {
-        period: "2023 - 2025",
-        text: "Expanded activities to 3 more states, now present in 11 cities distributed across Paraná, São Paulo, Rio de Janeiro and Santa Catarina. Increasingly strengthening its services as a major maintenance company, guaranteeing clients greater productivity through integrated control, coordination and supervision of their processes.",
+        period: "2023 to 2026",
+        text: "Expanded activities with bases in 5 states. Today it is present in 15 cities with fixed and mobile teams distributed across the entire national territory, guaranteeing clients faster response in operations that demand more urgency.",
       },
     ],
     whyKicker: "Top Reasons",
-    whyTitle: "Why choose us?",
+    whyTitle: "Why choose us",
     whyIntro:
       "Dancold has a department that offers consulting and maintenance capable of providing technical support 365 days a year, without interruption.",
     reasons: [
@@ -170,7 +171,7 @@ const en: typeof pt = {
       },
       {
         title: "Over 25 years of experience",
-        text: "A solid track record serving industries, hospitals, malls and large corporations.",
+        text: "A solid track record serving large corporations across multiple segments.",
       },
       {
         title: "Specialized teams per segment",
@@ -178,7 +179,7 @@ const en: typeof pt = {
       },
       {
         title: "Technology and innovation",
-        text: "Use of digital tools, remote monitoring and automation for maximum efficiency.",
+        text: "Retrofit, remote monitoring and automation for maximum efficiency.",
       },
     ],
   },
@@ -295,12 +296,12 @@ const en: typeof pt = {
     "comissionamento-de-obras": {
       title: "Construction Commissioning",
       short:
-        "We perform complete commissioning of HVAC systems, ensuring all equipment operates according to design parameters before the final delivery of the project.",
+        "We perform complete commissioning of refrigeration systems, ensuring all equipment operates according to design parameters before the final delivery of the project.",
       summary:
-        "We perform complete commissioning of HVAC systems, ensuring all equipment operates according to design parameters before the final delivery of the project. Includes performance tests, adjustments and issuance of a technical report.",
+        "We perform complete commissioning of refrigeration systems, ensuring all equipment operates according to design parameters before the final delivery of the project. Includes performance tests, adjustments and issuance of a technical report.",
       body: [
         "The difference between a system that simply works and a system that operates within design parameters can represent 20 to 30% more energy consumption, reduced service life and below-spec performance from the very first day of operation. Commissioning is the technical process that closes this gap — and one that most projects deliver incomplete or simply ignore.",
-        "Dancold performs complete commissioning of HVAC systems after installation, covering everything from equipment start-up verification to full-load tests and fine-tuning of all operational parameters. Each piece of equipment is tested individually and together with the system, measuring pressure, temperature, air flow, electrical consumption and real coefficient of performance. The process includes training the client's operations team in correct usage procedures and first-level maintenance. Delivery is formalized with a technical report signed by a responsible engineer, documenting the operational state of the system and serving as the baseline for all subsequent PMOC. Delivery is the starting point of the operation — not the end of our work. That is why each commissioning is documented with enough precision to support audits, technical inspections and any regulatory process the client may face throughout the system's life.",
+        "Dancold performs complete commissioning of refrigeration systems after installation, covering everything from equipment start-up verification to full-load tests and fine-tuning of all operational parameters. Each piece of equipment is tested individually and together with the system, measuring pressure, temperature, air flow, electrical consumption and real coefficient of performance. The process includes training the client's operations team in correct usage procedures and first-level maintenance. Delivery is formalized with a technical report signed by a responsible engineer, documenting the operational state of the system and serving as the baseline for all subsequent PMOC. Delivery is the starting point of the operation — not the end of our work. That is why each commissioning is documented with enough precision to support audits, technical inspections and any regulatory process the client may face throughout the system's life.",
       ],
       characteristicsTitle: "Characteristics",
       characteristics: [
@@ -323,6 +324,8 @@ const en: typeof pt = {
     kicker: "Where we operate",
     title: "Segments",
     breadcrumb: "Segments",
+    intro:
+      "Dancold provides consulting and implements PMOC, offering teams with uninterrupted technical support for the following segments:",
     servicesInclude: "Our services include:",
   },
   segments: {
@@ -396,7 +399,7 @@ const en: typeof pt = {
       pageTitle: "Commercial Air Conditioning and Refrigeration",
       title: "Commercial",
       short:
-        "Air conditioning and refrigeration for supermarkets, restaurants and stores, with refrigerated display cases, cold rooms and tailored air conditioning.",
+        "PMOC for air conditioning and refrigeration in supermarkets, restaurants and stores, with refrigerated display cases, cold rooms.",
       description:
         "For commercial establishments, Dancold offers air conditioning and refrigeration solutions that ensure customer comfort and product safety. We serve supermarkets, bakeries, restaurants, stores and other businesses with the installation and maintenance of refrigerated display cases, cold rooms, air conditioning systems and temperature control for storage. Tailored solutions for every type of commercial operation.",
       items: [
@@ -465,11 +468,11 @@ const en: typeof pt = {
     intro:
       "Today Dancold is located in the following states: Santa Catarina, Paraná, São Paulo, Rio de Janeiro and Piauí. We collaborate with private and government organizations. Our team is prepared for fast mobilization, with logistical support to serve large contracts throughout the national territory.",
     hqTitle: "Headquarters",
-    hqText: "Av. Prefeito Maurício Fruet, 3060 — Cajuru, Curitiba-PR | ZIP 82.920-330",
+    hqText: "Av. Prefeito Maurício Fruet, 3060, Cajuru, Curitiba, PR, ZIP 82.920-330.",
     serviceTitle: "Service hours",
-    serviceText: "Monday to Friday, 8:00 am to 5:30 pm",
+    serviceText: "Monday to Friday, 8:00 am to 5:30 pm.",
     onCallTitle: "Technical on-call",
-    onCallText: "Support 365 days a year for maintenance contracts",
+    onCallText: "Support 365 days a year for maintenance contracts.",
     contactTitle: "Get in Touch",
     emailTitle: "E-mail",
     statesTitle: "States where we operate",
@@ -479,7 +482,7 @@ const en: typeof pt = {
     kicker: "Contact",
     title: "Contact Us",
     intro:
-      "Get in touch to request a quote or a visit from a specialized technician, ask questions or make suggestions:",
+      "Get in touch to request a quote or a visit from a specialized technician, ask questions or make suggestions.",
     form: {
       name: "Name",
       email: "Email",
@@ -492,9 +495,9 @@ const en: typeof pt = {
     },
     infoTitle: "Get in Touch",
     hoursTitle: "Service Hours",
-    hoursText: "Monday to Friday 8:00 am to 5:30 pm",
+    hoursText: "Monday to Friday, 8:00 am to 5:30 pm.",
     addressTitle: "Address",
-    addressText: "Av. Prefeito Maurício Fruet, 3060 Cajuru • Curitiba-PR • ZIP 82.920-330",
+    addressText: "Av. Prefeito Maurício Fruet, 3060, Cajuru, Curitiba, PR, ZIP 82.920-330.",
     emailTitle: "Send us an e-mail",
     phonesTitle: "Phones",
   },
@@ -559,7 +562,7 @@ const en: typeof pt = {
         text: "E-mail it to us and mention the area you're interested in.",
       },
       {
-        title: "We'll get back to you",
+        title: "We get back to you",
         text: "We review your profile and reach out when a matching opportunity comes up.",
       },
     ],
@@ -573,16 +576,16 @@ const en: typeof pt = {
   },
   cta: {
     title: "Ready to take your operation to another level?",
-    text: "Talk to our technical team and discover the ideal HVAC, refrigeration and automation solution for your business.",
+    text: "Get in touch with our technical team and tell us more about your current demand.",
     button: "Request a quote",
   },
   footer: {
     about:
-      "Founded in 1998, Dancold started as a family business in air-conditioning and refrigeration maintenance. From 2002, it expanded its operations to the industrial sector, serving internationally recognized brands.",
+      "Founded in 1998, Dancold started as a family business in air conditioning and refrigeration maintenance. From 2002, it expanded its operations to the industrial sector, serving internationally recognized brands.",
     companyTitle: "Dancold",
     servicesTitle: "Our Services",
     contactTitle: "Contact",
-    hoursTitle: "Mon to Fri - 8:00 am to 5:30 pm",
+    hoursTitle: "Monday to Friday, 8:00 am to 5:30 pm.",
     addressTitle: "Address",
     emailTitle: "E-mail",
     rights: "All rights reserved.",
@@ -597,7 +600,7 @@ const en: typeof pt = {
     title: "Blog",
     breadcrumb: "Blog",
     intro:
-      "Articles on HVAC, industrial refrigeration, PMOC, automation and energy efficiency, written by a team with over 25 years in the field.",
+      "Over our 25-year journey we created a blog to help you better understand what we do in practice and how you can independently improve your operation by adjusting small details.",
     readArticle: "Read article",
     backToBlog: "Back to blog",
     publishedOn: "Published on",

@@ -156,6 +156,14 @@ body {
 .btn-primary:hover {
   background: var(--color-accent-dark);
 }
+/* WhatsApp brand green; dark ink keeps the label above 4.5:1 contrast */
+.btn-whatsapp {
+  background: #25d366;
+  color: #04301a;
+}
+.btn-whatsapp:hover {
+  background: #1ebe5b;
+}
 .btn-brand {
   background: var(--brand);
   color: #fff;

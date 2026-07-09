@@ -19,7 +19,7 @@ export function CtaSection({ dict }: { dict: Dictionary }) {
             href={site.whatsapp}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-primary h-[52px] px-7 text-[15px]"
+            className="btn btn-whatsapp h-[52px] px-7 text-[15px]"
           >
             <WhatsAppIcon className="h-5 w-5" />
             {dict.cta.button}

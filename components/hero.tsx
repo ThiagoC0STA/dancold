@@ -11,9 +11,16 @@ const SLIDE_IMAGES = [
   "/img/slides/2.webp",
   "/img/slides/3.webp",
   "/img/slides/4.webp",
+  "/img/services/comissionamento.webp",
 ];
 
-const SLIDE_LINKS = ["servicos/projetos-personalizados", "segmentos", "servicos/plano-de-manutencao-pmoc", "servicos"];
+const SLIDE_LINKS = [
+  "servicos/projetos-personalizados",
+  "segmentos",
+  "servicos/plano-de-manutencao-pmoc",
+  "servicos",
+  "servicos/comissionamento-de-obras",
+];
 
 const INTERVAL = 6500;
 const EASE_EXPO: [number, number, number, number] = [0.16, 1, 0.3, 1];
