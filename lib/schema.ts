@@ -57,7 +57,7 @@ export function siteGraph(dict: Dictionary, lang: Locale) {
     openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",
       dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      opens: "08:00",
+      opens: "07:30",
       closes: "17:30",
     },
     sameAs: [site.social.facebook, site.social.instagram, site.social.linkedin],

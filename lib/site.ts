@@ -64,7 +64,7 @@ export const coverage = [
     ],
   },
   { id: "sc", cities: ["Joinville", "Brusque", "Itajaí", "Canoinhas", "Florianópolis"] },
-  { id: "sp", cities: ["São Paulo Capital", "Campo Limpo Paulista", "Campinas"] },
+  { id: "sp", cities: ["São Paulo e região", "Campinas"] },
   { id: "rj", cities: ["Macaé"] },
   { id: "pi", cities: ["Floriano"] },
 ] as const;
