@@ -76,7 +76,8 @@ export function Header({ lang, labels }: { lang: Locale; labels: NavLabels }) {
     item.exact ? pathname === item.href : pathname.startsWith(item.href);
 
   return (
-    <header
+    <>
+      <header
       className={`sticky top-0 z-50 border-b transition-colors duration-300 ${
         scrolled ? "border-line bg-surface/90 backdrop-blur-xl" : "border-transparent bg-surface"
       }`}
@@ -130,6 +131,7 @@ export function Header({ lang, labels }: { lang: Locale; labels: NavLabels }) {
           </button>
         </div>
       </div>
+      </header>
 
       <AnimatePresence>
         {mobileOpen && (
@@ -224,7 +226,7 @@ export function Header({ lang, labels }: { lang: Locale; labels: NavLabels }) {
           </div>
         )}
       </AnimatePresence>
-    </header>
+    </>
   );
 }
 
