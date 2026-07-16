@@ -38,8 +38,8 @@ export default async function ServicesPage({ params }: PageProps<"/[lang]/servic
         title={dict.servicesPage.title}
         homeLabel={dict.common.home}
         crumbs={[{ label: dict.servicesPage.breadcrumb }]}
-        image="/img/heroes/chillers.jpg"
-        imageAlt="Chillers de um sistema de climatização central"
+        image="/img/heroes/servicos.webp"
+        imageAlt="Técnicos em manutenção de equipamentos de ar condicionado no telhado"
       />
       <section className="bg-bg py-24 lg:py-28">
         <div className="mx-auto max-w-7xl px-6">

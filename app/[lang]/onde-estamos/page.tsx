@@ -68,8 +68,8 @@ export default async function WhereWeArePage({ params }: PageProps<"/[lang]/onde
         title={data.title}
         homeLabel={dict.common.home}
         crumbs={[{ label: data.title }]}
-        image="/img/heroes/city-curitiba.jpg"
-        imageAlt="Vista aérea da cidade de Curitiba ao entardecer"
+        image="/img/heroes/onde-estamos.webp"
+        imageAlt="Equipes dos segmentos atendidos pela Dancold"
       />
 
       {/* intro + operational highlights */}

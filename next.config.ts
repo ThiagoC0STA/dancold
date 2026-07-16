@@ -9,6 +9,16 @@ const nextConfig: NextConfig = {
     formats: ["image/avif", "image/webp"],
     remotePatterns: [{ protocol: "https", hostname: "cdn.sanity.io" }],
   },
+  async redirects() {
+    // segmento "comercial" virou "agronegocios" (jul/2026)
+    return [
+      {
+        source: "/:lang/segmentos/comercial",
+        destination: "/:lang/segmentos/agronegocios",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

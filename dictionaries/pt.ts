@@ -393,25 +393,25 @@ const pt = {
         },
       ],
     },
-    comercial: {
-      pageTitle: "Climatização e Refrigeração Comercial",
-      title: "Comercial",
+    agronegocios: {
+      pageTitle: "Refrigeração para o Agronegócio",
+      title: "Agronegócios",
       short:
-        "Pmoc para climatização e refrigeração de supermercados, restaurantes e lojas, com balcões refrigerados, câmaras frias.",
+        "Refrigeração industrial para frigoríficos e agroindústrias, com câmaras frias, túneis de congelamento e PMOC que protegem a produção.",
       description:
-        "Para estabelecimentos comerciais, a Dancold oferece soluções de climatização e refrigeração que garantem conforto aos clientes e segurança para os produtos. Atendemos supermercados, padarias, restaurantes, lojas e outros negócios com instalação e manutenção de balcões refrigerados, câmaras frias, sistemas de ar-condicionado e controle de temperatura para estocagem. Soluções sob medida para cada tipo de operação comercial.",
+        "O agronegócio depende de frio confiável do processamento à expedição. A Dancold projeta, instala e mantém sistemas de refrigeração para frigoríficos, laticínios e agroindústrias: câmaras frias, túneis de congelamento e salas de processamento climatizadas, com PMOC, monitoramento ininterrupto e conformidade com as normas sanitárias, protegendo a produção contra falhas térmicas.",
       items: [
         {
-          title: "Balcões refrigerados e câmaras frias",
-          text: "Instalação e manutenção de equipamentos de refrigeração para conservação de alimentos e produtos perecíveis.",
+          title: "Câmaras frias e túneis de congelamento",
+          text: "Projeto, instalação e manutenção de sistemas de frio industrial para conservação e congelamento de alimentos.",
         },
         {
-          title: "Climatização de ambientes comerciais",
-          text: "Sistemas de ar-condicionado adequados para o conforto de clientes e colaboradores em lojas e estabelecimentos.",
+          title: "Salas de processamento climatizadas",
+          text: "Controle preciso de temperatura em ambientes de produção, atendendo às exigências sanitárias do setor.",
         },
         {
-          title: "Manutenção preventiva e corretiva",
-          text: "Contratos flexíveis de manutenção para reduzir paradas não planejadas e garantir a operação contínua do negócio.",
+          title: "PMOC e monitoramento 24/7",
+          text: "Plano de manutenção com sensores de temperatura e alarme ininterrupto, evitando perdas de produção.",
         },
       ],
     },

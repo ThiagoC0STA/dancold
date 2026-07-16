@@ -395,25 +395,25 @@ const en: typeof pt = {
         },
       ],
     },
-    comercial: {
-      pageTitle: "Commercial Air Conditioning and Refrigeration",
-      title: "Commercial",
+    agronegocios: {
+      pageTitle: "Refrigeration for Agribusiness",
+      title: "Agribusiness",
       short:
-        "PMOC for air conditioning and refrigeration in supermarkets, restaurants and stores, with refrigerated display cases, cold rooms.",
+        "Industrial refrigeration for meat plants and agribusinesses, with cold rooms, freezing tunnels and PMOC that protect production.",
       description:
-        "For commercial establishments, Dancold offers air conditioning and refrigeration solutions that ensure customer comfort and product safety. We serve supermarkets, bakeries, restaurants, stores and other businesses with the installation and maintenance of refrigerated display cases, cold rooms, air conditioning systems and temperature control for storage. Tailored solutions for every type of commercial operation.",
+        "Agribusiness depends on reliable cold from processing to shipping. Dancold designs, installs and maintains refrigeration systems for meat plants, dairies and agribusinesses: cold rooms, freezing tunnels and climate-controlled processing rooms, with PMOC, uninterrupted monitoring and compliance with sanitary standards, protecting production against thermal failures.",
       items: [
         {
-          title: "Refrigerated display cases and cold rooms",
-          text: "Installation and maintenance of refrigeration equipment for preserving food and perishable products.",
+          title: "Cold rooms and freezing tunnels",
+          text: "Design, installation and maintenance of industrial refrigeration systems for food preservation and freezing.",
         },
         {
-          title: "Air conditioning for commercial spaces",
-          text: "Air conditioning systems suited to the comfort of customers and employees in stores and establishments.",
+          title: "Climate-controlled processing rooms",
+          text: "Precise temperature control in production environments, meeting the sector's sanitary requirements.",
         },
         {
-          title: "Preventive and corrective maintenance",
-          text: "Flexible maintenance contracts to reduce unplanned downtime and ensure continuous business operation.",
+          title: "PMOC and 24/7 monitoring",
+          text: "Maintenance plan with temperature sensors and uninterrupted alarms, preventing production losses.",
         },
       ],
     },

@@ -51,8 +51,8 @@ export default async function AboutPage({ params }: PageProps<"/[lang]/sobre-nos
         title={dict.about.title}
         homeLabel={dict.common.home}
         crumbs={[{ label: dict.about.title }]}
-        image="/img/heroes/technicians.jpg"
-        imageAlt="Técnicos da Dancold em manutenção de sistema de climatização"
+        image="/img/heroes/sobre-nos.webp"
+        imageAlt="Equipe técnica da Dancold em casa de máquinas com chillers"
       />
 
       {/* intro + photo composition */}

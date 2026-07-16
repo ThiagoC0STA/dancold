@@ -37,7 +37,7 @@ export const segmentSlugs = [
   "industrias",
   "hospitais",
   "shopping-centers",
-  "comercial",
+  "agronegocios",
   "predios-corporativos",
   "residencial",
 ] as const;
@@ -47,7 +47,7 @@ export const segmentImages: Record<SegmentSlug, string> = {
   industrias: "/img/segments/industrias.webp",
   hospitais: "/img/segments/hospitais.webp",
   "shopping-centers": "/img/segments/shoppings.webp",
-  comercial: "/img/segments/comercial.jpg",
+  agronegocios: "/img/segments/agronegocios.webp",
   "predios-corporativos": "/img/segments/corporativos.webp",
   residencial: "/img/segments/residencias-v2.webp",
 };

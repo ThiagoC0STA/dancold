@@ -39,8 +39,8 @@ export default async function SegmentsPage({ params }: PageProps<"/[lang]/segmen
         title={dict.segmentsPage.title}
         homeLabel={dict.common.home}
         crumbs={[{ label: dict.segmentsPage.breadcrumb }]}
-        image="/img/heroes/mall-atrium.jpg"
-        imageAlt="Átrio de shopping center com climatização central"
+        image="/img/heroes/segmentos.webp"
+        imageAlt="Equipes dos segmentos atendidos: saúde, indústria, agronegócio e corporativo"
       />
       <section className="relative border-b border-line bg-bg py-24 lg:py-28">
         <div className="bg-blueprint absolute inset-0 opacity-40" aria-hidden />
