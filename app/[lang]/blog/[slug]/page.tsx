@@ -125,7 +125,10 @@ export default async function BlogPostPage({ params }: PageProps<"/[lang]/blog/[
             </p>
           </Reveal>
 
-          <div className="relative mt-10 aspect-video overflow-hidden rounded-[12px] border border-line shadow-[0_30px_60px_-40px_rgba(13,27,46,0.55)]">
+          <div
+            className="relative mt-10 overflow-hidden rounded-[12px] border border-line shadow-[0_30px_60px_-40px_rgba(13,27,46,0.55)]"
+            style={{ aspectRatio: post.coverRatio ?? "16 / 9" }}
+          >
             <Image
               src={post.coverUrl}
               alt={post.coverAlt}

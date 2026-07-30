@@ -67,22 +67,31 @@ const components: PortableTextComponents = {
     ),
   },
   types: {
-    image: ({ value }) => (
-      <figure className="mt-10">
-        <div className="relative aspect-video overflow-hidden rounded-[12px] border border-line shadow-[0_20px_50px_-30px_rgba(13,27,46,0.4)]">
-          <Image
-            src={imageUrl(value, 1400)}
-            alt={value?.alt ?? ""}
-            fill
-            sizes="(max-width: 896px) 100vw, 850px"
-            className="object-cover"
-          />
-        </div>
-        {value?.alt && (
-          <figcaption className="mt-3 text-center text-[13px] text-ink-3">{value.alt}</figcaption>
-        )}
-      </figure>
-    ),
+    image: ({ value }) => {
+      // Sanity encodes the natural size in the asset ref (…-1400x933-webp).
+      // Match the box to it so tall diagrams keep their height instead of being cropped by aspect-video.
+      const dims = /-(\d+)x(\d+)-/.exec(value?.asset?._ref ?? "");
+      const aspectRatio = dims ? `${dims[1]} / ${dims[2]}` : "16 / 9";
+      return (
+        <figure className="mt-10">
+          <div
+            className="relative mx-auto overflow-hidden rounded-[12px] border border-line shadow-[0_20px_50px_-30px_rgba(13,27,46,0.4)]"
+            style={{ aspectRatio }}
+          >
+            <Image
+              src={imageUrl(value, 1400)}
+              alt={value?.alt ?? ""}
+              fill
+              sizes="(max-width: 896px) 100vw, 850px"
+              className="object-cover"
+            />
+          </div>
+          {value?.alt && (
+            <figcaption className="mt-3 text-center text-[13px] text-ink-3">{value.alt}</figcaption>
+          )}
+        </figure>
+      );
+    },
   },
 };
 

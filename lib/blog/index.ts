@@ -46,12 +46,15 @@ type SanityCard = {
 };
 
 function toCard(item: SanityCard): BlogPostCard {
+  const ref = (item.coverImage as { asset?: { _ref?: string } })?.asset?._ref ?? "";
+  const dims = /-(\d+)x(\d+)-/.exec(ref);
   return {
     slug: item.slug,
     title: item.title,
     excerpt: item.excerpt ?? "",
     coverUrl: item.coverImage ? imageUrl(item.coverImage as never) : "/img/heroes/chillers.jpg",
     coverAlt: item.coverAlt ?? item.title,
+    coverRatio: dims ? `${dims[1]} / ${dims[2]}` : undefined,
     publishedAt: item.publishedAt,
   };
 }
