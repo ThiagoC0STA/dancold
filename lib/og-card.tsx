@@ -1,3 +1,5 @@
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
 import { ImageResponse } from "next/og";
 
 const INK = "#0a1428";
@@ -5,7 +7,10 @@ const BRAND = "#14335f";
 const ACCENT = "#d7282f";
 
 /** Shared branded 1200x630 social card, used by opengraph-image and twitter-image. */
-export function renderOgCard() {
+export async function renderOgCard() {
+  const logo = await readFile(join(process.cwd(), "app/icon.png"));
+  const logoSrc = `data:image/png;base64,${logo.toString("base64")}`;
+
   return new ImageResponse(
     (
       <div
@@ -32,8 +37,9 @@ export function renderOgCard() {
             display: "flex",
           }}
         />
-        <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
-          <div style={{ width: 18, height: 18, borderRadius: 9999, backgroundColor: ACCENT, display: "flex" }} />
+        <div style={{ display: "flex", alignItems: "center", gap: 26 }}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={logoSrc} width={104} height={104} alt="" style={{ borderRadius: 20 }} />
           <div
             style={{
               display: "flex",
