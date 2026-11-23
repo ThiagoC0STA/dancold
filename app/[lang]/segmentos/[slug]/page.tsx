@@ -12,6 +12,12 @@ import { CtaSection } from "@/components/cta-section";
 import { WhatsAppIcon } from "@/components/header";
 import { JsonLd } from "@/components/json-ld";
 import { breadcrumb } from "@/lib/schema";
+import { brazilStates } from "@/lib/brazil-map-data";
+import { segmentClients, segmentNouns, segmentVideos } from "@/lib/segment-proof";
+import { BrazilCoverageMap } from "@/components/brazil-coverage-map";
+import { LiteVideo } from "@/components/lite-video";
+import { QuoteForm } from "@/components/quote-form";
+import { SectionHeading } from "@/components/section-heading";
 
 export async function generateStaticParams() {
   return locales.flatMap((lang) => segmentSlugs.map((slug) => ({ lang, slug })));
@@ -32,6 +38,24 @@ export default async function SegmentPage({ params }: PageProps<"/[lang]/segment
   if (!isLocale(lang) || !segmentSlugs.includes(slug as SegmentSlug)) notFound();
   const dict = await getDictionary(lang);
   const segment = dict.segments[slug as SegmentSlug];
+  const page = dict.segmentsPage;
+
+  // prova do segmento: só aparece com dado real em lib/segment-proof.ts
+  const video = segmentVideos[slug as SegmentSlug];
+  const clients = segmentClients[slug as SegmentSlug] ?? [];
+  const cases = clients.filter((client) => client.summary?.[lang] ?? client.summary?.pt);
+  const presenceStates = brazilStates
+    .map((state) => ({
+      id: state.id,
+      name: state.name,
+      cities: clients
+        .filter((client) => client.state === state.id)
+        .map((client) => `${client.name} (${client.city})`),
+    }))
+    .filter((state) => state.cities.length > 0);
+  const presenceTitle = page.presenceTitle
+    .replace("{count}", String(clients.length))
+    .replace("{noun}", segmentNouns[slug as SegmentSlug]?.[lang] ?? page.presenceFallbackNoun);
 
   return (
     <>
@@ -66,6 +90,16 @@ export default async function SegmentPage({ params }: PageProps<"/[lang]/segment
                 </p>
               </Reveal>
 
+              {video && (
+                <Reveal delay={0.08} className="mt-10">
+                  <LiteVideo
+                    youtubeId={video.youtubeId}
+                    title={segment.pageTitle}
+                    playLabel={page.videoPlay}
+                  />
+                </Reveal>
+              )}
+
               <Reveal delay={0.12} className="mt-14">
                 <p className="kicker">{dict.segmentsPage.kicker}</p>
                 <h2 className="mt-4 font-display text-2xl font-semibold tracking-tight text-ink sm:text-[1.7rem]">
@@ -93,16 +127,19 @@ export default async function SegmentPage({ params }: PageProps<"/[lang]/segment
                 ))}
               </div>
 
-              <Reveal delay={0.2} className="mt-12">
+              <Reveal delay={0.2} className="mt-12 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+                <a href="#orcamento" className="btn btn-primary">
+                  {page.quoteCta}
+                  <span aria-hidden className="btn-arrow">→</span>
+                </a>
                 <a
                   href={site.whatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn btn-primary"
+                  className="btn btn-outline"
                 >
                   <WhatsAppIcon className="h-4.5 w-4.5" />
-                  {dict.common.contactUs}
-                  <span aria-hidden className="btn-arrow">→</span>
+                  {dict.common.whatsapp}
                 </a>
               </Reveal>
             </div>
@@ -155,6 +192,103 @@ export default async function SegmentPage({ params }: PageProps<"/[lang]/segment
                 </nav>
               </Reveal>
             </aside>
+          </div>
+        </div>
+      </section>
+
+      {/* presença no segmento: "Estamos em X ..." + mapa */}
+      {clients.length > 0 && (
+        <section className="section-dark relative overflow-hidden border-y border-line bg-bg">
+          <div className="bg-blueprint absolute inset-0 opacity-50" aria-hidden />
+          <div className="relative mx-auto max-w-7xl px-6 py-24 lg:py-28">
+            <Reveal>
+              <BrazilCoverageMap
+                states={presenceStates}
+                tone="dark"
+                hqTitle={dict.whereWeAre.hqTitle}
+                header={
+                  <div className="mb-8">
+                    <p className="kicker">{page.presenceKicker}</p>
+                    <h2 className="mt-4 font-display text-3xl font-semibold tracking-tight text-ink text-balance sm:text-4xl">
+                      {presenceTitle}
+                    </h2>
+                  </div>
+                }
+              />
+            </Reveal>
+          </div>
+        </section>
+      )}
+
+      {cases.length > 0 && (
+        <section className="bg-bg py-24 lg:py-28">
+          <div className="mx-auto max-w-7xl px-6">
+            <SectionHeading kicker={segment.title} title={page.casesTitle} />
+            <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              {cases.map((client, index) => (
+                <Reveal
+                  key={`${client.name}-${client.city}`}
+                  delay={0.08 * (index % 3)}
+                  className="rounded-[10px] border border-line bg-surface p-7"
+                >
+                  <p className="text-xs font-semibold uppercase tracking-[0.16em] text-ink-3">
+                    {client.city} · {client.state.toUpperCase()}
+                  </p>
+                  <h3 className="mt-3 font-display text-lg font-semibold text-ink">
+                    {client.name}
+                  </h3>
+                  <p className="mt-3 text-sm leading-relaxed text-ink-2">
+                    {client.summary?.[lang] ?? client.summary?.pt}
+                  </p>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* pedido de orçamento — destino do clique do anúncio */}
+      <section
+        id="orcamento"
+        className="relative scroll-mt-24 border-t border-line bg-surface-2 py-24 lg:py-28"
+      >
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="grid gap-12 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-16">
+            <div>
+              <SectionHeading
+                kicker={dict.quote.kicker}
+                title={dict.quote.title}
+                intro={dict.quote.text}
+              />
+              <Reveal delay={0.1}>
+                <ul className="mt-9 space-y-4">
+                  {dict.quote.points.map((point) => (
+                    <li key={point} className="flex items-start gap-3 text-[15px] text-ink-2">
+                      <span
+                        aria-hidden
+                        className="mt-0.5 flex h-6 w-6 flex-none items-center justify-center rounded-md border border-line-2 text-accent"
+                      >
+                        <CheckIcon className="h-3.5 w-3.5" />
+                      </span>
+                      {point}
+                    </li>
+                  ))}
+                </ul>
+                <p className="mt-10 text-sm text-ink-3">{dict.quote.whatsappAlt}</p>
+                <a
+                  href={site.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 inline-flex items-center gap-2 font-display text-lg font-semibold text-ink transition hover:text-accent"
+                >
+                  <WhatsAppIcon className="h-5 w-5" />
+                  {site.phoneMobile}
+                </a>
+              </Reveal>
+            </div>
+            <Reveal delay={0.12}>
+              <QuoteForm lang={lang} segment={slug} labels={dict.quote} />
+            </Reveal>
           </div>
         </div>
       </section>

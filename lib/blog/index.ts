@@ -1,84 +1,69 @@
 import "server-only";
-import { defineQuery } from "next-sanity";
+import type { PortableTextBlock } from "@portabletext/react";
 import type { Locale } from "@/lib/i18n";
-import { isSanityConfigured } from "@/sanity/env";
-import { getClient, imageUrl } from "@/sanity/lib/client";
+import { isSupabaseConfigured } from "@/lib/supabase/env";
+import { publicSelect } from "@/lib/supabase/rest";
 import { getSamplePosts, getSampleSlugs } from "./sample-posts";
 import type { BlogPost, BlogPostCard } from "./types";
 
-const FETCH_OPTIONS = { next: { revalidate: 300, tags: ["blog"] } };
+/**
+ * Blog lido do Supabase (tabela `posts`). O site só enxerga post publicado e
+ * com data já vencida: quem garante é o RLS. A leitura fica em cache e é
+ * renovada pela tag "blog" quando o admin salva.
+ */
 
-const listQuery = defineQuery(`
-  *[_type == "post" && defined(slug.current) && defined(title[$lang]) && publishedAt <= now()]
-    | order(publishedAt desc) {
-    "slug": slug.current,
-    "title": title[$lang],
-    "excerpt": excerpt[$lang],
-    coverImage,
-    "coverAlt": coalesce(coverImage.alt, title[$lang]),
-    publishedAt
-  }
-`);
-
-const postQuery = defineQuery(`
-  *[_type == "post" && slug.current == $slug && defined(title[$lang]) && publishedAt <= now()][0] {
-    "slug": slug.current,
-    "title": title[$lang],
-    "excerpt": excerpt[$lang],
-    coverImage,
-    "coverAlt": coalesce(coverImage.alt, title[$lang]),
-    publishedAt,
-    "body": body[$lang]
-  }
-`);
-
-const slugsQuery = defineQuery(
-  `*[_type == "post" && defined(slug.current)].slug.current`,
-);
-
-type SanityCard = {
+type Row = {
   slug: string;
-  title: string;
+  title: string | null;
   excerpt: string | null;
-  coverImage: unknown;
-  coverAlt: string | null;
-  publishedAt: string;
+  cover_url: string | null;
+  cover_alt: string | null;
+  cover_width: number | null;
+  cover_height: number | null;
+  published_at: string;
 };
 
-function toCard(item: SanityCard): BlogPostCard {
-  const ref = (item.coverImage as { asset?: { _ref?: string } })?.asset?._ref ?? "";
-  const dims = /-(\d+)x(\d+)-/.exec(ref);
+const cardColumns = (lang: Locale) =>
+  `slug,title:title->>${lang},excerpt:excerpt->>${lang},cover_url,cover_alt,cover_width,cover_height,published_at`;
+
+function toCard(row: Row): BlogPostCard {
+  const title = row.title ?? "";
   return {
-    slug: item.slug,
-    title: item.title,
-    excerpt: item.excerpt ?? "",
-    coverUrl: item.coverImage ? imageUrl(item.coverImage as never) : "/img/heroes/chillers.jpg",
-    coverAlt: item.coverAlt ?? item.title,
-    coverRatio: dims ? `${dims[1]} / ${dims[2]}` : undefined,
-    publishedAt: item.publishedAt,
+    slug: row.slug,
+    title,
+    excerpt: row.excerpt ?? "",
+    coverUrl: row.cover_url ?? "/img/heroes/chillers.jpg",
+    coverAlt: row.cover_alt || title,
+    coverRatio:
+      row.cover_width && row.cover_height ? `${row.cover_width} / ${row.cover_height}` : undefined,
+    publishedAt: row.published_at,
   };
 }
 
 export async function getPosts(lang: Locale): Promise<BlogPostCard[]> {
-  if (!isSanityConfigured) return getSamplePosts(lang);
-  const items = await getClient().fetch<SanityCard[]>(listQuery, { lang }, FETCH_OPTIONS);
-  return items.map(toCard);
+  if (!isSupabaseConfigured) return getSamplePosts(lang);
+  const rows = await publicSelect<Row>(
+    `posts?select=${cardColumns(lang)}&status=eq.publicado&title->>${lang}=not.is.null&order=published_at.desc`,
+    "blog",
+  );
+  return rows.map(toCard);
 }
 
 export async function getPost(lang: Locale, slug: string): Promise<BlogPost | null> {
-  if (!isSanityConfigured) {
+  if (!isSupabaseConfigured) {
     return getSamplePosts(lang).find((post) => post.slug === slug) ?? null;
   }
-  const item = await getClient().fetch<(SanityCard & { body: BlogPost["body"] | null }) | null>(
-    postQuery,
-    { lang, slug },
-    FETCH_OPTIONS,
+  const rows = await publicSelect<Row & { body: PortableTextBlock[] | null }>(
+    `posts?select=${cardColumns(lang)},body:body->${lang}&status=eq.publicado&slug=eq.${encodeURIComponent(slug)}&limit=1`,
+    "blog",
   );
-  if (!item || !item.body) return null;
-  return { ...toCard(item), body: item.body };
+  const row = rows[0];
+  if (!row || !row.title || !row.body?.length) return null;
+  return { ...toCard(row), body: row.body };
 }
 
 export async function getAllSlugs(): Promise<string[]> {
-  if (!isSanityConfigured) return getSampleSlugs();
-  return getClient().fetch<string[]>(slugsQuery, {}, FETCH_OPTIONS);
+  if (!isSupabaseConfigured) return getSampleSlugs();
+  const rows = await publicSelect<{ slug: string }>("posts?select=slug&status=eq.publicado", "blog");
+  return rows.map((row) => row.slug);
 }

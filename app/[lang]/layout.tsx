@@ -10,6 +10,7 @@ import { Footer } from "@/components/footer";
 import { WhatsAppFab } from "@/components/whatsapp-fab";
 import { JsonLd } from "@/components/json-ld";
 import { MotionProvider } from "@/components/motion-provider";
+import { Tracker } from "@/components/tracker";
 import "../globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
@@ -154,6 +155,7 @@ export default async function LangLayout({ children, params }: LayoutProps<"/[la
           </main>
           <Footer lang={lang} dict={dict} />
           <WhatsAppFab label={dict.common.whatsapp} />
+          <Tracker />
         </MotionProvider>
       </body>
     </html>

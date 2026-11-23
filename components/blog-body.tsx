@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { PortableText, type PortableTextBlock, type PortableTextComponents } from "@portabletext/react";
-import { imageUrl } from "@/sanity/lib/client";
 
 const components: PortableTextComponents = {
   block: {
@@ -68,10 +67,10 @@ const components: PortableTextComponents = {
   },
   types: {
     image: ({ value }) => {
-      // Sanity encodes the natural size in the asset ref (…-1400x933-webp).
-      // Match the box to it so tall diagrams keep their height instead of being cropped by aspect-video.
-      const dims = /-(\d+)x(\d+)-/.exec(value?.asset?._ref ?? "");
-      const aspectRatio = dims ? `${dims[1]} / ${dims[2]}` : "16 / 9";
+      // A caixa segue o tamanho real da imagem, para diagrama alto não ser cortado.
+      if (!value?.url) return null;
+      const aspectRatio =
+        value.width && value.height ? `${value.width} / ${value.height}` : "16 / 9";
       return (
         <figure className="mt-10">
           <div
@@ -79,7 +78,7 @@ const components: PortableTextComponents = {
             style={{ aspectRatio }}
           >
             <Image
-              src={imageUrl(value, 1400)}
+              src={value.url}
               alt={value?.alt ?? ""}
               fill
               sizes="(max-width: 896px) 100vw, 850px"
