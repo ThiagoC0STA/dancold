@@ -52,13 +52,13 @@ export function LocaleSwitcher({ current }: { current: Locale }) {
         ref={buttonRef}
         type="button"
         onClick={() => setOpen((v) => !v)}
-        aria-label={LANG_LABEL[current]}
+        aria-label={`${LANG_LABEL[current]}: ${localeNames[current]}`}
+        title={localeNames[current]}
         aria-expanded={open}
         aria-haspopup="menu"
-        className="flex h-10 cursor-pointer items-center gap-2 rounded-lg border border-line px-3 text-xs font-semibold tracking-wide text-ink-2 transition hover:border-line-2 hover:text-ink"
+        className="flex h-10 cursor-pointer items-center gap-2 rounded-lg border border-line px-3 text-ink-2 transition hover:border-line-2 hover:text-ink"
       >
-        <CurrentFlag className="h-4.5 w-4.5" />
-        <span className="uppercase">{current}</span>
+        <CurrentFlag className="h-5 w-5" />
         <svg
           viewBox="0 0 12 12"
           className={`h-2.5 w-2.5 transition-transform ${open ? "rotate-180" : ""}`}
