@@ -12,7 +12,7 @@ import { ServiceCard } from "@/components/service-card";
 import { SegmentCard } from "@/components/segment-card";
 import { LogoMarquee } from "@/components/logo-marquee";
 import { BrazilCoverageMap } from "@/components/brazil-coverage-map";
-import { CtaSection } from "@/components/cta-section";
+import { QuoteSection } from "@/components/quote-section";
 
 export async function generateMetadata({ params }: PageProps<"/[lang]">): Promise<Metadata> {
   const { lang } = await params;
@@ -218,7 +218,7 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
         </Reveal>
       </section>
 
-      <CtaSection dict={dict} />
+      <QuoteSection lang={lang} dict={dict} />
     </>
   );
 }

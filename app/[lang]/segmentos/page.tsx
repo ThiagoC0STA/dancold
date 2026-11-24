@@ -7,7 +7,7 @@ import { segmentSlugs } from "@/lib/site";
 import { PageHero } from "@/components/page-hero";
 import { SegmentCard } from "@/components/segment-card";
 import { Reveal } from "@/components/reveal";
-import { CtaSection } from "@/components/cta-section";
+import { QuoteSection } from "@/components/quote-section";
 import { JsonLd } from "@/components/json-ld";
 import { breadcrumb } from "@/lib/schema";
 
@@ -65,7 +65,7 @@ export default async function SegmentsPage({ params }: PageProps<"/[lang]/segmen
           </div>
         </div>
       </section>
-      <CtaSection dict={dict} />
+      <QuoteSection lang={lang} dict={dict} />
     </>
   );
 }

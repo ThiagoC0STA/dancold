@@ -5,7 +5,7 @@ import { publicInsert } from "@/lib/supabase/rest";
 import { classifySource, geoFromHeaders, hostOf } from "@/lib/track";
 
 /**
- * Recebe o pedido de orçamento das páginas de segmento e grava na tabela
+ * Recebe o pedido de orçamento do formulário do site e grava na tabela
  * `leads` do Supabase da Dancold (SQL em supabase/schema.sql).
  *
  * Usa a chave pública com RLS que só permite inserir, e sem pedir a linha de

@@ -9,6 +9,7 @@ import { Reveal } from "@/components/reveal";
 import { WhatsAppIcon } from "@/components/header";
 import { JsonLd } from "@/components/json-ld";
 import { breadcrumb } from "@/lib/schema";
+import { QuoteSection } from "@/components/quote-section";
 
 export async function generateMetadata({
   params,
@@ -52,7 +53,7 @@ export default async function ContactPage({ params }: PageProps<"/[lang]/contato
         imageAlt="Manômetros de um sistema de refrigeração industrial"
       />
 
-      {/* contact channels — no form, direct actions */}
+      {/* canais diretos; o formulário de orçamento fica no fim da página */}
       <section className="relative bg-bg py-24 lg:py-28">
         <div className="bg-blueprint absolute inset-0 opacity-40" aria-hidden />
         <div className="relative mx-auto max-w-7xl px-6">
@@ -200,6 +201,8 @@ export default async function ContactPage({ params }: PageProps<"/[lang]/contato
           </Reveal>
         </div>
       </section>
+
+      <QuoteSection lang={lang} dict={dict} />
     </>
   );
 }

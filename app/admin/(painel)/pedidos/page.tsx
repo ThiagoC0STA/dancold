@@ -179,7 +179,7 @@ export default async function LeadsPage({ searchParams }: PageProps<"/admin/pedi
           >
             {narrowed || status
               ? "Tire um filtro acima para ver mais pedidos."
-              : "Quando alguém preencher o formulário de uma página de segmento, o pedido aparece aqui na hora."}
+              : "Quando alguém preencher o formulário de orçamento do site, o pedido aparece aqui na hora."}
           </Empty>
         ) : (
           <div className="overflow-x-auto">

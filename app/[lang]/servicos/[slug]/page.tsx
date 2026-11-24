@@ -8,7 +8,7 @@ import { pageMetadata } from "@/lib/metadata";
 import { serviceImages, serviceSlugs, site, type ServiceSlug } from "@/lib/site";
 import { PageHero } from "@/components/page-hero";
 import { Reveal } from "@/components/reveal";
-import { CtaSection } from "@/components/cta-section";
+import { QuoteSection } from "@/components/quote-section";
 import { WhatsAppIcon } from "@/components/header";
 import { JsonLd } from "@/components/json-ld";
 import { breadcrumb, serviceSchema } from "@/lib/schema";
@@ -110,16 +110,19 @@ export default async function ServicePage({ params }: PageProps<"/[lang]/servico
                 </ol>
               </Reveal>
 
-              <Reveal delay={0.2} className="mt-12">
+              <Reveal delay={0.2} className="mt-12 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+                <a href="#orcamento" className="btn btn-primary">
+                  {dict.segmentsPage.quoteCta}
+                  <span aria-hidden className="btn-arrow">→</span>
+                </a>
                 <a
                   href={site.whatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn btn-primary"
+                  className="btn btn-outline"
                 >
                   <WhatsAppIcon className="h-4.5 w-4.5" />
-                  {dict.common.contactUs}
-                  <span aria-hidden className="btn-arrow">→</span>
+                  {dict.common.whatsapp}
                 </a>
               </Reveal>
             </div>
@@ -182,7 +185,7 @@ export default async function ServicePage({ params }: PageProps<"/[lang]/servico
         </div>
       </section>
 
-      <CtaSection dict={dict} />
+      <QuoteSection lang={lang} dict={dict} />
     </>
   );
 }

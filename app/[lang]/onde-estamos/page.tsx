@@ -9,7 +9,7 @@ import { PageHero } from "@/components/page-hero";
 import { Reveal } from "@/components/reveal";
 import { Counter } from "@/components/counter";
 import { SectionHeading } from "@/components/section-heading";
-import { CtaSection } from "@/components/cta-section";
+import { QuoteSection } from "@/components/quote-section";
 import { WhatsAppIcon } from "@/components/header";
 import { JsonLd } from "@/components/json-ld";
 import { breadcrumb } from "@/lib/schema";
@@ -209,7 +209,7 @@ export default async function WhereWeArePage({ params }: PageProps<"/[lang]/onde
         </div>
       </section>
 
-      <CtaSection dict={dict} />
+      <QuoteSection lang={lang} dict={dict} />
     </>
   );
 }

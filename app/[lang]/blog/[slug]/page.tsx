@@ -14,7 +14,7 @@ import { BlogCard, formatPostDate } from "@/components/blog-card";
 import { BlogShare } from "@/components/blog-share";
 import { ReadingProgress } from "@/components/reading-progress";
 import { Reveal } from "@/components/reveal";
-import { CtaSection } from "@/components/cta-section";
+import { QuoteSection } from "@/components/quote-section";
 import { JsonLd } from "@/components/json-ld";
 import { articleSchema, breadcrumb } from "@/lib/schema";
 
@@ -180,7 +180,7 @@ export default async function BlogPostPage({ params }: PageProps<"/[lang]/blog/[
         </section>
       )}
 
-      <CtaSection dict={dict} />
+      <QuoteSection lang={lang} dict={dict} />
     </>
   );
 }

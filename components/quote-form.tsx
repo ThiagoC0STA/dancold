@@ -12,11 +12,12 @@ const inputClass =
 
 export function QuoteForm({
   lang,
-  segment,
+  segment = "",
   labels,
 }: {
   lang: string;
-  segment: string;
+  /** slug do segmento; vazio fora das páginas de segmento */
+  segment?: string;
   labels: Dictionary["quote"];
 }) {
   const id = useId();
@@ -44,7 +45,7 @@ export function QuoteForm({
         } catch {
           // sem storage não há rastreio: getIds() descarta o evento
         }
-        track("form_view", { label: segment });
+        track("form_view", { label: segment || undefined });
       },
       { threshold: 0.25 },
     );
@@ -55,7 +56,7 @@ export function QuoteForm({
   function handleFocus() {
     if (started) return;
     setStarted(true);
-    track("form_start", { label: segment });
+    track("form_start", { label: segment || undefined });
   }
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
@@ -93,12 +94,12 @@ export function QuoteForm({
       });
       if (response.ok) {
         setStatus("sent");
-        track("form_submit", { label: segment });
+        track("form_submit", { label: segment || undefined });
         // conversão para o Google Ads pelo GTM da agência: o dataLayer é criado se o GTM
         // ainda não carregou, e ele lê o que estiver na fila quando chegar
         const tracker = window as unknown as { dataLayer?: unknown[] };
         tracker.dataLayer = tracker.dataLayer ?? [];
-        tracker.dataLayer.push({ event: "orcamento_enviado", segmento: segment, idioma: lang });
+        tracker.dataLayer.push({ event: "orcamento_enviado", segmento: segment || null, idioma: lang });
         return;
       }
       const data = (await response.json().catch(() => null)) as { fields?: QuoteField[] } | null;

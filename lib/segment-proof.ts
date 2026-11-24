@@ -8,9 +8,14 @@ import type { SegmentSlug } from "@/lib/site";
  * mostra a seção (a página continua igual à de antes).
  */
 
-/** ID do vídeo no YouTube (o trecho depois de `v=`), por segmento. */
-export const segmentVideos: Partial<Record<SegmentSlug, { youtubeId: string }>> = {
-  // hospitais: { youtubeId: "..." },
+/**
+ * Vídeo do segmento: do YouTube (o trecho depois de `v=`) ou arquivo do próprio
+ * site em `public/video/` com a capa ao lado.
+ */
+export type SegmentVideo = { youtubeId: string } | { src: string; poster: string };
+
+export const segmentVideos: Partial<Record<SegmentSlug, SegmentVideo>> = {
+  hospitais: { src: "/video/hospitais.mp4", poster: "/video/hospitais.webp" },
 };
 
 /** Como chamar os clientes do segmento no título "Estamos em X ...". */

@@ -10,7 +10,7 @@ import { Reveal } from "@/components/reveal";
 import { Counter } from "@/components/counter";
 import { SectionHeading } from "@/components/section-heading";
 import { LogoMarquee } from "@/components/logo-marquee";
-import { CtaSection } from "@/components/cta-section";
+import { QuoteSection } from "@/components/quote-section";
 import { JsonLd } from "@/components/json-ld";
 import { breadcrumb } from "@/lib/schema";
 
@@ -296,7 +296,7 @@ export default async function AboutPage({ params }: PageProps<"/[lang]/sobre-nos
         </div>
       </section>
 
-      <CtaSection dict={dict} />
+      <QuoteSection lang={lang} dict={dict} />
     </>
   );
 }

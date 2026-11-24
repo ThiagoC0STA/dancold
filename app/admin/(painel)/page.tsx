@@ -660,7 +660,7 @@ export default async function OverviewPage({ searchParams }: PageProps<"/admin">
             </div>
             {(recent.data ?? []).length === 0 ? (
               <Empty title="Nenhum pedido de orçamento ainda">
-                Quando alguém preencher o formulário de uma página de segmento, o pedido aparece aqui.
+                Quando alguém preencher o formulário de orçamento do site, o pedido aparece aqui.
               </Empty>
             ) : (
               <div className="overflow-x-auto">

@@ -6,7 +6,7 @@ import { pageMetadata } from "@/lib/metadata";
 import { serviceSlugs } from "@/lib/site";
 import { PageHero } from "@/components/page-hero";
 import { ServiceCard } from "@/components/service-card";
-import { CtaSection } from "@/components/cta-section";
+import { QuoteSection } from "@/components/quote-section";
 import { JsonLd } from "@/components/json-ld";
 import { breadcrumb } from "@/lib/schema";
 
@@ -58,7 +58,7 @@ export default async function ServicesPage({ params }: PageProps<"/[lang]/servic
           </div>
         </div>
       </section>
-      <CtaSection dict={dict} />
+      <QuoteSection lang={lang} dict={dict} />
     </>
   );
 }

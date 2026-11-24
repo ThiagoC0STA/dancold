@@ -8,7 +8,6 @@ import { pageMetadata } from "@/lib/metadata";
 import { segmentImages, segmentSlugs, site, type SegmentSlug } from "@/lib/site";
 import { PageHero } from "@/components/page-hero";
 import { Reveal } from "@/components/reveal";
-import { CtaSection } from "@/components/cta-section";
 import { WhatsAppIcon } from "@/components/header";
 import { JsonLd } from "@/components/json-ld";
 import { breadcrumb } from "@/lib/schema";
@@ -16,7 +15,7 @@ import { brazilStates } from "@/lib/brazil-map-data";
 import { segmentClients, segmentNouns, segmentVideos } from "@/lib/segment-proof";
 import { BrazilCoverageMap } from "@/components/brazil-coverage-map";
 import { LiteVideo } from "@/components/lite-video";
-import { QuoteForm } from "@/components/quote-form";
+import { QuoteSection } from "@/components/quote-section";
 import { SectionHeading } from "@/components/section-heading";
 
 export async function generateStaticParams() {
@@ -93,7 +92,7 @@ export default async function SegmentPage({ params }: PageProps<"/[lang]/segment
               {video && (
                 <Reveal delay={0.08} className="mt-10">
                   <LiteVideo
-                    youtubeId={video.youtubeId}
+                    video={video}
                     title={segment.pageTitle}
                     playLabel={page.videoPlay}
                   />
@@ -248,52 +247,7 @@ export default async function SegmentPage({ params }: PageProps<"/[lang]/segment
       )}
 
       {/* pedido de orçamento — destino do clique do anúncio */}
-      <section
-        id="orcamento"
-        className="relative scroll-mt-24 border-t border-line bg-surface-2 py-24 lg:py-28"
-      >
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="grid gap-12 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-16">
-            <div>
-              <SectionHeading
-                kicker={dict.quote.kicker}
-                title={dict.quote.title}
-                intro={dict.quote.text}
-              />
-              <Reveal delay={0.1}>
-                <ul className="mt-9 space-y-4">
-                  {dict.quote.points.map((point) => (
-                    <li key={point} className="flex items-start gap-3 text-[15px] text-ink-2">
-                      <span
-                        aria-hidden
-                        className="mt-0.5 flex h-6 w-6 flex-none items-center justify-center rounded-md border border-line-2 text-accent"
-                      >
-                        <CheckIcon className="h-3.5 w-3.5" />
-                      </span>
-                      {point}
-                    </li>
-                  ))}
-                </ul>
-                <p className="mt-10 text-sm text-ink-3">{dict.quote.whatsappAlt}</p>
-                <a
-                  href={site.whatsapp}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-2 inline-flex items-center gap-2 font-display text-lg font-semibold text-ink transition hover:text-accent"
-                >
-                  <WhatsAppIcon className="h-5 w-5" />
-                  {site.phoneMobile}
-                </a>
-              </Reveal>
-            </div>
-            <Reveal delay={0.12}>
-              <QuoteForm lang={lang} segment={slug} labels={dict.quote} />
-            </Reveal>
-          </div>
-        </div>
-      </section>
-
-      <CtaSection dict={dict} />
+      <QuoteSection lang={lang} dict={dict} segment={slug} />
     </>
   );
 }
