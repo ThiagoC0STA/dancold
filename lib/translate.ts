@@ -41,10 +41,10 @@ async function withAzure(texts: string[], target: Target, signal: AbortSignal): 
 
 async function withGemini(texts: string[], target: Target, signal: AbortSignal): Promise<string[]> {
   const key = process.env.GEMINI_API_KEY!;
-  // apelidos que o Google mantém apontando para o modelo atual: nome fixo sai do ar
-  // (em 2026-11 o gemini-2.5-flash passou a responder 404 "no longer available").
-  // Se o principal estiver sobrecarregado, tenta o Flash Lite.
-  const models = [process.env.GEMINI_MODEL || "gemini-flash-latest", "gemini-flash-lite-latest"];
+  // Em 2026-11-25 o apelido gemini-flash-latest estourou a cota gratuita (429) e o
+  // Flash Lite só respondia "sobrecarregado" (503); o 3.5 Flash e o 3 Flash respondiam.
+  // Se o principal falhar, tenta o segundo.
+  const models = [process.env.GEMINI_MODEL || "gemini-3.5-flash", "gemini-3-flash-preview"];
   const prompt =
     `Translate each string in the following JSON array from Brazilian Portuguese to ${LANG_NAME[target]}. ` +
     `Return ONLY a JSON array of translated strings, exactly the same length and order. ` +

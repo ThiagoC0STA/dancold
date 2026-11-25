@@ -6,7 +6,7 @@ export type BlogPostCard = {
   excerpt: string;
   coverUrl: string;
   coverAlt: string;
-  /** "w / h" from the Sanity asset; lets the cover box match the image instead of cropping to 16:9. */
+  /** "w / h" from the cover image; lets the cover box match the image instead of cropping to 16:9. */
   coverRatio?: string;
   publishedAt: string;
 };

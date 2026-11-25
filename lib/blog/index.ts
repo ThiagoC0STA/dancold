@@ -3,7 +3,6 @@ import type { PortableTextBlock } from "@portabletext/react";
 import type { Locale } from "@/lib/i18n";
 import { isSupabaseConfigured } from "@/lib/supabase/env";
 import { publicSelect } from "@/lib/supabase/rest";
-import { getSamplePosts, getSampleSlugs } from "./sample-posts";
 import type { BlogPost, BlogPostCard } from "./types";
 
 /**
@@ -41,7 +40,7 @@ function toCard(row: Row): BlogPostCard {
 }
 
 export async function getPosts(lang: Locale): Promise<BlogPostCard[]> {
-  if (!isSupabaseConfigured) return getSamplePosts(lang);
+  if (!isSupabaseConfigured) return [];
   const rows = await publicSelect<Row>(
     `posts?select=${cardColumns(lang)}&status=eq.publicado&title->>${lang}=not.is.null&order=published_at.desc`,
     "blog",
@@ -50,9 +49,7 @@ export async function getPosts(lang: Locale): Promise<BlogPostCard[]> {
 }
 
 export async function getPost(lang: Locale, slug: string): Promise<BlogPost | null> {
-  if (!isSupabaseConfigured) {
-    return getSamplePosts(lang).find((post) => post.slug === slug) ?? null;
-  }
+  if (!isSupabaseConfigured) return null;
   const rows = await publicSelect<Row & { body: PortableTextBlock[] | null }>(
     `posts?select=${cardColumns(lang)},body:body->${lang}&status=eq.publicado&slug=eq.${encodeURIComponent(slug)}&limit=1`,
     "blog",
@@ -63,7 +60,7 @@ export async function getPost(lang: Locale, slug: string): Promise<BlogPost | nu
 }
 
 export async function getAllSlugs(): Promise<string[]> {
-  if (!isSupabaseConfigured) return getSampleSlugs();
+  if (!isSupabaseConfigured) return [];
   const rows = await publicSelect<{ slug: string }>("posts?select=slug&status=eq.publicado", "blog");
   return rows.map((row) => row.slug);
 }

@@ -24,8 +24,6 @@ const nextConfig: NextConfig = {
         destination: "/:lang/segmentos/agronegocios",
         permanent: true,
       },
-      // o blog saiu do Sanity: quem tinha o endereço antigo cai no painel novo
-      { source: "/studio/:path*", destination: "/admin/blog", permanent: false },
     ];
   },
 };
